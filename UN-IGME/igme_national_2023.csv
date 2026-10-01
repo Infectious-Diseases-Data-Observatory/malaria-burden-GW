@@ -1,0 +1,817 @@
+iso3,country_name,indicator_code,indicator,unit,year,value,lower,upper
+AGO,Angola,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,18.4473755336387,12.1550642331087,28.3722219776371
+AGO,Angola,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,14.7073584139319,9.47115421709804,23.0721913580106
+AGO,Angola,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,32.9976750307159,23.0361459337675,48.7283480489478
+AGO,Angola,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,50.5134355847153,35.2641473274192,74.5942333218593
+AGO,Angola,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,18.1134627107397,12.5163293840145,27.1908505026843
+AGO,Angola,CME_TMM0,Neonatal deaths,Number of deaths,2023,25464.0,16780.0,39160.0
+AGO,Angola,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,19484.0,12454.0,30071.0
+AGO,Angola,CME_TMY0,Infant deaths,Number of deaths,2023,44948.0,31428.0,66220.0
+AGO,Angola,CME_TMY0T4,Under-five deaths,Number of deaths,2023,67797.0,47351.0,100208.0
+AGO,Angola,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,22849.0,15916.0,33971.0
+AGO,Angola,DM_BRTS,Number of births,Persons,2023,1381370.0,,
+AGO,Angola,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,1316621.0,,
+AGO,Angola,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,1274284.0,,
+AGO,Angola,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,1241747.0,,
+AGO,Angola,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,1208901.0,,
+AGO,Angola,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,1177703.0,,
+AGO,Angola,DM_POP_U5,Population under age 5,Persons,2023,6219257.0,,
+BDI,Burundi,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,19.424180218779,11.0227422175216,33.1130113494793
+BDI,Burundi,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,12.0355549233565,6.47725427639004,21.4550665978294
+BDI,Burundi,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,31.4159299009932,18.2437946198305,53.1683168712052
+BDI,Burundi,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,48.6836722800881,28.271482690983,82.3922424833205
+BDI,Burundi,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,17.8278199243175,10.2140307506939,30.8649637974982
+BDI,Burundi,CME_TMM0,Neonatal deaths,Number of deaths,2023,8948.0,5078.0,15251.0
+BDI,Burundi,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,5394.0,2877.0,9296.0
+BDI,Burundi,CME_TMY0,Infant deaths,Number of deaths,2023,14342.0,8347.0,24185.0
+BDI,Burundi,CME_TMY0T4,Under-five deaths,Number of deaths,2023,22103.0,12848.0,37354.0
+BDI,Burundi,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,7761.0,4507.0,13187.0
+BDI,Burundi,DM_BRTS,Number of births,Persons,2023,460882.0,,
+BDI,Burundi,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,444971.0,,
+BDI,Burundi,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,438246.0,,
+BDI,Burundi,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,433818.0,,
+BDI,Burundi,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,428618.0,,
+BDI,Burundi,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,421580.0,,
+BDI,Burundi,DM_POP_U5,Population under age 5,Persons,2023,2167234.0,,
+BEN,Benin,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,27.677217067337,20.198427284036,37.5945908930558
+BEN,Benin,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,19.1901408311658,13.3728783662493,26.9756122241805
+BEN,Benin,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,46.4802711736647,35.4716608110704,61.1875981311883
+BEN,Benin,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,77.1826848189933,58.9023675476812,101.604895628632
+BEN,Benin,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,32.1990334518827,24.2923984548959,43.0515163865898
+BEN,Benin,CME_TMM0,Neonatal deaths,Number of deaths,2023,13223.0,9650.0,17959.0
+BEN,Benin,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,8699.0,6029.0,12063.0
+BEN,Benin,CME_TMY0,Infant deaths,Number of deaths,2023,21922.0,16760.0,28806.0
+BEN,Benin,CME_TMY0T4,Under-five deaths,Number of deaths,2023,36066.0,27509.0,47521.0
+BEN,Benin,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,14144.0,10759.0,18726.0
+BEN,Benin,DM_BRTS,Number of births,Persons,2023,478062.0,,
+BEN,Benin,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,455242.0,,
+BEN,Benin,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,442423.0,,
+BEN,Benin,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,433147.0,,
+BEN,Benin,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,425585.0,,
+BEN,Benin,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,420045.0,,
+BEN,Benin,DM_POP_U5,Population under age 5,Persons,2023,2176443.0,,
+BFA,Burkina Faso,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,24.1671586757274,14.000835903888,40.6822020568933
+BFA,Burkina Faso,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,20.5868526614372,10.7866563116801,35.3708036109539
+BFA,Burkina Faso,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,44.8655239109236,28.9703478011613,69.0102867066889
+BFA,Burkina Faso,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,77.3590276942138,49.9518949630585,118.990445561889
+BFA,Burkina Faso,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,34.0198208702679,21.6075246675475,53.6849743953122
+BFA,Burkina Faso,CME_TMM0,Neonatal deaths,Number of deaths,2023,17598.0,10196.0,29619.0
+BFA,Burkina Faso,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,14681.0,7425.0,24245.0
+BFA,Burkina Faso,CME_TMY0,Infant deaths,Number of deaths,2023,32279.0,20897.0,49461.0
+BFA,Burkina Faso,CME_TMY0T4,Under-five deaths,Number of deaths,2023,55420.0,35839.0,85208.0
+BFA,Burkina Faso,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,23141.0,14931.0,35761.0
+BFA,Burkina Faso,DM_BRTS,Number of births,Persons,2023,728612.0,,
+BFA,Burkina Faso,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,694130.0,,
+BFA,Burkina Faso,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,674818.0,,
+BFA,Burkina Faso,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,659372.0,,
+BFA,Burkina Faso,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,656587.0,,
+BFA,Burkina Faso,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,666232.0,,
+BFA,Burkina Faso,DM_POP_U5,Population under age 5,Persons,2023,3351139.0,,
+BWA,Botswana,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,18.0790742423179,5.12378548140392,59.5378481456513
+BWA,Botswana,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,14.729227476554,4.06778707779759,52.0921836022488
+BWA,Botswana,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,33.2928207763087,9.93025595414223,106.963592628811
+BWA,Botswana,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,34.5706820193209,10.3114038689509,111.069121275725
+BWA,Botswana,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,1.32187002504969,0.384970773120713,4.59726915044785
+BWA,Botswana,CME_TMM0,Neonatal deaths,Number of deaths,2023,1108.0,314.0,3647.0
+BWA,Botswana,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,926.0,248.0,2920.0
+BWA,Botswana,CME_TMY0,Infant deaths,Number of deaths,2023,2034.0,609.0,6453.0
+BWA,Botswana,CME_TMY0T4,Under-five deaths,Number of deaths,2023,2111.0,632.0,6704.0
+BWA,Botswana,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,77.0,23.0,249.0
+BWA,Botswana,DM_BRTS,Number of births,Persons,2023,61294.0,,
+BWA,Botswana,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,59857.0,,
+BWA,Botswana,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,61904.0,,
+BWA,Botswana,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,60587.0,,
+BWA,Botswana,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,56337.0,,
+BWA,Botswana,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,54974.0,,
+BWA,Botswana,DM_POP_U5,Population under age 5,Persons,2023,293659.0,,
+CAF,Central African Republic,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,30.4458225528655,21.3248082063652,43.6074265638527
+CAF,Central African Republic,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,30.9494826431563,21.3561480266833,44.1085010797848
+CAF,Central African Republic,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,60.7576837563865,45.3888880408113,81.1628288742754
+CAF,Central African Republic,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,92.6056815279805,69.1808615955461,123.706807401971
+CAF,Central African Republic,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,33.908180264942,24.9232103680537,46.3019780493627
+CAF,Central African Republic,CME_TMM0,Neonatal deaths,Number of deaths,2023,7263.0,5087.0,10401.0
+CAF,Central African Republic,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,6548.0,4480.0,9120.0
+CAF,Central African Republic,CME_TMY0,Infant deaths,Number of deaths,2023,13811.0,10400.0,18245.0
+CAF,Central African Republic,CME_TMY0T4,Under-five deaths,Number of deaths,2023,20102.0,15225.0,26280.0
+CAF,Central African Republic,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,6291.0,4824.0,8063.0
+CAF,Central African Republic,DM_BRTS,Number of births,Persons,2023,238858.0,,
+CAF,Central African Republic,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,214316.0,,
+CAF,Central African Republic,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,192850.0,,
+CAF,Central African Republic,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,184821.0,,
+CAF,Central African Republic,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,177120.0,,
+CAF,Central African Republic,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,171799.0,,
+CAF,Central African Republic,DM_POP_U5,Population under age 5,Persons,2023,940907.0,,
+CIV,Côte d'Ivoire,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,27.9338090785546,21.5645265969332,35.7128584215948
+CIV,Côte d'Ivoire,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,18.6198312796024,13.7269241636902,24.6585377286872
+CIV,Côte d'Ivoire,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,46.1536584018152,37.2520520985481,57.1402213536711
+CIV,Côte d'Ivoire,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,66.5433459864149,53.7092026360396,82.3835347173287
+CIV,Côte d'Ivoire,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,21.3762811635365,17.0939346828948,26.7731363017374
+CIV,Côte d'Ivoire,CME_TMM0,Neonatal deaths,Number of deaths,2023,27833.0,21488.0,35581.0
+CIV,Côte d'Ivoire,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,17614.0,12905.0,23095.0
+CIV,Côte d'Ivoire,CME_TMY0,Infant deaths,Number of deaths,2023,45447.0,36736.0,56179.0
+CIV,Côte d'Ivoire,CME_TMY0T4,Under-five deaths,Number of deaths,2023,65219.0,52666.0,80698.0
+CIV,Côte d'Ivoire,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,19772.0,15931.0,24533.0
+CIV,Côte d'Ivoire,DM_BRTS,Number of births,Persons,2023,997001.0,,
+CIV,Côte d'Ivoire,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,952601.0,,
+CIV,Côte d'Ivoire,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,928841.0,,
+CIV,Côte d'Ivoire,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,914816.0,,
+CIV,Côte d'Ivoire,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,903223.0,,
+CIV,Côte d'Ivoire,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,894359.0,,
+CIV,Côte d'Ivoire,DM_POP_U5,Population under age 5,Persons,2023,4593841.0,,
+CMR,Cameroon,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,25.2120581175073,17.8478238456473,35.4392428386293
+CMR,Cameroon,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,16.2576588754971,10.4804920624778,23.7860893131606
+CMR,Cameroon,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,41.3289679120009,30.3027692317053,55.3048215605763
+CMR,Cameroon,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,66.9760341433521,49.1074277737161,89.6247306494574
+CMR,Cameroon,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,26.752728908416,19.392298907339,36.3290825264339
+CMR,Cameroon,CME_TMM0,Neonatal deaths,Number of deaths,2023,24123.0,17078.0,33905.0
+CMR,Cameroon,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,14954.0,9479.0,21409.0
+CMR,Cameroon,CME_TMY0,Infant deaths,Number of deaths,2023,39077.0,28696.0,52196.0
+CMR,Cameroon,CME_TMY0T4,Under-five deaths,Number of deaths,2023,62804.0,46052.0,84067.0
+CMR,Cameroon,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,23727.0,17358.0,31894.0
+CMR,Cameroon,DM_BRTS,Number of births,Persons,2023,957392.0,,
+CMR,Cameroon,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,915567.0,,
+CMR,Cameroon,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,890986.0,,
+CMR,Cameroon,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,874543.0,,
+CMR,Cameroon,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,861697.0,,
+CMR,Cameroon,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,850308.0,,
+CMR,Cameroon,DM_POP_U5,Population under age 5,Persons,2023,4393101.0,,
+COD,Democratic Republic of the Congo,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,23.8629143203185,17.8299701524363,31.7166650355899
+COD,Democratic Republic of the Congo,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,34.0684835247679,26.3678451042978,44.4312648619001
+COD,Democratic Republic of the Congo,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,57.1712089821429,45.9275829991854,72.130113344657
+COD,Democratic Republic of the Congo,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,91.3143265805965,73.3559144141065,115.206812021532
+COD,Democratic Republic of the Congo,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,36.2134863977343,28.748689225969,46.4253655705924
+COD,Democratic Republic of the Congo,CME_TMM0,Neonatal deaths,Number of deaths,2023,104170.0,77840.0,138444.0
+COD,Democratic Republic of the Congo,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,140294.0,108773.0,181592.0
+COD,Democratic Republic of the Congo,CME_TMY0,Infant deaths,Number of deaths,2023,244464.0,196723.0,307815.0
+COD,Democratic Republic of the Congo,CME_TMY0T4,Under-five deaths,Number of deaths,2023,382839.0,307543.0,483455.0
+COD,Democratic Republic of the Congo,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,138375.0,110875.0,175662.0
+COD,Democratic Republic of the Congo,DM_BRTS,Number of births,Persons,2023,4369683.0,,
+COD,Democratic Republic of the Congo,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,4142462.9999999995,,
+COD,Democratic Republic of the Congo,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,3979573.0,,
+COD,Democratic Republic of the Congo,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,3843012.0,,
+COD,Democratic Republic of the Congo,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,3714970.0,,
+COD,Democratic Republic of the Congo,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,3595858.0,,
+COD,Democratic Republic of the Congo,DM_POP_U5,Population under age 5,Persons,2023,19275876.0,,
+COG,Congo,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,16.801794359478,8.71995695994294,32.8458907794982
+COG,Congo,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,10.8722920286205,5.19503223171041,22.1570211631497
+COG,Congo,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,27.7110288744166,14.7499433306606,52.7450783071505
+COG,Congo,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,40.2958795510943,21.4485699008633,76.6990403716189
+COG,Congo,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,12.9435291880233,6.7989101099546,25.2877676858106
+COG,Congo,CME_TMM0,Neonatal deaths,Number of deaths,2023,3180.0,1650.0,6215.0
+COG,Congo,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,2007.0,948.0,3929.0
+COG,Congo,CME_TMY0,Infant deaths,Number of deaths,2023,5187.0,2767.0,9833.0
+COG,Congo,CME_TMY0T4,Under-five deaths,Number of deaths,2023,7481.0,3987.0,14208.0
+COG,Congo,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,2294.0,1221.0,4380.0
+COG,Congo,DM_BRTS,Number of births,Persons,2023,189365.0,,
+COG,Congo,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,183269.0,,
+COG,Congo,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,179737.0,,
+COG,Congo,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,176827.0,,
+COG,Congo,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,173971.0,,
+COG,Congo,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,171877.0,,
+COG,Congo,DM_POP_U5,Population under age 5,Persons,2023,885683.0,,
+COM,Comoros,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,22.6897261309528,15.9520542048572,31.3923951619431
+COM,Comoros,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,13.4188588047953,8.51800081697953,20.2906531849616
+COM,Comoros,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,36.0354135843,27.049637193057,47.2504174571736
+COM,Comoros,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,40.1859199193298,30.16517492006,52.6926515675168
+COM,Comoros,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,4.3056626701643,3.20215485411154,5.71213486745921
+COM,Comoros,CME_TMM0,Neonatal deaths,Number of deaths,2023,553.0,389.0,764.0
+COM,Comoros,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,317.0,197.0,472.0
+COM,Comoros,CME_TMY0,Infant deaths,Number of deaths,2023,870.0,654.0,1139.0
+COM,Comoros,CME_TMY0T4,Under-five deaths,Number of deaths,2023,970.0,729.0,1270.0
+COM,Comoros,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,100.0,75.0,131.0
+COM,Comoros,DM_BRTS,Number of births,Persons,2023,24366.0,,
+COM,Comoros,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,23471.0,,
+COM,Comoros,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,23069.0,,
+COM,Comoros,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,22808.0,,
+COM,Comoros,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,22542.0,,
+COM,Comoros,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,22255.0,,
+COM,Comoros,DM_POP_U5,Population under age 5,Persons,2023,114145.0,,
+CPV,Cabo Verde,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,8.33035863896918,7.17367497260528,9.635141767777
+CPV,Cabo Verde,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,2.71999812730528,2.0177994659909,3.50586786018324
+CPV,Cabo Verde,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,11.0363365710582,9.77529676054251,12.4963161865205
+CPV,Cabo Verde,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,11.5966612393976,10.2715973110018,13.1307653243837
+CPV,Cabo Verde,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,0.566577609552976,0.501199928514462,0.642477742885317
+CPV,Cabo Verde,CME_TMM0,Neonatal deaths,Number of deaths,2023,54.0,46.0,62.0
+CPV,Cabo Verde,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,17.0,13.0,22.0
+CPV,Cabo Verde,CME_TMY0,Infant deaths,Number of deaths,2023,71.0,63.0,80.0
+CPV,Cabo Verde,CME_TMY0T4,Under-five deaths,Number of deaths,2023,75.0,66.0,85.0
+CPV,Cabo Verde,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,4.0,3.0,4.0
+CPV,Cabo Verde,DM_BRTS,Number of births,Persons,2023,6440.0,,
+CPV,Cabo Verde,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,6376.0,,
+CPV,Cabo Verde,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,6382.0,,
+CPV,Cabo Verde,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,7656.0,,
+CPV,Cabo Verde,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,9168.0,,
+CPV,Cabo Verde,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,9553.0,,
+CPV,Cabo Verde,DM_POP_U5,Population under age 5,Persons,2023,39134.0,,
+DJI,Djibouti,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,27.7419807833095,14.1416852034344,53.5340239053765
+DJI,Djibouti,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,16.5507064419201,7.6239510607336,33.8555425979606
+DJI,Djibouti,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,44.3974950651098,23.8043237573772,81.4545738149687
+DJI,Djibouti,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,50.5057840831968,27.0793663960878,92.6612438754591
+DJI,Djibouti,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,6.39208142146575,3.35490385865427,12.2004527394992
+DJI,Djibouti,CME_TMM0,Neonatal deaths,Number of deaths,2023,664.0,339.0,1281.0
+DJI,Djibouti,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,390.0,175.0,750.0
+DJI,Djibouti,CME_TMY0,Infant deaths,Number of deaths,2023,1054.0,567.0,1922.0
+DJI,Djibouti,CME_TMY0T4,Under-five deaths,Number of deaths,2023,1200.0,645.0,2190.0
+DJI,Djibouti,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,146.0,78.0,268.0
+DJI,Djibouti,DM_BRTS,Number of births,Persons,2023,23946.0,,
+DJI,Djibouti,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,23197.0,,
+DJI,Djibouti,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,22988.0,,
+DJI,Djibouti,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,22864.0,,
+DJI,Djibouti,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,22756.0,,
+DJI,Djibouti,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,22701.0,,
+DJI,Djibouti,DM_POP_U5,Population under age 5,Persons,2023,114506.0,,
+ERI,Eritrea,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,16.2037175017873,8.65411515159019,31.2212623526046
+ERI,Eritrea,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,9.15627368278144,4.26528857812888,18.8610934056665
+ERI,Eritrea,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,25.4315244269652,14.1189385407147,47.4157099691598
+ERI,Eritrea,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,35.4124475836133,19.6600944015444,66.0246045707867
+ERI,Eritrea,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,10.2413769872138,5.62051151829561,19.5351684962489
+ERI,Eritrea,CME_TMM0,Neonatal deaths,Number of deaths,2023,1604.0,857.0,3090.0
+ERI,Eritrea,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,888.0,402.0,1754.0
+ERI,Eritrea,CME_TMY0,Infant deaths,Number of deaths,2023,2492.0,1386.0,4630.0
+ERI,Eritrea,CME_TMY0T4,Under-five deaths,Number of deaths,2023,3442.0,1914.0,6406.0
+ERI,Eritrea,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,950.0,528.0,1774.0
+ERI,Eritrea,DM_BRTS,Number of births,Persons,2023,99058.0,,
+ERI,Eritrea,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,95783.0,,
+ERI,Eritrea,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,93840.0,,
+ERI,Eritrea,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,92061.0,,
+ERI,Eritrea,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,90438.0,,
+ERI,Eritrea,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,88992.0,,
+ERI,Eritrea,DM_POP_U5,Population under age 5,Persons,2023,461113.0,,
+ETH,Ethiopia,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,25.9388629477387,18.5915396704051,36.0124468800716
+ETH,Ethiopia,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,12.9801484597354,8.7598714296252,18.8872656503654
+ETH,Ethiopia,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,38.6666375996567,28.0677732596146,52.9688958379924
+ETH,Ethiopia,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,51.4884096955929,37.3749852210288,70.5332653505397
+ETH,Ethiopia,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,13.3374879073443,9.57598864091483,18.546771566356
+ETH,Ethiopia,CME_TMM0,Neonatal deaths,Number of deaths,2023,106432.0,76291.0,147746.0
+ETH,Ethiopia,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,50268.0,33904.0,71825.0
+ETH,Ethiopia,CME_TMY0,Infant deaths,Number of deaths,2023,156700.0,113966.0,214158.0
+ETH,Ethiopia,CME_TMY0T4,Under-five deaths,Number of deaths,2023,206843.0,150327.0,283231.0
+ETH,Ethiopia,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,50143.0,36358.0,69068.0
+ETH,Ethiopia,DM_BRTS,Number of births,Persons,2023,4105685.0000000005,,
+ETH,Ethiopia,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,3967764.0,,
+ETH,Ethiopia,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,3893881.0,,
+ETH,Ethiopia,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,3826439.0,,
+ETH,Ethiopia,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,3745343.0,,
+ETH,Ethiopia,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,3633102.0,,
+ETH,Ethiopia,DM_POP_U5,Population under age 5,Persons,2023,19066530.0,,
+GAB,Gabon,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,16.9289452055494,11.3275627462294,25.509715094775
+GAB,Gabon,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,10.0153637001573,6.00212851875762,16.2570723951803
+GAB,Gabon,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,26.8706535035313,19.1699468692456,39.0781301122398
+GAB,Gabon,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,33.7822953189997,24.100820856526,49.1297664864195
+GAB,Gabon,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,7.10249037330307,5.02724602689071,10.4604096228164
+GAB,Gabon,CME_TMM0,Neonatal deaths,Number of deaths,2023,1164.0,779.0,1753.0
+GAB,Gabon,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,675.0,400.0,1082.0
+GAB,Gabon,CME_TMY0,Infant deaths,Number of deaths,2023,1839.0,1314.0,2670.0
+GAB,Gabon,CME_TMY0T4,Under-five deaths,Number of deaths,2023,2312.0,1650.0,3360.0
+GAB,Gabon,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,473.0,336.0,689.0
+GAB,Gabon,DM_BRTS,Number of births,Persons,2023,68745.0,,
+GAB,Gabon,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,67108.0,,
+GAB,Gabon,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,66694.0,,
+GAB,Gabon,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,66328.0,,
+GAB,Gabon,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,65892.0,,
+GAB,Gabon,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,65212.99999999999,,
+GAB,Gabon,DM_POP_U5,Population under age 5,Persons,2023,331235.0,,
+GHA,Ghana,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,18.6860891240603,14.3030951115375,24.1461852128483
+GHA,Ghana,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,9.80702785565629,7.19420120277386,13.4701663492756
+GHA,Ghana,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,28.400330338188,22.6034331887416,35.8798506355761
+GHA,Ghana,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,37.1857796193778,29.5956517121096,46.9790387162042
+GHA,Ghana,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,9.04225223158051,7.1539217149737,11.5122457411159
+GHA,Ghana,CME_TMM0,Neonatal deaths,Number of deaths,2023,16603.0,12709.0,21453.0
+GHA,Ghana,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,8419.0,6127.0,11448.0
+GHA,Ghana,CME_TMY0,Infant deaths,Number of deaths,2023,25022.0,19931.0,31577.0
+GHA,Ghana,CME_TMY0T4,Under-five deaths,Number of deaths,2023,32687.0,26026.0,41290.0
+GHA,Ghana,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,7665.0,6090.0,9704.0
+GHA,Ghana,DM_BRTS,Number of births,Persons,2023,888947.0,,
+GHA,Ghana,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,861369.0,,
+GHA,Ghana,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,851010.0,,
+GHA,Ghana,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,844564.0,,
+GHA,Ghana,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,837578.0,,
+GHA,Ghana,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,831246.0,,
+GHA,Ghana,DM_POP_U5,Population under age 5,Persons,2023,4225767.0,,
+GIN,Guinea,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,30.3133629099213,21.0179009069668,43.0440972198462
+GIN,Guinea,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,31.7436839560187,21.6506801547994,44.4828824200261
+GIN,Guinea,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,61.427032250099,47.3882359950574,80.1299549062129
+GIN,Guinea,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,94.9500426064148,73.2497544151872,123.85984400838
+GIN,Guinea,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,35.7169996460261,27.1480149598555,47.5392034608221
+GIN,Guinea,CME_TMM0,Neonatal deaths,Number of deaths,2023,14771.0,10243.0,20972.0
+GIN,Guinea,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,14738.0,9886.0,20354.0
+GIN,Guinea,CME_TMY0,Infant deaths,Number of deaths,2023,29509.0,22815.0,38383.0
+GIN,Guinea,CME_TMY0T4,Under-five deaths,Number of deaths,2023,45314.0,34978.0,59132.0
+GIN,Guinea,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,15805.0,12149.0,20770.0
+GIN,Guinea,DM_BRTS,Number of births,Persons,2023,487595.0,,
+GIN,Guinea,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,460983.0,,
+GIN,Guinea,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,446910.0,,
+GIN,Guinea,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,438287.0,,
+GIN,Guinea,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,429070.0,,
+GIN,Guinea,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,419320.0,,
+GIN,Guinea,DM_POP_U5,Population under age 5,Persons,2023,2194570.0,,
+GMB,Gambia,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,23.5173530893325,16.4765043856743,32.8361049390381
+GMB,Gambia,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,10.2181483551341,5.94470873812672,15.839594697908
+GMB,Gambia,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,33.705782033108,24.6983860879413,45.451541820704
+GMB,Gambia,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,43.8424041819014,32.1261386086382,59.1205646923289
+GMB,Gambia,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,10.4902026322742,7.61585176807972,14.3198836632963
+GMB,Gambia,CME_TMM0,Neonatal deaths,Number of deaths,2023,1929.0,1352.0,2694.0
+GMB,Gambia,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,806.0,451.0,1224.0
+GMB,Gambia,CME_TMY0,Infant deaths,Number of deaths,2023,2735.0,2007.0,3682.0
+GMB,Gambia,CME_TMY0T4,Under-five deaths,Number of deaths,2023,3537.0,2594.0,4765.0
+GMB,Gambia,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,802.0,587.0,1085.0
+GMB,Gambia,DM_BRTS,Number of births,Persons,2023,82092.0,,
+GMB,Gambia,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,79439.0,,
+GMB,Gambia,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,77987.0,,
+GMB,Gambia,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,76692.0,,
+GMB,Gambia,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,75356.0,,
+GMB,Gambia,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,74085.0,,
+GMB,Gambia,DM_POP_U5,Population under age 5,Persons,2023,383558.0,,
+GNB,Guinea-Bissau,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,32.6881535316008,17.5981707940775,58.2150153962624
+GNB,Guinea-Bissau,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,10.3921928385316,2.70249684922136,22.3537986530542
+GNB,Guinea-Bissau,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,43.3813865737641,24.2877947044855,73.5611331134047
+GNB,Guinea-Bissau,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,69.6960638564149,39.0205068198317,118.182516414141
+GNB,Guinea-Bissau,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,27.5080130312576,15.099444321017,48.1644120693827
+GNB,Guinea-Bissau,CME_TMM0,Neonatal deaths,Number of deaths,2023,2113.0,1138.0,3762.0
+GNB,Guinea-Bissau,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,661.0,143.0,1317.0
+GNB,Guinea-Bissau,CME_TMY0,Infant deaths,Number of deaths,2023,2774.0,1558.0,4681.0
+GNB,Guinea-Bissau,CME_TMY0T4,Under-five deaths,Number of deaths,2023,4429.0,2484.0,7498.0
+GNB,Guinea-Bissau,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,1655.0,927.0,2821.0
+GNB,Guinea-Bissau,DM_BRTS,Number of births,Persons,2023,64679.0,,
+GNB,Guinea-Bissau,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,61864.0,,
+GNB,Guinea-Bissau,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,60337.0,,
+GNB,Guinea-Bissau,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,59300.0,,
+GNB,Guinea-Bissau,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,58325.0,,
+GNB,Guinea-Bissau,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,57471.0,,
+GNB,Guinea-Bissau,DM_POP_U5,Population under age 5,Persons,2023,297298.0,,
+GNQ,Equatorial Guinea,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,26.744466307853,11.8895863617042,55.0054622909273
+GNQ,Equatorial Guinea,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,21.638628838239,8.39532937140898,46.8337150952498
+GNQ,Equatorial Guinea,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,49.1786522663411,26.1417185711964,89.7929066832496
+GNQ,Equatorial Guinea,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,70.4429146644442,37.4450857359723,128.618288047103
+GNQ,Equatorial Guinea,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,22.3640986278319,11.6067885670106,42.6555469091871
+GNQ,Equatorial Guinea,CME_TMM0,Neonatal deaths,Number of deaths,2023,1462.0,650.0,3006.0
+GNQ,Equatorial Guinea,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,1196.0,433.0,2392.0
+GNQ,Equatorial Guinea,CME_TMY0,Infant deaths,Number of deaths,2023,2658.0,1418.0,4824.0
+GNQ,Equatorial Guinea,CME_TMY0T4,Under-five deaths,Number of deaths,2023,3792.0,2021.0,6902.0
+GNQ,Equatorial Guinea,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,1134.0,602.0,2089.0
+GNQ,Equatorial Guinea,DM_BRTS,Number of births,Persons,2023,54694.0,,
+GNQ,Equatorial Guinea,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,52310.0,,
+GNQ,Equatorial Guinea,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,51080.0,,
+GNQ,Equatorial Guinea,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,50417.0,,
+GNQ,Equatorial Guinea,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,49718.0,,
+GNQ,Equatorial Guinea,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,48906.0,,
+GNQ,Equatorial Guinea,DM_POP_U5,Population under age 5,Persons,2023,252431.0,,
+KEN,Kenya,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,21.1043341447586,17.1240063927997,26.0321811228226
+KEN,Kenya,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,13.8309696368336,10.676583047722,17.7117094428098
+KEN,Kenya,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,34.6985702693178,28.9752660252355,41.5741602215402
+KEN,Kenya,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,39.6248653186726,33.0890006392543,47.4766103251272
+KEN,Kenya,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,5.10337486056484,4.23648798027845,6.15848390035282
+KEN,Kenya,CME_TMM0,Neonatal deaths,Number of deaths,2023,31638.0,25672.0,39024.0
+KEN,Kenya,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,19823.0,15224.0,25229.0
+KEN,Kenya,CME_TMY0,Infant deaths,Number of deaths,2023,51461.0,43005.0,61593.0
+KEN,Kenya,CME_TMY0T4,Under-five deaths,Number of deaths,2023,58636.0,48982.0,70210.0
+KEN,Kenya,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,7175.0,5982.0,8613.0
+KEN,Kenya,DM_BRTS,Number of births,Persons,2023,1499998.0,,
+KEN,Kenya,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,1452999.0,,
+KEN,Kenya,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,1425638.0,,
+KEN,Kenya,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,1400869.0,,
+KEN,Kenya,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,1381636.0,,
+KEN,Kenya,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,1375554.0,,
+KEN,Kenya,DM_POP_U5,Population under age 5,Persons,2023,7036696.0,,
+LBR,Liberia,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,33.0966640925464,25.2625963758051,42.7018124676676
+LBR,Liberia,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,31.3094551332202,23.2320605255433,39.9404802799337
+LBR,Liberia,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,63.6246923279228,50.1818643250624,77.3439299776185
+LBR,Liberia,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,87.2936049083,68.849933534868,106.116512606826
+LBR,Liberia,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,25.2771643923204,19.6543617231947,31.1845156404357
+LBR,Liberia,CME_TMM0,Neonatal deaths,Number of deaths,2023,5624.0,4293.0,7256.0
+LBR,Liberia,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,5006.0,3687.0,6316.0
+LBR,Liberia,CME_TMY0,Infant deaths,Number of deaths,2023,10630.0,8401.0,12900.0
+LBR,Liberia,CME_TMY0T4,Under-five deaths,Number of deaths,2023,14528.0,11460.0,17672.0
+LBR,Liberia,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,3898.0,3060.0,4772.0
+LBR,Liberia,DM_BRTS,Number of births,Persons,2023,170065.0,,
+LBR,Liberia,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,161531.0,,
+LBR,Liberia,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,156369.0,,
+LBR,Liberia,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,153595.0,,
+LBR,Liberia,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,151532.0,,
+LBR,Liberia,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,149905.0,,
+LBR,Liberia,DM_POP_U5,Population under age 5,Persons,2023,772931.0,,
+LSO,Lesotho,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,29.0752279279475,20.5760253379153,40.3193552009979
+LSO,Lesotho,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,29.9908192366289,21.1924976612271,41.7396508883257
+LSO,Lesotho,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,58.4252753925252,42.6249788784761,78.569438672985
+LSO,Lesotho,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,61.3121534202979,44.7311412222875,82.4516691740071
+LSO,Lesotho,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,3.06601053783079,2.19993450574988,4.21326431350806
+LSO,Lesotho,CME_TMM0,Neonatal deaths,Number of deaths,2023,1620.0,1146.0,2246.0
+LSO,Lesotho,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,1604.0,1135.0,2186.0
+LSO,Lesotho,CME_TMY0,Infant deaths,Number of deaths,2023,3224.0,2358.0,4323.0
+LSO,Lesotho,CME_TMY0T4,Under-five deaths,Number of deaths,2023,3390.0,2479.0,4547.0
+LSO,Lesotho,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,166.0,120.0,224.0
+LSO,Lesotho,DM_BRTS,Number of births,Persons,2023,55728.0,,
+LSO,Lesotho,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,53261.0,,
+LSO,Lesotho,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,52477.0,,
+LSO,Lesotho,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,52806.0,,
+LSO,Lesotho,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,53469.0,,
+LSO,Lesotho,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,54324.0,,
+LSO,Lesotho,DM_POP_U5,Population under age 5,Persons,2023,266337.0,,
+MDG,Madagascar,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,23.3208177393417,17.9923843922667,30.5546042228253
+MDG,Madagascar,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,20.7325064645968,15.7450591505666,27.2106365872453
+MDG,Madagascar,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,43.6897322204431,34.5076745193857,55.8449006346873
+MDG,Madagascar,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,63.6302284299462,50.2573740021077,81.3331554907104
+MDG,Madagascar,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,20.8514923283248,16.3126097104226,26.9958345607294
+MDG,Madagascar,CME_TMM0,Neonatal deaths,Number of deaths,2023,23335.0,18004.0,30571.0
+MDG,Madagascar,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,19832.0,15028.0,25724.0
+MDG,Madagascar,CME_TMY0,Infant deaths,Number of deaths,2023,43167.0,34140.0,55077.0
+MDG,Madagascar,CME_TMY0T4,Under-five deaths,Number of deaths,2023,62324.0,49218.0,79650.0
+MDG,Madagascar,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,19157.0,15079.0,24591.0
+MDG,Madagascar,DM_BRTS,Number of births,Persons,2023,1001244.0,,
+MDG,Madagascar,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,958400.0,,
+MDG,Madagascar,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,935646.0,,
+MDG,Madagascar,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,918045.0,,
+MDG,Madagascar,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,899365.0,,
+MDG,Madagascar,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,876676.0,,
+MDG,Madagascar,DM_POP_U5,Population under age 5,Persons,2023,4588132.0,,
+MLI,Mali,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,28.7026971061366,23.3693954158802,34.9758142162179
+MLI,Mali,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,21.0993232921448,16.1034170902996,26.5077516791842
+MLI,Mali,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,49.3015912490616,42.0734497385343,57.1502656936765
+MLI,Mali,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,76.208505926193,65.0355224344914,88.3406853908179
+MLI,Mali,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,28.3022611897593,23.970598465711,33.081008099447
+MLI,Mali,CME_TMM0,Neonatal deaths,Number of deaths,2023,27283.0,22214.0,33243.0
+MLI,Mali,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,18736.0,14120.0,23486.0
+MLI,Mali,CME_TMY0,Infant deaths,Number of deaths,2023,46019.0,39314.0,53272.0
+MLI,Mali,CME_TMY0T4,Under-five deaths,Number of deaths,2023,69858.0,59629.0,80919.0
+MLI,Mali,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,23839.0,20311.0,27675.0
+MLI,Mali,DM_BRTS,Number of births,Persons,2023,951445.0,,
+MLI,Mali,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,895715.0,,
+MLI,Mali,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,856988.0,,
+MLI,Mali,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,826667.0,,
+MLI,Mali,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,797396.0,,
+MLI,Mali,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,781407.0,,
+MLI,Mali,DM_POP_U5,Population under age 5,Persons,2023,4158171.9999999995,,
+MOZ,Mozambique,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,25.5513217906723,19.7894864752074,33.0884873666934
+MOZ,Mozambique,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,19.880918450528,14.7560081532282,25.989821248089
+MOZ,Mozambique,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,44.9229591762191,36.0304750235581,56.1929856073637
+MOZ,Mozambique,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,61.6510879640598,49.4472765329346,77.1177759028096
+MOZ,Mozambique,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,17.5149522738109,13.9182838932903,22.170623841958
+MOZ,Mozambique,CME_TMM0,Neonatal deaths,Number of deaths,2023,32192.0,24934.0,41685.0
+MOZ,Mozambique,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,23578.0,17474.0,30701.0
+MOZ,Mozambique,CME_TMY0,Infant deaths,Number of deaths,2023,55770.0,44787.0,69645.0
+MOZ,Mozambique,CME_TMY0T4,Under-five deaths,Number of deaths,2023,75655.0,60701.0,94611.0
+MOZ,Mozambique,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,19885.0,15899.0,24966.0
+MOZ,Mozambique,DM_BRTS,Number of births,Persons,2023,1260855.0,,
+MOZ,Mozambique,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,1201259.0,,
+MOZ,Mozambique,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,1161562.0,,
+MOZ,Mozambique,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,1130623.0,,
+MOZ,Mozambique,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,1101447.0,,
+MOZ,Mozambique,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,1073720.0,,
+MOZ,Mozambique,DM_POP_U5,Population under age 5,Persons,2023,5668611.0,,
+MRT,Mauritania,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,21.3088583698846,15.2068165269472,30.3343876340372
+MRT,Mauritania,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,9.89196365510786,6.47725830958304,14.944424604505
+MRT,Mauritania,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,31.1145024591115,22.4952023902028,43.4951278018313
+MRT,Mauritania,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,38.1331870110733,27.5695798357959,53.3065841151531
+MRT,Mauritania,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,7.24408051289471,5.19115349479719,10.2576124792361
+MRT,Mauritania,CME_TMM0,Neonatal deaths,Number of deaths,2023,3681.0,2627.0,5240.0
+MRT,Mauritania,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,1624.0,1050.0,2406.0
+MRT,Mauritania,CME_TMY0,Infant deaths,Number of deaths,2023,5305.0,3841.0,7403.0
+MRT,Mauritania,CME_TMY0T4,Under-five deaths,Number of deaths,2023,6457.0,4672.0,9019.0
+MRT,Mauritania,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,1152.0,831.0,1616.0
+MRT,Mauritania,DM_BRTS,Number of births,Persons,2023,172885.0,,
+MRT,Mauritania,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,166881.0,,
+MRT,Mauritania,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,163064.0,,
+MRT,Mauritania,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,159827.0,,
+MRT,Mauritania,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,156635.0,,
+MRT,Mauritania,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,153510.0,,
+MRT,Mauritania,DM_POP_U5,Population under age 5,Persons,2023,799916.0,,
+MUS,Mauritius,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,9.52051808778476,8.75738971875652,10.3563792040329
+MUS,Mauritius,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,4.33233944709621,3.81954885456141,4.88532346757349
+MUS,Mauritius,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,13.8167053777492,12.8945654047951,14.8041075334693
+MUS,Mauritius,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,15.3917706495115,14.364509331968,16.4917338537753
+MUS,Mauritius,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,1.59713237930792,1.4891458152857,1.71298554248068
+MUS,Mauritius,CME_TMM0,Neonatal deaths,Number of deaths,2023,112.0,103.0,122.0
+MUS,Mauritius,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,53.0,46.0,59.0
+MUS,Mauritius,CME_TMY0,Infant deaths,Number of deaths,2023,165.0,154.0,177.0
+MUS,Mauritius,CME_TMY0T4,Under-five deaths,Number of deaths,2023,185.0,173.0,199.0
+MUS,Mauritius,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,20.0,19.0,22.0
+MUS,Mauritius,DM_BRTS,Number of births,Persons,2023,11804.0,,
+MUS,Mauritius,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,11800.0,,
+MUS,Mauritius,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,12200.0,,
+MUS,Mauritius,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,12351.0,,
+MUS,Mauritius,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,12156.0,,
+MUS,Mauritius,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,12054.0,,
+MUS,Mauritius,DM_POP_U5,Population under age 5,Persons,2023,60560.0,,
+MWI,Malawi,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,23.779223099815,18.1593705373156,31.2024230280045
+MWI,Malawi,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,14.8571211086964,10.9179473512338,19.8746709589988
+MWI,Malawi,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,38.3709974047544,29.8185400005198,49.4876900311612
+MWI,Malawi,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,49.6349790948417,38.5719087245074,64.0150276584767
+MWI,Malawi,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,11.7134379897087,9.02240362756777,15.2836922540249
+MWI,Malawi,CME_TMM0,Neonatal deaths,Number of deaths,2023,15738.0,12019.0,20649.0
+MWI,Malawi,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,9335.0,6851.0,12307.0
+MWI,Malawi,CME_TMY0,Infant deaths,Number of deaths,2023,25073.0,19508.0,32284.0
+MWI,Malawi,CME_TMY0T4,Under-five deaths,Number of deaths,2023,32221.0,25041.0,41553.0
+MWI,Malawi,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,7148.0,5533.0,9263.0
+MWI,Malawi,DM_BRTS,Number of births,Persons,2023,662289.0,,
+MWI,Malawi,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,640415.0,,
+MWI,Malawi,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,626370.0,,
+MWI,Malawi,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,615283.0,,
+MWI,Malawi,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,604707.0,,
+MWI,Malawi,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,593037.0,,
+MWI,Malawi,DM_POP_U5,Population under age 5,Persons,2023,3079813.0,,
+NAM,Namibia,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,22.0908154206582,15.7461178832499,32.5491608560297
+NAM,Namibia,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,16.7007838211589,11.031168212431,25.6628001187643
+NAM,Namibia,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,38.2913665641465,30.9034103470257,53.6651091012555
+NAM,Namibia,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,41.0691352832714,33.1452349220887,57.5581344682183
+NAM,Namibia,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,2.88836828801342,2.31331386264735,4.11379248975783
+NAM,Namibia,CME_TMM0,Neonatal deaths,Number of deaths,2023,1694.0,1207.0,2496.0
+NAM,Namibia,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,1214.0,803.0,1879.0
+NAM,Namibia,CME_TMY0,Infant deaths,Number of deaths,2023,2908.0,2349.0,4065.0
+NAM,Namibia,CME_TMY0T4,Under-five deaths,Number of deaths,2023,3117.0,2518.0,4359.0
+NAM,Namibia,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,209.0,168.0,295.0
+NAM,Namibia,DM_BRTS,Number of births,Persons,2023,76715.0,,
+NAM,Namibia,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,77447.0,,
+NAM,Namibia,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,83231.0,,
+NAM,Namibia,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,86826.0,,
+NAM,Namibia,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,83013.0,,
+NAM,Namibia,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,78945.0,,
+NAM,Namibia,DM_POP_U5,Population under age 5,Persons,2023,409462.0,,
+NER,Niger,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,33.2443037936125,24.2460950356772,45.5910547308489
+NER,Niger,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,34.4697914067903,24.1847282344441,46.8805129666937
+NER,Niger,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,66.8988043605367,51.5421558824432,86.2319999096223
+NER,Niger,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,113.467525618226,87.4210077281984,146.258692548888
+NER,Niger,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,49.9074714263596,37.8286205004338,65.6913928209396
+NER,Niger,CME_TMM0,Neonatal deaths,Number of deaths,2023,36385.0,26539.0,49891.0
+NER,Niger,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,35007.0,24261.0,46827.0
+NER,Niger,CME_TMY0,Infant deaths,Number of deaths,2023,71392.0,55145.0,91769.0
+NER,Niger,CME_TMY0T4,Under-five deaths,Number of deaths,2023,118415.0,91236.0,152806.0
+NER,Niger,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,47023.0,36067.0,61045.0
+NER,Niger,DM_BRTS,Number of births,Persons,2023,1095892.0,,
+NER,Niger,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,1025915.0,,
+NER,Niger,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,962557.0,,
+NER,Niger,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,916980.0,,
+NER,Niger,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,891084.0,,
+NER,Niger,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,870616.0,,
+NER,Niger,DM_POP_U5,Population under age 5,Persons,2023,4667151.0,,
+NGA,Nigeria,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,39.2394184711156,32.8080955038625,47.2585661555017
+NGA,Nigeria,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,32.1030875673261,25.6491275109006,39.1225475258994
+NGA,Nigeria,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,70.130311353425,61.1130043189722,80.7599443319249
+NGA,Nigeria,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,116.816468972674,101.796288011281,134.522310670227
+NGA,Nigeria,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,50.2072045032463,43.3313954495869,58.4856654220664
+NGA,Nigeria,CME_TMM0,Neonatal deaths,Number of deaths,2023,294425.0,246186.0,354565.0
+NGA,Nigeria,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,222624.0,176571.0,270614.0
+NGA,Nigeria,CME_TMY0,Infant deaths,Number of deaths,2023,517049.0,451176.0,594492.0
+NGA,Nigeria,CME_TMY0T4,Under-five deaths,Number of deaths,2023,857244.0,746690.0,987993.0
+NGA,Nigeria,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,340195.0,295342.0,393808.0
+NGA,Nigeria,DM_BRTS,Number of births,Persons,2023,7509758.0,,
+NGA,Nigeria,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,7065325.0,,
+NGA,Nigeria,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,6806995.0,,
+NGA,Nigeria,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,6638370.0,,
+NGA,Nigeria,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,6527162.0,,
+NGA,Nigeria,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,6488772.0,,
+NGA,Nigeria,DM_POP_U5,Population under age 5,Persons,2023,33526624.000000004,,
+RWA,Rwanda,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,17.6468204675242,12.8111585451307,24.0479568728364
+RWA,Rwanda,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,12.503271706396,8.76058876148749,17.5852032493253
+RWA,Rwanda,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,30.0578236307762,22.4562724551367,39.9968283175918
+RWA,Rwanda,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,38.8091079994808,28.994378092126,51.6418370432108
+RWA,Rwanda,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,9.02248049619531,6.68829992232329,12.1301773516657
+RWA,Rwanda,CME_TMM0,Neonatal deaths,Number of deaths,2023,6978.0,5066.0,9509.0
+RWA,Rwanda,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,4828.0,3355.0,6684.0
+RWA,Rwanda,CME_TMY0,Infant deaths,Number of deaths,2023,11806.0,8831.0,15689.0
+RWA,Rwanda,CME_TMY0T4,Under-five deaths,Number of deaths,2023,15232.0,11386.0,20262.0
+RWA,Rwanda,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,3426.0,2552.0,4580.0
+RWA,Rwanda,DM_BRTS,Number of births,Persons,2023,395578.0,,
+RWA,Rwanda,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,385110.0,,
+RWA,Rwanda,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,380513.0,,
+RWA,Rwanda,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,375464.0,,
+RWA,Rwanda,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,370529.0,,
+RWA,Rwanda,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,366818.0,,
+RWA,Rwanda,DM_POP_U5,Population under age 5,Persons,2023,1878434.0,,
+SEN,Senegal,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,21.6557780504026,17.2149424580368,27.3281447353143
+SEN,Senegal,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,8.50069426142325,5.87467626610048,11.4987078451121
+SEN,Senegal,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,30.0452396730118,24.2057689742028,36.9786328489454
+SEN,Senegal,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,38.2419515907875,30.8094012696707,47.0668599316625
+SEN,Senegal,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,8.45061259877405,6.76744346884419,10.4756004663675
+SEN,Senegal,CME_TMM0,Neonatal deaths,Number of deaths,2023,11508.0,9149.0,14521.0
+SEN,Senegal,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,4216.0,2839.0,5674.0
+SEN,Senegal,CME_TMY0,Infant deaths,Number of deaths,2023,15724.0,12679.0,19335.0
+SEN,Senegal,CME_TMY0T4,Under-five deaths,Number of deaths,2023,19854.0,15999.0,24435.0
+SEN,Senegal,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,4130.0,3319.0,5099.0
+SEN,Senegal,DM_BRTS,Number of births,Persons,2023,531890.0,,
+SEN,Senegal,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,513260.99999999994,,
+SEN,Senegal,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,496897.0,,
+SEN,Senegal,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,486233.0,,
+SEN,Senegal,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,480375.0,,
+SEN,Senegal,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,474872.0,,
+SEN,Senegal,DM_POP_U5,Population under age 5,Persons,2023,2451639.0,,
+SLE,Sierra Leone,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,28.8101383009271,21.0685623970811,38.6657100230756
+SLE,Sierra Leone,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,28.1570608431025,20.416292736575,38.4342576492216
+SLE,Sierra Leone,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,56.3022898347101,43.7093436359371,72.7300606122148
+SLE,Sierra Leone,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,93.7724386602517,72.7986687044818,121.133175356409
+SLE,Sierra Leone,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,39.7056689236127,30.4189159182333,52.19959442108
+SLE,Sierra Leone,CME_TMM0,Neonatal deaths,Number of deaths,2023,7455.0,5452.0,10004.0
+SLE,Sierra Leone,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,6934.0,5009.0,9345.0
+SLE,Sierra Leone,CME_TMY0,Infant deaths,Number of deaths,2023,14389.0,11191.0,18548.0
+SLE,Sierra Leone,CME_TMY0T4,Under-five deaths,Number of deaths,2023,23868.0,18526.0,30877.0
+SLE,Sierra Leone,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,9479.0,7328.0,12320.0
+SLE,Sierra Leone,DM_BRTS,Number of births,Persons,2023,258903.00000000003,,
+SLE,Sierra Leone,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,244841.0,,
+SLE,Sierra Leone,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,235487.0,,
+SLE,Sierra Leone,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,230905.0,,
+SLE,Sierra Leone,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,227682.0,,
+SLE,Sierra Leone,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,224821.0,,
+SLE,Sierra Leone,DM_POP_U5,Population under age 5,Persons,2023,1163735.0,,
+SOM,Somalia,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,34.846225815148,15.0956314686183,81.7432702303569
+SOM,Somalia,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,32.1742336128445,12.2124207794358,79.1989326034382
+SOM,Somalia,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,67.2559206348724,31.4752781807095,145.361494354938
+SOM,Somalia,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,104.290355579674,48.8071224428877,225.404719625663
+SOM,Somalia,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,39.7048191075261,17.8950974324731,93.6574058188078
+SOM,Somalia,CME_TMM0,Neonatal deaths,Number of deaths,2023,27464.0,11901.0,64392.0
+SOM,Somalia,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,24501.0,8840.0,54662.0
+SOM,Somalia,CME_TMY0,Infant deaths,Number of deaths,2023,51965.0,24504.0,110514.0
+SOM,Somalia,CME_TMY0T4,Under-five deaths,Number of deaths,2023,79057.0,37220.0,168735.0
+SOM,Somalia,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,27092.0,12720.0,58216.0
+SOM,Somalia,DM_BRTS,Number of births,Persons,2023,788763.0,,
+SOM,Somalia,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,739701.0,,
+SOM,Somalia,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,701529.0,,
+SOM,Somalia,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,676558.0,,
+SOM,Somalia,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,657426.0,,
+SOM,Somalia,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,636494.0,,
+SOM,Somalia,DM_POP_U5,Population under age 5,Persons,2023,3411706.0,,
+SSD,South Sudan,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,39.5258317730907,10.4057496021167,116.130117788653
+SSD,South Sudan,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,30.8727265430072,6.66908640396278,101.772281784874
+SSD,South Sudan,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,71.8696626326938,19.8372771401475,196.882478043054
+SSD,South Sudan,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,96.7113347494943,26.7644343101449,265.633640805336
+SSD,South Sudan,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,27.0401825027942,7.06735426095255,85.605363198335
+SSD,South Sudan,CME_TMM0,Neonatal deaths,Number of deaths,2023,12962.0,3413.0,38050.0
+SSD,South Sudan,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,10077.0,1947.0,27765.0
+SSD,South Sudan,CME_TMY0,Infant deaths,Number of deaths,2023,23039.0,6412.0,61922.0
+SSD,South Sudan,CME_TMY0T4,Under-five deaths,Number of deaths,2023,30807.0,8564.0,84352.0
+SSD,South Sudan,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,7768.0,2156.0,22372.0
+SSD,South Sudan,DM_BRTS,Number of births,Persons,2023,328308.0,,
+SSD,South Sudan,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,315151.0,,
+SSD,South Sudan,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,304589.0,,
+SSD,South Sudan,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,297849.0,,
+SSD,South Sudan,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,288893.0,,
+SSD,South Sudan,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,277154.0,,
+SSD,South Sudan,DM_POP_U5,Population under age 5,Persons,2023,1483636.0,,
+STP,Sao Tome and Principe,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,6.66622599495649,3.41679151505747,13.0644099250408
+STP,Sao Tome and Principe,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,2.67374096767092,0.679544021576678,6.12751012895869
+STP,Sao Tome and Principe,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,9.50480961151536,5.14936506917226,17.5154527955049
+STP,Sao Tome and Principe,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,14.0960982769183,7.63676065545201,25.9762745453665
+STP,Sao Tome and Principe,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,4.63534675449628,2.50027039132057,8.61165885429832
+STP,Sao Tome and Principe,CME_TMM0,Neonatal deaths,Number of deaths,2023,43.0,22.0,85.0
+STP,Sao Tome and Principe,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,18.0,4.0,39.0
+STP,Sao Tome and Principe,CME_TMY0,Infant deaths,Number of deaths,2023,61.0,33.0,113.0
+STP,Sao Tome and Principe,CME_TMY0T4,Under-five deaths,Number of deaths,2023,90.0,49.0,166.0
+STP,Sao Tome and Principe,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,29.0,16.0,53.0
+STP,Sao Tome and Principe,DM_BRTS,Number of births,Persons,2023,6507.0,,
+STP,Sao Tome and Principe,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,6377.0,,
+STP,Sao Tome and Principe,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,6251.0,,
+STP,Sao Tome and Principe,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,6107.0,,
+STP,Sao Tome and Principe,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,6011.0,,
+STP,Sao Tome and Principe,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,5904.0,,
+STP,Sao Tome and Principe,DM_POP_U5,Population under age 5,Persons,2023,30649.0,,
+SWZ,Eswatini,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,25.4833994773893,16.2210184145322,40.9742339034202
+SWZ,Eswatini,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,19.4293353249179,11.8134319540796,32.2934016653454
+SWZ,Eswatini,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,44.6643238244896,29.080707823237,69.9300579868456
+SWZ,Eswatini,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,46.2137957286919,30.0895608824144,72.3560358329592
+SWZ,Eswatini,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,1.62191357746061,1.03906995010557,2.60838216304962
+SWZ,Eswatini,CME_TMM0,Neonatal deaths,Number of deaths,2023,755.0,481.0,1214.0
+SWZ,Eswatini,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,566.0,344.0,911.0
+SWZ,Eswatini,CME_TMY0,Infant deaths,Number of deaths,2023,1321.0,862.0,2060.0
+SWZ,Eswatini,CME_TMY0T4,Under-five deaths,Number of deaths,2023,1368.0,893.0,2133.0
+SWZ,Eswatini,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,47.0,30.0,74.0
+SWZ,Eswatini,DM_BRTS,Number of births,Persons,2023,29622.0,,
+SWZ,Eswatini,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,28732.0,,
+SWZ,Eswatini,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,28584.0,,
+SWZ,Eswatini,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,28421.0,,
+SWZ,Eswatini,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,28269.0,,
+SWZ,Eswatini,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,28145.0,,
+SWZ,Eswatini,DM_POP_U5,Population under age 5,Persons,2023,142151.0,,
+SYC,Seychelles,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,8.53344279400187,6.29119000220776,11.3656147784127
+SYC,Seychelles,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,4.57677070492052,3.22780918050258,6.58521826012429
+SYC,Seychelles,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,13.136735080757,10.1795359387971,16.9925204569206
+SYC,Seychelles,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,14.2632974991298,11.05249885954,18.4497421198769
+SYC,Seychelles,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,1.14155877356065,0.881940667537312,1.48241157253893
+SYC,Seychelles,CME_TMM0,Neonatal deaths,Number of deaths,2023,15.0,11.0,20.0
+SYC,Seychelles,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,8.0,6.0,11.0
+SYC,Seychelles,CME_TMY0,Infant deaths,Number of deaths,2023,23.0,18.0,30.0
+SYC,Seychelles,CME_TMY0T4,Under-five deaths,Number of deaths,2023,25.0,19.0,32.0
+SYC,Seychelles,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,2.0,2.0,3.0
+SYC,Seychelles,DM_BRTS,Number of births,Persons,2023,1744.0,,
+SYC,Seychelles,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,1745.0,,
+SYC,Seychelles,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,1804.0,,
+SYC,Seychelles,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,1805.0,,
+SYC,Seychelles,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,1752.0,,
+SYC,Seychelles,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,1745.0,,
+SYC,Seychelles,DM_POP_U5,Population under age 5,Persons,2023,8850.0,,
+TCD,Chad,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,30.9391700016052,19.4025114352739,48.5357957184931
+TCD,Chad,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,27.3273773805351,16.0916671036351,44.2928915438539
+TCD,Chad,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,57.9651706112122,38.9718379003773,85.2721274881178
+TCD,Chad,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,100.581424805735,67.6241084428012,147.964579221167
+TCD,Chad,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,45.2385122802453,29.8141841015065,68.5367240210424
+TCD,Chad,CME_TMM0,Neonatal deaths,Number of deaths,2023,25315.0,15877.0,39705.0
+TCD,Chad,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,21161.0,12182.0,33244.0
+TCD,Chad,CME_TMY0,Infant deaths,Number of deaths,2023,46476.0,31338.0,68083.0
+TCD,Chad,CME_TMY0T4,Under-five deaths,Number of deaths,2023,78490.0,52764.0,115594.0
+TCD,Chad,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,32014.0,21435.0,47489.0
+TCD,Chad,DM_BRTS,Number of births,Persons,2023,819054.0,,
+TCD,Chad,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,773594.0,,
+TCD,Chad,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,734418.0,,
+TCD,Chad,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,704106.0,,
+TCD,Chad,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,679997.0,,
+TCD,Chad,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,654802.0,,
+TCD,Chad,DM_POP_U5,Population under age 5,Persons,2023,3546916.0,,
+TGO,Togo,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,23.0068646442098,15.679325074806,33.2644113937952
+TGO,Togo,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,13.0442516010079,8.03782530442023,20.1892630097735
+TGO,Togo,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,35.9039767870666,25.6004337215489,50.3054396199032
+TGO,Togo,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,58.0686935906097,41.4044313358301,81.3606575269775
+TGO,Togo,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,22.9901547873596,16.2192165948552,32.7002166831882
+TGO,Togo,CME_TMM0,Neonatal deaths,Number of deaths,2023,6663.0,4541.0,9632.0
+TGO,Togo,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,3622.0,2191.0,5525.0
+TGO,Togo,CME_TMY0,Infant deaths,Number of deaths,2023,10285.0,7345.0,14376.0
+TGO,Togo,CME_TMY0T4,Under-five deaths,Number of deaths,2023,16498.0,11763.0,23092.0
+TGO,Togo,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,6213.0,4420.0,8728.0
+TGO,Togo,DM_BRTS,Number of births,Persons,2023,268455.0,,
+TGO,Togo,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,278127.0,,
+TGO,Togo,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,272423.0,,
+TGO,Togo,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,268141.0,,
+TGO,Togo,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,263832.0,,
+TGO,Togo,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,259697.0,,
+TGO,Togo,DM_POP_U5,Population under age 5,Persons,2023,1134788.0,,
+TZA,United Republic of Tanzania,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,20.5784172188168,15.7842479203975,26.7096788814609
+TZA,United Republic of Tanzania,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,9.18171837733728,5.84234310321697,13.1256980005863
+TZA,United Republic of Tanzania,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,29.6896252983353,23.615889899827,37.4333662339476
+TZA,United Republic of Tanzania,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,38.4865016891488,30.6131511390751,48.5246714405026
+TZA,United Republic of Tanzania,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,9.06604383549248,7.16650462342585,11.5226362701296
+TZA,United Republic of Tanzania,CME_TMM0,Neonatal deaths,Number of deaths,2023,48249.0,37010.0,62621.0
+TZA,United Republic of Tanzania,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,20475.0,12652.0,28941.0
+TZA,United Republic of Tanzania,CME_TMY0,Infant deaths,Number of deaths,2023,68724.0,54721.0,86556.0
+TZA,United Republic of Tanzania,CME_TMY0T4,Under-five deaths,Number of deaths,2023,88215.0,70205.0,111186.0
+TZA,United Republic of Tanzania,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,19491.0,15483.0,24634.0
+TZA,United Republic of Tanzania,DM_BRTS,Number of births,Persons,2023,2346391.0,,
+TZA,United Republic of Tanzania,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,2267010.0,,
+TZA,United Republic of Tanzania,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,2209390.0,,
+TZA,United Republic of Tanzania,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,2157656.0,,
+TZA,United Republic of Tanzania,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,2110405.0,,
+TZA,United Republic of Tanzania,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,2065938.9999999998,,
+TZA,United Republic of Tanzania,DM_POP_U5,Population under age 5,Persons,2023,10810399.0,,
+UGA,Uganda,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,21.4694458609668,17.1351004523204,26.2069131629876
+UGA,Uganda,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,14.9622525907368,11.3350426563873,18.94379816627
+UGA,Uganda,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,36.1859514611824,30.4322985363884,42.3213533666874
+UGA,Uganda,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,49.3762862972195,41.5253385509866,57.7481363882609
+UGA,Uganda,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,13.6855598411892,11.4412227200416,16.108517275532
+UGA,Uganda,CME_TMM0,Neonatal deaths,Number of deaths,2023,36751.0,29333.0,44858.0
+UGA,Uganda,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,24518.0,18409.0,30921.0
+UGA,Uganda,CME_TMY0,Infant deaths,Number of deaths,2023,61269.0,51578.0,71598.0
+UGA,Uganda,CME_TMY0T4,Under-five deaths,Number of deaths,2023,82802.0,69680.0,96860.0
+UGA,Uganda,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,21533.0,18072.0,25267.0
+UGA,Uganda,DM_BRTS,Number of births,Persons,2023,1712750.0,,
+UGA,Uganda,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,1658195.0,,
+UGA,Uganda,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,1624039.0,,
+UGA,Uganda,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,1589468.0,,
+UGA,Uganda,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,1552022.0,,
+UGA,Uganda,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,1514626.0,,
+UGA,Uganda,DM_POP_U5,Population under age 5,Persons,2023,7938350.0,,
+ZAF,South Africa,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,12.2063612768948,10.2041802153299,14.4204762502422
+ZAF,South Africa,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,12.2207248474013,10.1994869510855,14.5814679471036
+ZAF,South Africa,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,24.3063152437424,21.6767331335734,27.3709424930065
+ZAF,South Africa,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,34.7582181546649,30.997895467976,39.1406587436422
+ZAF,South Africa,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,10.7122789399286,9.52769156178148,12.1009301128793
+ZAF,South Africa,CME_TMM0,Neonatal deaths,Number of deaths,2023,14486.0,12110.0,17113.0
+ZAF,South Africa,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,14283.0,11882.0,17011.0
+ZAF,South Africa,CME_TMY0,Infant deaths,Number of deaths,2023,28769.0,25665.0,32386.0
+ZAF,South Africa,CME_TMY0T4,Under-five deaths,Number of deaths,2023,41107.0,36643.0,46301.0
+ZAF,South Africa,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,12338.0,10981.0,13922.0
+ZAF,South Africa,DM_BRTS,Number of births,Persons,2023,1186793.0,,
+ZAF,South Africa,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,1161443.0,,
+ZAF,South Africa,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,1198685.0,,
+ZAF,South Africa,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,1213677.0,,
+ZAF,South Africa,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,1175063.0,,
+ZAF,South Africa,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,1138909.0,,
+ZAF,South Africa,DM_POP_U5,Population under age 5,Persons,2023,5887775.0,,
+ZMB,Zambia,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,21.5497596139942,17.4583963262924,26.6291716868278
+ZMB,Zambia,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,13.7354837001726,10.6940444684148,17.482176020633
+ZMB,Zambia,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,35.022367036324,29.1169930734175,42.3644913254409
+ZMB,Zambia,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,49.133866067513,40.8490504503651,59.4343392222359
+ZMB,Zambia,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,14.6236540093415,12.0839043361997,17.8249947322513
+ZMB,Zambia,CME_TMM0,Neonatal deaths,Number of deaths,2023,14764.0,11961.0,18243.0
+ZMB,Zambia,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,8942.0,6939.0,11327.0
+ZMB,Zambia,CME_TMY0,Infant deaths,Number of deaths,2023,23706.0,19728.0,28646.0
+ZMB,Zambia,CME_TMY0T4,Under-five deaths,Number of deaths,2023,32958.0,27403.0,39875.0
+ZMB,Zambia,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,9252.0,7676.0,11233.0
+ZMB,Zambia,DM_BRTS,Number of births,Persons,2023,685565.0,,
+ZMB,Zambia,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,659086.0,,
+ZMB,Zambia,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,641981.0,,
+ZMB,Zambia,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,628146.0,,
+ZMB,Zambia,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,616843.0,,
+ZMB,Zambia,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,605616.0,,
+ZMB,Zambia,DM_POP_U5,Population under age 5,Persons,2023,3151673.0,,
+ZWE,Zimbabwe,CME_MRM0,Neonatal mortality rate,"Deaths per 1,000 live births",2023,33.5747914675158,24.180009049842,45.9249310292819
+ZWE,Zimbabwe,CME_MRM1T11,Mortality rate age 1-11 months,"Deaths per 1,000 children aged 1 month",2023,29.3906933905459,20.720996288569,41.47019021811
+ZWE,Zimbabwe,CME_MRY0,Infant mortality rate,"Deaths per 1,000 live births",2023,62.1961109062569,45.4985868639844,83.487259057359
+ZWE,Zimbabwe,CME_MRY0T4,Under-five mortality rate,"Deaths per 1,000 live births",2023,64.1975290255617,46.962692815715,86.1738082736008
+ZWE,Zimbabwe,CME_MRY1T4,Child mortality rate (aged 1-4 years),"Deaths per 1,000 children aged 1",2023,2.13415421183155,1.53389605492003,2.9312731798144
+ZWE,Zimbabwe,CME_TMM0,Neonatal deaths,Number of deaths,2023,16677.0,12011.0,22808.0
+ZWE,Zimbabwe,CME_TMM1T11,Deaths age 1-11 months,Number of deaths,2023,13892.0,9828.0,19177.0
+ZWE,Zimbabwe,CME_TMY0,Infant deaths,Number of deaths,2023,30569.0,22399.0,40944.0
+ZWE,Zimbabwe,CME_TMY0T4,Under-five deaths,Number of deaths,2023,31538.0,23104.0,42267.0
+ZWE,Zimbabwe,CME_TMY1T4,Child deaths (aged 1-4 years),Number of deaths,2023,969.0,701.0,1318.0
+ZWE,Zimbabwe,DM_BRTS,Number of births,Persons,2023,496917.0,,
+ZWE,Zimbabwe,DM_POP_TOT_AGE_Y0,Population Under 1 year old,Persons,2023,480882.0,,
+ZWE,Zimbabwe,DM_POP_TOT_AGE_Y01,Population 1 year old,Persons,2023,471416.0,,
+ZWE,Zimbabwe,DM_POP_TOT_AGE_Y02,Population 2 years old,Persons,2023,460595.0,,
+ZWE,Zimbabwe,DM_POP_TOT_AGE_Y03,Population 3 years old,Persons,2023,451010.0,,
+ZWE,Zimbabwe,DM_POP_TOT_AGE_Y04,Population 4 years old,Persons,2023,443083.0,,
+ZWE,Zimbabwe,DM_POP_U5,Population under age 5,Persons,2023,2306985.0,,

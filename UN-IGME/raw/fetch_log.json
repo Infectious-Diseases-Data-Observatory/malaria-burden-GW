@@ -1,0 +1,26 @@
+[
+  {
+    "name": "cme_national",
+    "url": "https://sdmx.data.unicef.org/ws/public/sdmxapi/rest/data/UNICEF,CME,1.0/AGO+CAF+COG+COD+GNQ+GAB+BDI+COM+DJI+ERI+ETH+KEN+MDG+MWI+MUS+MOZ+RWA+SYC+SOM+TZA+UGA+ZMB+SSD+BWA+LSO+NAM+ZAF+SWZ+ZWE+BEN+BFA+CMR+CPV+TCD+CIV+GMB+GHA+GIN+GNB+LBR+MLI+MRT+NER+NGA+STP+SEN+SLE+TGO.CME_MRM0+CME_MRM1T11+CME_MRY0+CME_MRY1T4+CME_MRY0T4+CME_TMM0+CME_TMM1T11+CME_TMY0+CME_TMY1T4+CME_TMY0T4._T._T?format=csv&labels=both&startPeriod=2023&endPeriod=2023",
+    "fetched_utc": "2026-10-01T19:44:59+00:00",
+    "rows": 480
+  },
+  {
+    "name": "dm_births_u5pop",
+    "url": "https://sdmx.data.unicef.org/ws/public/sdmxapi/rest/data/UNICEF,DM,1.0/AGO+CAF+COG+COD+GNQ+GAB+BDI+COM+DJI+ERI+ETH+KEN+MDG+MWI+MUS+MOZ+RWA+SYC+SOM+TZA+UGA+ZMB+SSD+BWA+LSO+NAM+ZAF+SWZ+ZWE+BEN+BFA+CMR+CPV+TCD+CIV+GMB+GHA+GIN+GNB+LBR+MLI+MRT+NER+NGA+STP+SEN+SLE+TGO.DM_BRTS+DM_POP_U5...?format=csv&labels=both&startPeriod=2023&endPeriod=2023",
+    "fetched_utc": "2026-10-01T19:45:04+00:00",
+    "rows": 192
+  },
+  {
+    "name": "wpp_pop_single_age",
+    "url": "https://sdmx.data.unicef.org/ws/public/sdmxapi/rest/data/UNPD,UNPD_DEMOGRAPHY,1.0/AGO+CAF+COG+COD+GNQ+GAB+BDI+COM+DJI+ERI+ETH+KEN+MDG+MWI+MUS+MOZ+RWA+SYC+SOM+TZA+UGA+ZMB+SSD+BWA+LSO+NAM+ZAF+SWZ+ZWE+BEN+BFA+CMR+CPV+TCD+CIV+GMB+GHA+GIN+GNB+LBR+MLI+MRT+NER+NGA+STP+SEN+SLE+TGO.DM_POP_TOT_AGE._T._T.Y0+Y01+Y02+Y03+Y04?format=csv&labels=both&startPeriod=2023&endPeriod=2023",
+    "fetched_utc": "2026-10-01T19:45:10+00:00",
+    "rows": 240
+  },
+  {
+    "name": "cme_subnational_nga",
+    "url": "https://sdmx.data.unicef.org/ws/public/sdmxapi/rest/data/UNICEF,CME_SUBNATIONAL,1.0/.MRM0+MRY0T4._T._T.UN_IGME..NGA.?format=csv&labels=both",
+    "fetched_utc": "2026-10-01T19:45:15+00:00",
+    "rows": 1628
+  }
+]
