@@ -1,118 +1,147 @@
 column,source,description,unit
 location_level,,'country' or 'nigeria_state',
-iso3,,ISO 3166-1 alpha-3 code of the country (NGA for Nigerian states),
+iso3,,ISO 3166-1 alpha-3 country code (NGA for Nigerian states),
 country_name,,Country name,
 state_name,,Nigerian state name (blank for country rows),
-year,,Reference year of the estimates (see igme_state_* columns for the one exception),
-gbd_location_id,IHME GBD 2023 (IHME/ downloads),GBD location_id (join key for IHME data),
-igme_code,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","UN IGME / UNICEF area code (ISO3, or NGA-k_1 for states)",
+year,,Reference year of all estimates,
+gbd_location_id,IHME GBD 2023 (IHME/ downloads),GBD location_id,
+igme_code,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",UN IGME / UNICEF area code,
 map_admin_id,"Malaria Atlas Project, 202608 release, admin-0/admin-1 aggregates",MAP admin-1 unit ID (Nigerian states only),
+blend_ihme_weight,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Weight on IHME in the blended columns (0.5 for countries; 1.0 for Nigerian states, which use IHME only; blank where IHME is unavailable)",weight (0-1)
+blend_live_births,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Live births, blended IHME and WPP",births per year
+blend_pop_0_27d,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Population aged 0-27 days (neonatal), blended",persons
+blend_pop_1_5m,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Population aged 1-5 months, blended",persons
+blend_pop_6_11m,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Population aged 6-11 months, blended",persons
+blend_pop_12_23m,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Population aged 12-23 months, blended",persons
+blend_pop_2_4y,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Population aged 2-4 years, blended",persons
+blend_q_all_0_27d,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Probability of death from all causes within 0-27 days (neonatal), conditional on survival to the start of the band, blended",probability (0-1)
+blend_q_all_1_5m,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Probability of death from all causes within 1-5 months, conditional on survival to the start of the band, blended",probability (0-1)
+blend_q_all_6_11m,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Probability of death from all causes within 6-11 months, conditional on survival to the start of the band, blended",probability (0-1)
+blend_q_all_12_23m,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Probability of death from all causes within 12-23 months, conditional on survival to the start of the band, blended",probability (0-1)
+blend_q_all_2_4y,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Probability of death from all causes within 2-4 years, conditional on survival to the start of the band, blended",probability (0-1)
+blend_q_malaria_0_27d,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Probability of death from malaria within 0-27 days (neonatal), conditional on survival to the start of the band, blended (IHME malaria q and CA-CODE-based IGME malaria q)",probability (0-1)
+blend_q_malaria_1_5m,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Probability of death from malaria within 1-5 months, conditional on survival to the start of the band, blended (IHME malaria q and CA-CODE-based IGME malaria q)",probability (0-1)
+blend_q_malaria_6_11m,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Probability of death from malaria within 6-11 months, conditional on survival to the start of the band, blended (IHME malaria q and CA-CODE-based IGME malaria q)",probability (0-1)
+blend_q_malaria_12_23m,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Probability of death from malaria within 12-23 months, conditional on survival to the start of the band, blended (IHME malaria q and CA-CODE-based IGME malaria q)",probability (0-1)
+blend_q_malaria_2_4y,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Probability of death from malaria within 2-4 years, conditional on survival to the start of the band, blended (IHME malaria q and CA-CODE-based IGME malaria q)",probability (0-1)
+pfpracm_share_0_27d,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","Share of all-cause deaths at 0-27 days (neonatal) attributable to malaria (deaths that would not occur at PfPR 0, including indirect deaths)",proportion
+pfpracm_share_0_27d_lower,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM share at 0-27 days (neonatal), lower 95% interval (model hazard-ratio uncertainty only)",proportion
+pfpracm_share_0_27d_upper,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM share at 0-27 days (neonatal), upper 95% interval (model hazard-ratio uncertainty only)",proportion
+pfpracm_share_1_5m,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","Share of all-cause deaths at 1-5 months attributable to malaria (deaths that would not occur at PfPR 0, including indirect deaths)",proportion
+pfpracm_share_1_5m_lower,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM share at 1-5 months, lower 95% interval (model hazard-ratio uncertainty only)",proportion
+pfpracm_share_1_5m_upper,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM share at 1-5 months, upper 95% interval (model hazard-ratio uncertainty only)",proportion
+pfpracm_share_6_11m,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","Share of all-cause deaths at 6-11 months attributable to malaria (deaths that would not occur at PfPR 0, including indirect deaths)",proportion
+pfpracm_share_6_11m_lower,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM share at 6-11 months, lower 95% interval (model hazard-ratio uncertainty only)",proportion
+pfpracm_share_6_11m_upper,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM share at 6-11 months, upper 95% interval (model hazard-ratio uncertainty only)",proportion
+pfpracm_share_12_23m,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","Share of all-cause deaths at 12-23 months attributable to malaria (deaths that would not occur at PfPR 0, including indirect deaths)",proportion
+pfpracm_share_12_23m_lower,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM share at 12-23 months, lower 95% interval (model hazard-ratio uncertainty only)",proportion
+pfpracm_share_12_23m_upper,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM share at 12-23 months, upper 95% interval (model hazard-ratio uncertainty only)",proportion
+pfpracm_share_2_4y,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","Share of all-cause deaths at 2-4 years attributable to malaria (deaths that would not occur at PfPR 0, including indirect deaths): mean of the model's 24-35, 36-47 and 48-59 month bands",proportion
+pfpracm_q_malaria_0_27d,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM probability of malaria death within 0-27 days (neonatal), conditional on survival to the start of the band: pfpracm_share x blend_q_all",probability (0-1)
+pfpracm_q_malaria_1_5m,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM probability of malaria death within 1-5 months, conditional on survival to the start of the band: pfpracm_share x blend_q_all",probability (0-1)
+pfpracm_q_malaria_6_11m,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM probability of malaria death within 6-11 months, conditional on survival to the start of the band: pfpracm_share x blend_q_all",probability (0-1)
+pfpracm_q_malaria_12_23m,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM probability of malaria death within 12-23 months, conditional on survival to the start of the band: pfpracm_share x blend_q_all",probability (0-1)
+pfpracm_q_malaria_2_4y,"Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; see README and PfPR-ACM/provenance.json","PfPR-ACM probability of malaria death within 2-4 years, conditional on survival to the start of the band: pfpracm_share x blend_q_all",probability (0-1)
+map_pfpr_2_10,"Malaria Atlas Project, 202608 release, admin-0/admin-1 aggregates","P. falciparum parasite rate in children aged 2-10, population-weighted mean over the unit (the PfPR-ACM exposure)",proportion (0-1)
+map_pfpr_2_10_lower,"Malaria Atlas Project, 202608 release, admin-0/admin-1 aggregates","PfPR2-10, lower 95% interval",proportion (0-1)
+map_pfpr_2_10_upper,"Malaria Atlas Project, 202608 release, admin-0/admin-1 aggregates","PfPR2-10, upper 95% interval",proportion (0-1)
 ihme_live_births,IHME GBD 2023 (IHME/ downloads),Live births (all maternal ages),births per year
 ihme_live_births_lower,IHME GBD 2023 (IHME/ downloads),"Live births, lower 95% UI",births per year
 ihme_live_births_upper,IHME GBD 2023 (IHME/ downloads),"Live births, upper 95% UI",births per year
 ihme_pop_0_27d,IHME GBD 2023 (IHME/ downloads),Population aged 0-27 days (neonatal),persons
 ihme_pop_1_5m,IHME GBD 2023 (IHME/ downloads),Population aged 1-5 months,persons
 ihme_pop_6_11m,IHME GBD 2023 (IHME/ downloads),Population aged 6-11 months,persons
-ihme_pop_1_11m,IHME GBD 2023 (IHME/ downloads),Population aged 1-11 months (post-neonatal),persons
-ihme_pop_u1,IHME GBD 2023 (IHME/ downloads),Population aged under 1 year,persons
-ihme_pop_12_23m,IHME GBD 2023 (IHME/ downloads),Population aged 12-23 months (age 1),persons
-ihme_pop_2y,IHME GBD 2023 (IHME/ downloads),Population aged age 2,persons
-ihme_pop_3y,IHME GBD 2023 (IHME/ downloads),Population aged age 3,persons
-ihme_pop_4y,IHME GBD 2023 (IHME/ downloads),Population aged age 4,persons
+ihme_pop_12_23m,IHME GBD 2023 (IHME/ downloads),Population aged 12-23 months,persons
 ihme_pop_2_4y,IHME GBD 2023 (IHME/ downloads),Population aged 2-4 years,persons
-ihme_pop_1_4y,IHME GBD 2023 (IHME/ downloads),Population aged 1-4 years,persons
 ihme_pop_u5,IHME GBD 2023 (IHME/ downloads),Population aged under 5 years,persons
 ihme_q_all_0_27d,IHME GBD 2023 (IHME/ downloads),"Probability of death from all causes within 0-27 days (neonatal), conditional on survival to the start of the band",probability (0-1)
 ihme_q_all_1_5m,IHME GBD 2023 (IHME/ downloads),"Probability of death from all causes within 1-5 months, conditional on survival to the start of the band",probability (0-1)
 ihme_q_all_6_11m,IHME GBD 2023 (IHME/ downloads),"Probability of death from all causes within 6-11 months, conditional on survival to the start of the band",probability (0-1)
-ihme_q_all_1_11m,IHME GBD 2023 (IHME/ downloads),"Probability of death from all causes within 1-11 months (post-neonatal), conditional on survival to the start of the band (derived by chaining component bands; see README)",probability (0-1)
-ihme_q_all_u1,IHME GBD 2023 (IHME/ downloads),"Probability of death from all causes within under 1 year, conditional on survival to the start of the band",probability (0-1)
-ihme_q_all_12_23m,IHME GBD 2023 (IHME/ downloads),"Probability of death from all causes within 12-23 months (age 1), conditional on survival to the start of the band",probability (0-1)
+ihme_q_all_12_23m,IHME GBD 2023 (IHME/ downloads),"Probability of death from all causes within 12-23 months, conditional on survival to the start of the band",probability (0-1)
 ihme_q_all_2_4y,IHME GBD 2023 (IHME/ downloads),"Probability of death from all causes within 2-4 years, conditional on survival to the start of the band",probability (0-1)
-ihme_q_all_1_4y,IHME GBD 2023 (IHME/ downloads),"Probability of death from all causes within 1-4 years, conditional on survival to the start of the band (derived by chaining component bands; see README)",probability (0-1)
 ihme_q_all_u5,IHME GBD 2023 (IHME/ downloads),"Probability of death from all causes within under 5 years, conditional on survival to the start of the band",probability (0-1)
 ihme_q_malaria_0_27d,IHME GBD 2023 (IHME/ downloads),"Probability of death from malaria within 0-27 days (neonatal), conditional on survival to the start of the band",probability (0-1)
 ihme_q_malaria_1_5m,IHME GBD 2023 (IHME/ downloads),"Probability of death from malaria within 1-5 months, conditional on survival to the start of the band",probability (0-1)
 ihme_q_malaria_6_11m,IHME GBD 2023 (IHME/ downloads),"Probability of death from malaria within 6-11 months, conditional on survival to the start of the band",probability (0-1)
-ihme_q_malaria_1_11m,IHME GBD 2023 (IHME/ downloads),"Probability of death from malaria within 1-11 months (post-neonatal), conditional on survival to the start of the band (derived as q_all x malaria fraction; see README)",probability (0-1)
-ihme_q_malaria_u1,IHME GBD 2023 (IHME/ downloads),"Probability of death from malaria within under 1 year, conditional on survival to the start of the band",probability (0-1)
-ihme_q_malaria_12_23m,IHME GBD 2023 (IHME/ downloads),"Probability of death from malaria within 12-23 months (age 1), conditional on survival to the start of the band",probability (0-1)
+ihme_q_malaria_12_23m,IHME GBD 2023 (IHME/ downloads),"Probability of death from malaria within 12-23 months, conditional on survival to the start of the band",probability (0-1)
 ihme_q_malaria_2_4y,IHME GBD 2023 (IHME/ downloads),"Probability of death from malaria within 2-4 years, conditional on survival to the start of the band",probability (0-1)
-ihme_q_malaria_1_4y,IHME GBD 2023 (IHME/ downloads),"Probability of death from malaria within 1-4 years, conditional on survival to the start of the band (derived as q_all x malaria fraction; see README)",probability (0-1)
 ihme_q_malaria_u5,IHME GBD 2023 (IHME/ downloads),"Probability of death from malaria within under 5 years, conditional on survival to the start of the band",probability (0-1)
-ihme_deaths_all_0_27d,IHME GBD 2023 (IHME/ downloads),All-cause deaths at age 0-27 days (neonatal) (derived; see README),deaths per year
-ihme_deaths_all_1_5m,IHME GBD 2023 (IHME/ downloads),All-cause deaths at age 1-5 months (derived; see README),deaths per year
-ihme_deaths_all_6_11m,IHME GBD 2023 (IHME/ downloads),All-cause deaths at age 6-11 months (derived; see README),deaths per year
-ihme_deaths_all_1_11m,IHME GBD 2023 (IHME/ downloads),All-cause deaths at age 1-11 months (post-neonatal) (derived; see README),deaths per year
-ihme_deaths_all_u1,IHME GBD 2023 (IHME/ downloads),All-cause deaths at age under 1 year (derived; see README),deaths per year
-ihme_deaths_all_12_23m,IHME GBD 2023 (IHME/ downloads),All-cause deaths at age 12-23 months (age 1) (derived; see README),deaths per year
-ihme_deaths_all_2_4y,IHME GBD 2023 (IHME/ downloads),All-cause deaths at age 2-4 years (derived; see README),deaths per year
-ihme_deaths_all_1_4y,IHME GBD 2023 (IHME/ downloads),All-cause deaths at age 1-4 years (derived; see README),deaths per year
-ihme_deaths_all_u5,IHME GBD 2023 (IHME/ downloads),All-cause deaths at age under 5 years (derived; see README),deaths per year
-ihme_deaths_malaria_0_27d,IHME GBD 2023 (IHME/ downloads),Malaria deaths at age 0-27 days (neonatal) (derived; see README),deaths per year
-ihme_deaths_malaria_1_5m,IHME GBD 2023 (IHME/ downloads),Malaria deaths at age 1-5 months (derived; see README),deaths per year
-ihme_deaths_malaria_6_11m,IHME GBD 2023 (IHME/ downloads),Malaria deaths at age 6-11 months (derived; see README),deaths per year
-ihme_deaths_malaria_1_11m,IHME GBD 2023 (IHME/ downloads),Malaria deaths at age 1-11 months (post-neonatal) (derived; see README),deaths per year
-ihme_deaths_malaria_u1,IHME GBD 2023 (IHME/ downloads),Malaria deaths at age under 1 year (derived; see README),deaths per year
-ihme_deaths_malaria_12_23m,IHME GBD 2023 (IHME/ downloads),Malaria deaths at age 12-23 months (age 1) (derived; see README),deaths per year
-ihme_deaths_malaria_2_4y,IHME GBD 2023 (IHME/ downloads),Malaria deaths at age 2-4 years (derived; see README),deaths per year
-ihme_deaths_malaria_1_4y,IHME GBD 2023 (IHME/ downloads),Malaria deaths at age 1-4 years (derived; see README),deaths per year
-ihme_deaths_malaria_u5,IHME GBD 2023 (IHME/ downloads),Malaria deaths at age under 5 years (derived; see README),deaths per year
-ihme_malaria_fraction_0_27d,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at age 0-27 days (neonatal) attributed to malaria (derived as q_malaria / q_all),proportion (0-1)
-ihme_malaria_fraction_1_5m,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at age 1-5 months attributed to malaria (derived as q_malaria / q_all),proportion (0-1)
-ihme_malaria_fraction_6_11m,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at age 6-11 months attributed to malaria (derived as q_malaria / q_all),proportion (0-1)
-ihme_malaria_fraction_1_11m,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at age 1-11 months (post-neonatal) attributed to malaria (derived as q_malaria / q_all),proportion (0-1)
-ihme_malaria_fraction_u1,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at age under 1 year attributed to malaria (derived as q_malaria / q_all),proportion (0-1)
-ihme_malaria_fraction_12_23m,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at age 12-23 months (age 1) attributed to malaria (derived as q_malaria / q_all),proportion (0-1)
-ihme_malaria_fraction_2_4y,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at age 2-4 years attributed to malaria (derived as q_malaria / q_all),proportion (0-1)
-ihme_malaria_fraction_1_4y,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at age 1-4 years attributed to malaria (derived as q_malaria / q_all),proportion (0-1)
-ihme_malaria_fraction_u5,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at age under 5 years attributed to malaria (derived as q_malaria / q_all),proportion (0-1)
-igme_q_0_27d,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Neonatal mortality: probability of dying in the first 28 days,"probability (0-1); IGME publishes per 1,000 live births"
-igme_q_0_27d_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Neonatal mortality: probability of dying in the first 28 days, lower 90% uncertainty bound","probability (0-1); IGME publishes per 1,000 live births"
-igme_q_0_27d_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Neonatal mortality: probability of dying in the first 28 days, upper 90% uncertainty bound","probability (0-1); IGME publishes per 1,000 live births"
-igme_q_1_11m,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Post-neonatal mortality: probability of dying between 1 and 11 months, conditional on survival to 1 month","probability (0-1); IGME publishes per 1,000 children aged 1 month"
-igme_q_1_11m_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Post-neonatal mortality: probability of dying between 1 and 11 months, conditional on survival to 1 month, lower 90% uncertainty bound","probability (0-1); IGME publishes per 1,000 children aged 1 month"
-igme_q_1_11m_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Post-neonatal mortality: probability of dying between 1 and 11 months, conditional on survival to 1 month, upper 90% uncertainty bound","probability (0-1); IGME publishes per 1,000 children aged 1 month"
-igme_q_u1,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Infant mortality: probability of dying before age 1,"probability (0-1); IGME publishes per 1,000 live births"
-igme_q_u1_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Infant mortality: probability of dying before age 1, lower 90% uncertainty bound","probability (0-1); IGME publishes per 1,000 live births"
-igme_q_u1_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Infant mortality: probability of dying before age 1, upper 90% uncertainty bound","probability (0-1); IGME publishes per 1,000 live births"
-igme_q_1_4y,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Child mortality: probability of dying between exact ages 1 and 5, conditional on survival to age 1 (4q1)","probability (0-1); IGME publishes per 1,000 children aged 1"
-igme_q_1_4y_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Child mortality: probability of dying between exact ages 1 and 5, conditional on survival to age 1 (4q1), lower 90% uncertainty bound","probability (0-1); IGME publishes per 1,000 children aged 1"
-igme_q_1_4y_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Child mortality: probability of dying between exact ages 1 and 5, conditional on survival to age 1 (4q1), upper 90% uncertainty bound","probability (0-1); IGME publishes per 1,000 children aged 1"
-igme_q_u5,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Under-five mortality: probability of dying before age 5,"probability (0-1); IGME publishes per 1,000 live births"
-igme_q_u5_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Under-five mortality: probability of dying before age 5, lower 90% uncertainty bound","probability (0-1); IGME publishes per 1,000 live births"
-igme_q_u5_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Under-five mortality: probability of dying before age 5, upper 90% uncertainty bound","probability (0-1); IGME publishes per 1,000 live births"
-igme_deaths_0_27d,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Neonatal deaths (0-27 days),deaths per year
-igme_deaths_0_27d_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Neonatal deaths (0-27 days), lower 90% uncertainty bound",deaths per year
-igme_deaths_0_27d_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Neonatal deaths (0-27 days), upper 90% uncertainty bound",deaths per year
-igme_deaths_1_11m,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Post-neonatal deaths (1-11 months),deaths per year
-igme_deaths_1_11m_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Post-neonatal deaths (1-11 months), lower 90% uncertainty bound",deaths per year
-igme_deaths_1_11m_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Post-neonatal deaths (1-11 months), upper 90% uncertainty bound",deaths per year
-igme_deaths_u1,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Infant deaths (under 1 year),deaths per year
-igme_deaths_u1_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Infant deaths (under 1 year), lower 90% uncertainty bound",deaths per year
-igme_deaths_u1_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Infant deaths (under 1 year), upper 90% uncertainty bound",deaths per year
-igme_deaths_1_4y,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Child deaths (ages 1-4),deaths per year
-igme_deaths_1_4y_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Child deaths (ages 1-4), lower 90% uncertainty bound",deaths per year
-igme_deaths_1_4y_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Child deaths (ages 1-4), upper 90% uncertainty bound",deaths per year
-igme_deaths_u5,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Under-five deaths,deaths per year
-igme_deaths_u5_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Under-five deaths, lower 90% uncertainty bound",deaths per year
-igme_deaths_u5_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Under-five deaths, upper 90% uncertainty bound",deaths per year
+ihme_malaria_fraction_0_27d,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at 0-27 days (neonatal) assigned to malaria (q_malaria / q_all),proportion (0-1)
+ihme_malaria_fraction_1_5m,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at 1-5 months assigned to malaria (q_malaria / q_all),proportion (0-1)
+ihme_malaria_fraction_6_11m,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at 6-11 months assigned to malaria (q_malaria / q_all),proportion (0-1)
+ihme_malaria_fraction_12_23m,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at 12-23 months assigned to malaria (q_malaria / q_all),proportion (0-1)
+ihme_malaria_fraction_2_4y,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at 2-4 years assigned to malaria (q_malaria / q_all),proportion (0-1)
+ihme_malaria_fraction_u5,IHME GBD 2023 (IHME/ downloads),Share of all-cause deaths at under 5 years assigned to malaria (q_malaria / q_all),proportion (0-1)
+ihme_deaths_all_0_27d,IHME GBD 2023 (IHME/ downloads),All-cause deaths at 0-27 days (neonatal) (derived; see README),deaths per year
+ihme_deaths_all_1_5m,IHME GBD 2023 (IHME/ downloads),All-cause deaths at 1-5 months (derived; see README),deaths per year
+ihme_deaths_all_6_11m,IHME GBD 2023 (IHME/ downloads),All-cause deaths at 6-11 months (derived; see README),deaths per year
+ihme_deaths_all_12_23m,IHME GBD 2023 (IHME/ downloads),All-cause deaths at 12-23 months (derived; see README),deaths per year
+ihme_deaths_all_2_4y,IHME GBD 2023 (IHME/ downloads),All-cause deaths at 2-4 years (derived; see README),deaths per year
+ihme_deaths_all_u5,IHME GBD 2023 (IHME/ downloads),All-cause deaths at under 5 years (derived; see README),deaths per year
+ihme_deaths_malaria_0_27d,IHME GBD 2023 (IHME/ downloads),Malaria deaths at 0-27 days (neonatal) (derived; see README),deaths per year
+ihme_deaths_malaria_1_5m,IHME GBD 2023 (IHME/ downloads),Malaria deaths at 1-5 months (derived; see README),deaths per year
+ihme_deaths_malaria_6_11m,IHME GBD 2023 (IHME/ downloads),Malaria deaths at 6-11 months (derived; see README),deaths per year
+ihme_deaths_malaria_12_23m,IHME GBD 2023 (IHME/ downloads),Malaria deaths at 12-23 months (derived; see README),deaths per year
+ihme_deaths_malaria_2_4y,IHME GBD 2023 (IHME/ downloads),Malaria deaths at 2-4 years (derived; see README),deaths per year
+ihme_deaths_malaria_u5,IHME GBD 2023 (IHME/ downloads),Malaria deaths at under 5 years (derived; see README),deaths per year
+igme_q_all_0_27d,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README","Probability of death from all causes within 0-27 days (neonatal), conditional on survival to the start of the band (1-11 month and 1-4 year IGME rates split by IHME hazard shares)",probability (0-1)
+igme_q_all_1_5m,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README","Probability of death from all causes within 1-5 months, conditional on survival to the start of the band (1-11 month and 1-4 year IGME rates split by IHME hazard shares)",probability (0-1)
+igme_q_all_6_11m,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README","Probability of death from all causes within 6-11 months, conditional on survival to the start of the band (1-11 month and 1-4 year IGME rates split by IHME hazard shares)",probability (0-1)
+igme_q_all_12_23m,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README","Probability of death from all causes within 12-23 months, conditional on survival to the start of the band (1-11 month and 1-4 year IGME rates split by IHME hazard shares)",probability (0-1)
+igme_q_all_2_4y,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README","Probability of death from all causes within 2-4 years, conditional on survival to the start of the band (1-11 month and 1-4 year IGME rates split by IHME hazard shares)",probability (0-1)
+igme_malaria_fraction_0_27d,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README",Share of all-cause deaths at 0-27 days (neonatal) assigned to malaria: CA-CODE 1-59 month share spread by IHME's age pattern (neonatal: IHME),proportion (0-1)
+igme_malaria_fraction_1_5m,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README",Share of all-cause deaths at 1-5 months assigned to malaria: CA-CODE 1-59 month share spread by IHME's age pattern (neonatal: IHME),proportion (0-1)
+igme_malaria_fraction_6_11m,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README",Share of all-cause deaths at 6-11 months assigned to malaria: CA-CODE 1-59 month share spread by IHME's age pattern (neonatal: IHME),proportion (0-1)
+igme_malaria_fraction_12_23m,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README",Share of all-cause deaths at 12-23 months assigned to malaria: CA-CODE 1-59 month share spread by IHME's age pattern (neonatal: IHME),proportion (0-1)
+igme_malaria_fraction_2_4y,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README",Share of all-cause deaths at 2-4 years assigned to malaria: CA-CODE 1-59 month share spread by IHME's age pattern (neonatal: IHME),proportion (0-1)
+igme_q_malaria_0_27d,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README","Probability of death from malaria within 0-27 days (neonatal), conditional on survival to the start of the band: igme_malaria_fraction x igme_q_all",probability (0-1)
+igme_q_malaria_1_5m,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README","Probability of death from malaria within 1-5 months, conditional on survival to the start of the band: igme_malaria_fraction x igme_q_all",probability (0-1)
+igme_q_malaria_6_11m,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README","Probability of death from malaria within 6-11 months, conditional on survival to the start of the band: igme_malaria_fraction x igme_q_all",probability (0-1)
+igme_q_malaria_12_23m,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README","Probability of death from malaria within 12-23 months, conditional on survival to the start of the band: igme_malaria_fraction x igme_q_all",probability (0-1)
+igme_q_malaria_2_4y,"Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README","Probability of death from malaria within 2-4 years, conditional on survival to the start of the band: igme_malaria_fraction x igme_q_all",probability (0-1)
+wpp_pop_0_27d,"UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API",Population aged 0-27 days (neonatal) (WPP under-1 split by IHME's under-1 age distribution; ages 2-4 summed),persons
+wpp_pop_1_5m,"UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API",Population aged 1-5 months (WPP under-1 split by IHME's under-1 age distribution; ages 2-4 summed),persons
+wpp_pop_6_11m,"UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API",Population aged 6-11 months (WPP under-1 split by IHME's under-1 age distribution; ages 2-4 summed),persons
+wpp_pop_12_23m,"UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API",Population aged 12-23 months (WPP under-1 split by IHME's under-1 age distribution; ages 2-4 summed),persons
+wpp_pop_2_4y,"UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API",Population aged 2-4 years (WPP under-1 split by IHME's under-1 age distribution; ages 2-4 summed),persons
 wpp_live_births,"UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API",Live births (UNICEF DM dataflow; see README caution for Togo),births per year
+igme_published_q_0_27d,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Neonatal mortality rate (0-27 days),"probability (0-1); published per 1,000"
+igme_published_q_0_27d_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Neonatal mortality rate (0-27 days), lower 90% bound","probability (0-1); published per 1,000"
+igme_published_q_0_27d_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Neonatal mortality rate (0-27 days), upper 90% bound","probability (0-1); published per 1,000"
+igme_published_q_1_11m,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Mortality rate 1-11 months, conditional on survival to 1 month","probability (0-1); published per 1,000"
+igme_published_q_1_11m_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Mortality rate 1-11 months, conditional on survival to 1 month, lower 90% bound","probability (0-1); published per 1,000"
+igme_published_q_1_11m_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Mortality rate 1-11 months, conditional on survival to 1 month, upper 90% bound","probability (0-1); published per 1,000"
+igme_published_q_u1,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Infant mortality rate,"probability (0-1); published per 1,000"
+igme_published_q_u1_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Infant mortality rate, lower 90% bound","probability (0-1); published per 1,000"
+igme_published_q_u1_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Infant mortality rate, upper 90% bound","probability (0-1); published per 1,000"
+igme_published_q_1_4y,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Child mortality rate 1-4 years (4q1), conditional on survival to age 1","probability (0-1); published per 1,000"
+igme_published_q_1_4y_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Child mortality rate 1-4 years (4q1), conditional on survival to age 1, lower 90% bound","probability (0-1); published per 1,000"
+igme_published_q_1_4y_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Child mortality rate 1-4 years (4q1), conditional on survival to age 1, upper 90% bound","probability (0-1); published per 1,000"
+igme_published_q_u5,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Under-five mortality rate,"probability (0-1); published per 1,000"
+igme_published_q_u5_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Under-five mortality rate, lower 90% bound","probability (0-1); published per 1,000"
+igme_published_q_u5_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Under-five mortality rate, upper 90% bound","probability (0-1); published per 1,000"
+igme_published_deaths_0_27d,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Neonatal deaths,deaths per year
+igme_published_deaths_0_27d_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Neonatal deaths, lower 90% bound",deaths per year
+igme_published_deaths_0_27d_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Neonatal deaths, upper 90% bound",deaths per year
+igme_published_deaths_1_11m,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Deaths at 1-11 months,deaths per year
+igme_published_deaths_1_11m_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Deaths at 1-11 months, lower 90% bound",deaths per year
+igme_published_deaths_1_11m_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Deaths at 1-11 months, upper 90% bound",deaths per year
+igme_published_deaths_u1,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Infant deaths,deaths per year
+igme_published_deaths_u1_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Infant deaths, lower 90% bound",deaths per year
+igme_published_deaths_u1_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Infant deaths, upper 90% bound",deaths per year
+igme_published_deaths_1_4y,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Deaths at 1-4 years,deaths per year
+igme_published_deaths_1_4y_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Deaths at 1-4 years, lower 90% bound",deaths per year
+igme_published_deaths_1_4y_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Deaths at 1-4 years, upper 90% bound",deaths per year
+igme_published_deaths_u5,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",Under-five deaths,deaths per year
+igme_published_deaths_u5_lower,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Under-five deaths, lower 90% bound",deaths per year
+igme_published_deaths_u5_upper,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0","Under-five deaths, upper 90% bound",deaths per year
+cacode_malaria_fraction_1_59m,"CA-CODE 2026 (WHO/UNICEF, with UN IGME), UNICEF SDMX API dataflow UNICEF,CME_CAUSE_OF_DEATH,1.0",Malaria share of deaths at 1-59 months,proportion (0-1)
+cacode_malaria_fraction_1_59m_lower,"CA-CODE 2026 (WHO/UNICEF, with UN IGME), UNICEF SDMX API dataflow UNICEF,CME_CAUSE_OF_DEATH,1.0","Malaria share of deaths at 1-59 months, lower bound as published",proportion (0-1)
+cacode_malaria_fraction_1_59m_upper,"CA-CODE 2026 (WHO/UNICEF, with UN IGME), UNICEF SDMX API dataflow UNICEF,CME_CAUSE_OF_DEATH,1.0","Malaria share of deaths at 1-59 months, upper bound as published",proportion (0-1)
+cacode_malaria_fraction_u5,"CA-CODE 2026 (WHO/UNICEF, with UN IGME), UNICEF SDMX API dataflow UNICEF,CME_CAUSE_OF_DEATH,1.0",Malaria share of under-five deaths (CA-CODE assigns no neonatal deaths to malaria),proportion (0-1)
+cacode_malaria_deaths_1_59m,"CA-CODE 2026 (WHO/UNICEF, with UN IGME), UNICEF SDMX API dataflow UNICEF,CME_CAUSE_OF_DEATH,1.0",Malaria deaths at 1-59 months (on CA-CODE's own all-cause total),deaths per year
 wpp_pop_u1,"UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API",Population under 1 year,persons
-wpp_pop_12_23m,"UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API",Population age 1,persons
-wpp_pop_2y,"UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API",Population age 2,persons
-wpp_pop_3y,"UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API",Population age 3,persons
-wpp_pop_4y,"UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API",Population age 4,persons
 wpp_pop_u5,"UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API",Population under 5 years (sum of single ages 0-4),persons
-igme_state_q_u5_2021,"UN IGME 2021-round subnational estimates (estimates to 2021), UNICEF SDMX API dataflow UNICEF,CME_SUBNATIONAL,1.0","Under-five mortality probability in 2021 (latest year IGME publishes for Nigerian states; NOT 2023, and from an earlier estimation round than the national igme_ columns)",probability (0-1)
-igme_state_q_u5_2021_lower,"UN IGME 2021-round subnational estimates (estimates to 2021), UNICEF SDMX API dataflow UNICEF,CME_SUBNATIONAL,1.0","Under-five mortality probability in 2021 (latest year IGME publishes for Nigerian states; NOT 2023, and from an earlier estimation round than the national igme_ columns), lower 90% uncertainty bound",probability (0-1)
-igme_state_q_u5_2021_upper,"UN IGME 2021-round subnational estimates (estimates to 2021), UNICEF SDMX API dataflow UNICEF,CME_SUBNATIONAL,1.0","Under-five mortality probability in 2021 (latest year IGME publishes for Nigerian states; NOT 2023, and from an earlier estimation round than the national igme_ columns), upper 90% uncertainty bound",probability (0-1)
-igme_state_q_0_27d_2021,"UN IGME 2021-round subnational estimates (estimates to 2021), UNICEF SDMX API dataflow UNICEF,CME_SUBNATIONAL,1.0","Neonatal mortality probability in 2021 (latest year IGME publishes for Nigerian states; NOT 2023, and from an earlier estimation round than the national igme_ columns)",probability (0-1)
-igme_state_q_0_27d_2021_lower,"UN IGME 2021-round subnational estimates (estimates to 2021), UNICEF SDMX API dataflow UNICEF,CME_SUBNATIONAL,1.0","Neonatal mortality probability in 2021 (latest year IGME publishes for Nigerian states; NOT 2023, and from an earlier estimation round than the national igme_ columns), lower 90% uncertainty bound",probability (0-1)
-igme_state_q_0_27d_2021_upper,"UN IGME 2021-round subnational estimates (estimates to 2021), UNICEF SDMX API dataflow UNICEF,CME_SUBNATIONAL,1.0","Neonatal mortality probability in 2021 (latest year IGME publishes for Nigerian states; NOT 2023, and from an earlier estimation round than the national igme_ columns), upper 90% uncertainty bound",probability (0-1)
-map_pfpr_2_10,"Malaria Atlas Project, 202608 release, admin-0/admin-1 aggregates",P. falciparum parasite rate in children aged 2-10 (population-weighted mean over the unit),proportion (0-1)
-map_pfpr_2_10_lower,"Malaria Atlas Project, 202608 release, admin-0/admin-1 aggregates","PfPR2-10, lower 95% credible interval",proportion (0-1)
-map_pfpr_2_10_upper,"Malaria Atlas Project, 202608 release, admin-0/admin-1 aggregates","PfPR2-10, upper 95% credible interval",proportion (0-1)
 worldpop_pop_u1,"WorldPop Global2 R2025A, constrained, UN-adjusted, 1 km (DOI 10.5258/SOTON/WP00842)",Population aged 0-11 months (sum of grid cells over the unit; Nigerian states use MAP 202403 admin-1 boundaries; WorldPop applies one national under-1 share to every grid cell),persons
 worldpop_pop_1_4y,"WorldPop Global2 R2025A, constrained, UN-adjusted, 1 km (DOI 10.5258/SOTON/WP00842)",Population aged 1-4 years (sum of grid cells over the unit; Nigerian states use MAP 202403 admin-1 boundaries; WorldPop applies one national under-1 share to every grid cell),persons
 worldpop_pop_u5,"WorldPop Global2 R2025A, constrained, UN-adjusted, 1 km (DOI 10.5258/SOTON/WP00842)",Population under 5 years (sum of grid cells over the unit; Nigerian states use MAP 202403 admin-1 boundaries; WorldPop applies one national under-1 share to every grid cell),persons
