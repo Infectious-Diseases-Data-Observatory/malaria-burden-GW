@@ -1,0 +1,193 @@
+REF_AREA,Geographic area,INDICATOR,Indicator,CAUSE_OF_DEATH,Cause of death,SEX,Sex,AGE_GROUP,Age group,SERIES_NAME,UNIT_MEASURE,Unit of measure,TIME_PERIOD,OBS_VALUE,COUNTRY_NOTES,OBS_FOOTNOTE,LOWER_BOUND,UPPER_BOUND
+SEN,Senegal,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,666.0,,,492.0,840.0
+SEN,Senegal,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,666.0,,,492.0,840.0
+BFA,Burkina Faso,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,8791.0,,,4615.0,12966.0
+BFA,Burkina Faso,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,8791.0,,,4615.0,12966.0
+GIN,Guinea,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,22.44,,,20.69,24.19
+GIN,Guinea,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,15.13,,,13.02,17.23
+CIV,Côte d'Ivoire,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,15.58,,,14.58,16.59
+CIV,Côte d'Ivoire,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,8.93,,,7.85,10.02
+KEN,Kenya,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,8.05,,,7.57,8.52
+KEN,Kenya,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,3.7,,,3.17,4.24
+BFA,Burkina Faso,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,15.85,,,13.45,18.25
+BFA,Burkina Faso,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,23.22,,,22.09,24.36
+CIV,Côte d'Ivoire,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,5827.0,,,4429.0,7226.0
+CIV,Côte d'Ivoire,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,5827.0,,,4429.0,7226.0
+SWZ,Eswatini,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,1.0,,,0.0,1.0
+SWZ,Eswatini,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,1.0,,,1.0,2.0
+CAF,Central African Republic,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,4991.0,,,3388.0,6594.0
+CAF,Central African Republic,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,4991.0,,,3388.0,6594.0
+ETH,Ethiopia,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,8966.0,,,4199.0,13733.0
+ETH,Ethiopia,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,8966.0,,,4199.0,13733.0
+CAF,Central African Republic,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,39.18,,,35.6,42.76
+MWI,Malawi,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,3013.0,,,2143.0,3883.0
+CAF,Central African Republic,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,24.95,,,21.3,28.61
+MWI,Malawi,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,3013.0,,,2143.0,3883.0
+TZA,United Republic of Tanzania,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,8.3,,,6.72,9.89
+TZA,United Republic of Tanzania,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,18.33,,,17.27,19.38
+SWZ,Eswatini,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,0.16,,,0.08,0.25
+SWZ,Eswatini,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,0.07,,,0.04,0.11
+SEN,Senegal,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,7.97,,,7.54,8.41
+SEN,Senegal,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,3.35,,,2.87,3.84
+KEN,Kenya,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,2172.0,,,1662.0,2683.0
+KEN,Kenya,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,2172.0,,,1662.0,2683.0
+ETH,Ethiopia,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,8.81,,,3.01,14.61
+ETH,Ethiopia,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,4.31,,,1.5,7.11
+TZA,United Republic of Tanzania,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,7324.0,,,4941.0,9707.0
+TZA,United Republic of Tanzania,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,7324.0,,,4941.0,9707.0
+GAB,Gabon,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,35.0,,,15.0,54.0
+GAB,Gabon,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,35.0,,,15.0,54.0
+STP,Sao Tome and Principe,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,0.0,,,0.0,0.0
+STP,Sao Tome and Principe,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,0.0,,,0.0,0.0
+GAB,Gabon,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,1.48,,,1.04,1.93
+GAB,Gabon,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,2.95,,,2.37,3.53
+GMB,Gambia,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,10.45,,,9.69,11.22
+GMB,Gambia,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,4.75,,,3.75,5.75
+BEN,Benin,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,30.31,,,28.91,31.72
+BEN,Benin,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,19.22,,,17.42,21.03
+MWI,Malawi,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,9.35,,,8.28,10.42
+MWI,Malawi,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,18.28,,,17.07,19.49
+GMB,Gambia,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,168.0,,,101.0,235.0
+GMB,Gambia,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,168.0,,,101.0,235.0
+TGO,Togo,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,12.91,,,11.37,14.46
+TGO,Togo,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,21.65,,,20.56,22.74
+STP,Sao Tome and Principe,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,0.0,,,0.0,0.0
+STP,Sao Tome and Principe,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,0.0,,,0.0,0.0
+COM,Comoros,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,14.0,,,8.0,20.0
+COM,Comoros,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,14.0,,,8.0,20.0
+MDG,Madagascar,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,14.95,,,6.64,23.26
+MDG,Madagascar,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,23.85,,,10.56,37.15
+MLI,Mali,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,7073.0,,,5664.0,8482.0
+MLI,Mali,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,7073.0,,,5664.0,8482.0
+CMR,Cameroon,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,16.34,,,15.28,17.4
+CMR,Cameroon,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,10.09,,,8.84,11.34
+MDG,Madagascar,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,9350.0,,,4756.0,13944.0
+MDG,Madagascar,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,9350.0,,,4756.0,13944.0
+CMR,Cameroon,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,6362.0,,,4181.0,8543.0
+CMR,Cameroon,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,6362.0,,,4181.0,8543.0
+SYC,Seychelles,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,0.0,,,0.0,0.0
+SYC,Seychelles,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,0.0,,,0.0,0.0
+NAM,Namibia,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,43.0,,,21.0,66.0
+NAM,Namibia,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,43.0,,,21.0,66.0
+AGO,Angola,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,6.92,,,5.84,8.01
+AGO,Angola,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,11.07,,,9.93,12.21
+SOM,Somalia,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,1.14,,,0.0,2.58
+SOM,Somalia,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,1.78,,,0.0,4.35
+AGO,Angola,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,4703.0,,,2349.0,7057.0
+AGO,Angola,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,4703.0,,,2349.0,7057.0
+NAM,Namibia,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,3.04,,,2.61,3.47
+NAM,Namibia,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,1.39,,,0.92,1.86
+SOM,Somalia,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,871.0,,,413.0,1330.0
+SOM,Somalia,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,871.0,,,413.0,1330.0
+ZAF,South Africa,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,14.0,,,14.0,15.0
+ZAF,South Africa,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,14.0,,,14.0,15.0
+GNB,Guinea-Bissau,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,339.0,,,114.0,565.0
+GNB,Guinea-Bissau,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,339.0,,,114.0,565.0
+SYC,Seychelles,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,0.0,,,0.0,0.0
+SYC,Seychelles,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,0.0,,,0.0,0.0
+GNB,Guinea-Bissau,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,14.63,,,13.5,15.77
+ZAF,South Africa,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,0.05,,,0.04,0.07
+ZAF,South Africa,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,0.03,,,0.02,0.04
+MOZ,Mozambique,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,23.59,,,21.64,25.54
+MOZ,Mozambique,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,13.57,,,11.61,15.52
+UGA,Uganda,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,14.7,,,12.99,16.42
+UGA,Uganda,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,26.49,,,25.23,27.75
+ERI,Eritrea,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,150.0,,,78.0,222.0
+ERI,Eritrea,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,150.0,,,78.0,222.0
+GNB,Guinea-Bissau,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,7.66,,,5.95,9.37
+UGA,Uganda,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,12146.0,,,9559.0,14733.0
+UGA,Uganda,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,12146.0,,,9559.0,14733.0
+ERI,Eritrea,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,4.32,,,0.65,8.0
+ERI,Eritrea,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,8.04,,,1.01,15.07
+MOZ,Mozambique,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,10277.0,,,7211.0,13342.0
+MOZ,Mozambique,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,10277.0,,,7211.0,13342.0
+MLI,Mali,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,10.07,,,8.99,11.16
+MLI,Mali,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,16.47,,,15.44,17.51
+MRT,Mauritania,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,174.0,,,109.0,239.0
+MRT,Mauritania,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,174.0,,,109.0,239.0
+CPV,Cabo Verde,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,0.0,,,0.0,0.0
+CPV,Cabo Verde,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,0.0,,,0.0,0.0
+ZMB,Zambia,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,2526.0,,,1945.0,3106.0
+ZMB,Zambia,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,2526.0,,,1945.0,3106.0
+NER,Niger,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,23556.0,,,16783.0,30329.0
+NER,Niger,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,23556.0,,,16783.0,30329.0
+CPV,Cabo Verde,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,0.0,,,0.0,0.0
+CPV,Cabo Verde,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,0.0,,,0.0,0.0
+COD,Democratic Republic of the Congo,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,24.32,,,21.86,26.78
+COD,Democratic Republic of the Congo,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,32.19,,,29.53,34.85
+GNQ,Equatorial Guinea,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,96.0,,,10.0,182.0
+GNQ,Equatorial Guinea,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,96.0,,,10.0,182.0
+NER,Niger,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,20.01,,,17.95,22.07
+NER,Niger,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,28.95,,,27.13,30.78
+COD,Democratic Republic of the Congo,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,103618.0,,,76118.0,131119.0
+COD,Democratic Republic of the Congo,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,103618.0,,,76118.0,131119.0
+ZMB,Zambia,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,7.66,,,6.89,8.44
+ZMB,Zambia,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,13.88,,,13.1,14.66
+BDI,Burundi,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,3693.0,,,1565.0,5820.0
+BDI,Burundi,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,3693.0,,,1565.0,5820.0
+RWA,Rwanda,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,739.0,,,482.0,995.0
+RWA,Rwanda,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,739.0,,,482.0,995.0
+BDI,Burundi,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,27.95,,,26.32,29.57
+BDI,Burundi,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,16.66,,,14.68,18.64
+GNQ,Equatorial Guinea,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,4.14,,,3.12,5.16
+GNQ,Equatorial Guinea,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,2.54,,,1.54,3.53
+MRT,Mauritania,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,6.25,,,5.86,6.64
+MRT,Mauritania,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,2.69,,,2.26,3.12
+RWA,Rwanda,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,8.91,,,8.21,9.6
+RWA,Rwanda,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,4.84,,,4.15,5.53
+COM,Comoros,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,3.36,,,1.36,5.36
+COM,Comoros,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,1.44,,,0.73,2.16
+LSO,Lesotho,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,4.12,,,3.31,4.94
+LSO,Lesotho,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,7.9,,,6.86,8.94
+DJI,Djibouti,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,4.2,,,0.52,7.87
+DJI,Djibouti,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,1.9,,,0.41,3.38
+NGA,Nigeria,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,162941.0,,,132844.0,193038.0
+NGA,Nigeria,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,162941.0,,,132844.0,193038.0
+MUS,Mauritius,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,0.0,,,0.0,0.0
+MUS,Mauritius,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,0.0,,,0.0,0.0
+ZWE,Zimbabwe,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,1.67,,,0.66,2.68
+ZWE,Zimbabwe,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,3.55,,,1.37,5.72
+GHA,Ghana,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,1368.0,,,980.0,1756.0
+GHA,Ghana,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,1368.0,,,980.0,1756.0
+BWA,Botswana,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,0.0,,,0.0,0.0
+BWA,Botswana,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,0.0,,,0.0,0.0
+TGO,Togo,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,2132.0,,,1321.0,2944.0
+TGO,Togo,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,2132.0,,,1321.0,2944.0
+BEN,Benin,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,6946.0,,,4866.0,9025.0
+BEN,Benin,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,6946.0,,,4866.0,9025.0
+SSD,South Sudan,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,19.33,,,14.36,24.29
+SSD,South Sudan,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,11.67,,,7.55,15.79
+GHA,Ghana,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,4.19,,,3.65,4.73
+GHA,Ghana,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,8.52,,,8.0,9.05
+NGA,Nigeria,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,18.96,,,17.13,20.8
+NGA,Nigeria,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,28.85,,,26.86,30.84
+DJI,Djibouti,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,23.0,,,14.0,32.0
+DJI,Djibouti,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,23.0,,,14.0,32.0
+MUS,Mauritius,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,0.0,,,0.0,0.0
+MUS,Mauritius,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,0.0,,,0.0,0.0
+ZWE,Zimbabwe,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,527.0,,,258.0,796.0
+ZWE,Zimbabwe,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,527.0,,,258.0,796.0
+BWA,Botswana,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,0.0,,,0.0,0.0
+BWA,Botswana,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,0.0,,,0.0,0.0
+COG,Congo,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,12.41,,,8.63,16.19
+COG,Congo,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,7.13,,,4.6,9.67
+LSO,Lesotho,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,140.0,,,81.0,199.0
+LSO,Lesotho,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,140.0,,,81.0,199.0
+SLE,Sierra Leone,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,7011.0,,,5084.0,8938.0
+SLE,Sierra Leone,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,7011.0,,,5084.0,8938.0
+LBR,Liberia,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,3455.0,,,2611.0,4299.0
+LBR,Liberia,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,3455.0,,,2611.0,4299.0
+LBR,Liberia,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,23.33,,,20.5,26.16
+LBR,Liberia,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,37.62,,,34.86,40.38
+COG,Congo,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,533.0,,,0.0,1083.0
+COG,Congo,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,533.0,,,0.0,1083.0
+TCD,Chad,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,14331.0,,,7621.0,21040.0
+SSD,South Sudan,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,3817.0,,,0.0,10299.0
+SSD,South Sudan,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,3817.0,,,0.0,10299.0
+TCD,Chad,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,14331.0,,,7621.0,21040.0
+SLE,Sierra Leone,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,29.36,,,26.84,31.88
+SLE,Sierra Leone,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,42.69,,,41.0,44.38
+GIN,Guinea,DEATHS,Deaths,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,D,Number of deaths,2023,6858.0,,,4854.0,8862.0
+TCD,Chad,FRACTION,Fraction,MALARIA,Malaria,_T,Total,Y0T4,Under 5 years,CA CODE,PCNT,%,2023,18.14,,,15.65,20.63
+TCD,Chad,FRACTION,Fraction,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,PCNT,%,2023,26.7,,,24.74,28.66
+GIN,Guinea,DEATHS,Deaths,MALARIA,Malaria,_T,Total,M1T59,1 to 59 months,CA CODE,D,Number of deaths,2023,6858.0,,,4854.0,8862.0

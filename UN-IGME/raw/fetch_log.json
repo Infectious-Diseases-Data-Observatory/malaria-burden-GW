@@ -22,5 +22,11 @@
     "url": "https://sdmx.data.unicef.org/ws/public/sdmxapi/rest/data/UNICEF,CME_SUBNATIONAL,1.0/.MRM0+MRY0T4._T._T.UN_IGME..NGA.?format=csv&labels=both",
     "fetched_utc": "2026-10-01T19:45:15+00:00",
     "rows": 1628
+  },
+  {
+    "name": "cacode_malaria",
+    "url": "https://sdmx.data.unicef.org/ws/public/sdmxapi/rest/data/UNICEF,CME_CAUSE_OF_DEATH,1.0/AGO+CAF+COG+COD+GNQ+GAB+BDI+COM+DJI+ERI+ETH+KEN+MDG+MWI+MUS+MOZ+RWA+SYC+SOM+TZA+UGA+ZMB+SSD+BWA+LSO+NAM+ZAF+SWZ+ZWE+BEN+BFA+CMR+CPV+TCD+CIV+GMB+GHA+GIN+GNB+LBR+MLI+MRT+NER+NGA+STP+SEN+SLE+TGO.FRACTION+DEATHS.MALARIA._T.M1T59+Y0T4.?format=csv&labels=both&startPeriod=2023&endPeriod=2023",
+    "fetched_utc": "2026-10-01T20:56:52+00:00",
+    "rows": 192
   }
 ]
