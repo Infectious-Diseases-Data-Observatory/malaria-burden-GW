@@ -10,7 +10,8 @@ Malaria, but no death counts. Derivations (see README "Methods"):
   malaria deaths         D_malaria = D x f
 
 Composite bands (1-11 months, <1 year, 1-4 years, <5 years) sum deaths and population over the
-component bands and chain q as 1 - prod(1 - q). Composite malaria q = f x q_all.
+component bands and chain all-cause q as 1 - prod(1 - q). Cause-specific q does not chain, so
+composite malaria q = f x q_all, except for <1 and <5 where IHME's own published malaria q is used.
 
 Output: IHME/ihme_2023_by_age_band.csv, one row per location x age band.
 """
@@ -83,12 +84,13 @@ def main():
         df["malaria_fraction"] = df["deaths_malaria"] / df["deaths_all"]
         df["q_malaria"] = df["q_all"] * df["malaria_fraction"]
         df["band_width_years"] = comp[comp["age_band"].isin(parts)].drop_duplicates("age_band")["band_width_years"].sum()
-        # Check: chained all-cause q should reproduce IHME's own <1 / <5 values.
-        ihme_age = {"<1 year": "<1 year", "<5 years": "<5 years"}.get(band)
-        if ihme_age:
-            ref = q[(q["age_name"] == ihme_age) & (q["cause_name"] == "All causes")].set_index("gbd_location_id")["val"]
+        if band in ("<1 year", "<5 years"):
+            # Chained all-cause q should reproduce IHME's own value; use IHME's malaria q directly.
+            ref = q[(q["age_name"] == band) & (q["cause_name"] == "All causes")].set_index("gbd_location_id")["val"]
             gap = (df["q_all"] - ref.reindex(df.index)).abs().max()
             assert gap < 1e-6, f"{band}: chained q differs from IHME by {gap}"
+            ref_mal = q[(q["age_name"] == band) & (q["cause_name"] == "Malaria")].set_index("gbd_location_id")["val"]
+            df["q_malaria"] = ref_mal.reindex(df.index)
         rows.append(df.assign(age_band=band).reset_index())
 
     for age_name, band in POP_ONLY.items():

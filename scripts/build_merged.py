@@ -58,19 +58,19 @@ IGME_CODES = {
     "CME_TMY0T4": ("igme_deaths_u5", "Under-five deaths", "deaths per year"),
 }
 WPP_CODES = {
-    "DM_BRTS": ("wpp_live_births", "Live births"),
+    "DM_BRTS": ("wpp_live_births", "Live births (UNICEF DM dataflow; see README caution for Togo)"),
     "DM_POP_TOT_AGE_Y0": ("wpp_pop_u1", "Population under 1 year"),
     "DM_POP_TOT_AGE_Y01": ("wpp_pop_12_23m", "Population age 1"),
     "DM_POP_TOT_AGE_Y02": ("wpp_pop_2y", "Population age 2"),
     "DM_POP_TOT_AGE_Y03": ("wpp_pop_3y", "Population age 3"),
     "DM_POP_TOT_AGE_Y04": ("wpp_pop_4y", "Population age 4"),
-    "DM_POP_U5": ("wpp_pop_u5", "Population under 5 years"),
 }
+SINGLE_AGES = ["wpp_pop_u1", "wpp_pop_12_23m", "wpp_pop_2y", "wpp_pop_3y", "wpp_pop_4y"]
 
 SRC_IHME = "IHME GBD 2023 (IHME/ downloads)"
 SRC_IGME = "UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0"
-SRC_IGME_SUB = ("UN IGME subnational estimates (estimates to 2021), UNICEF SDMX API dataflow "
-                "UNICEF,CME_SUBNATIONAL,1.0")
+SRC_IGME_SUB = ("UN IGME 2021-round subnational estimates (estimates to 2021), UNICEF SDMX API "
+                "dataflow UNICEF,CME_SUBNATIONAL,1.0")
 SRC_WPP = "UN World Population Prospects 2024 (as used by UN IGME), via UNICEF SDMX API"
 SRC_MAP = "Malaria Atlas Project, 202608 release, admin-0/admin-1 aggregates"
 SRC_WP = "WorldPop Global2 R2025A, constrained, UN-adjusted, 1 km (DOI 10.5258/SOTON/WP00842)"
@@ -105,7 +105,12 @@ def ihme_wide(dictionary):
         w.columns = [f"{prefix}_{BAND_CODES[b]}" for b in w.columns]
         for col in w.columns:
             band = col[len(prefix) + 1:]
-            dictionary.append((col, SRC_IHME, template.format(band=BAND_LABELS[band]), unit))
+            desc = template.format(band=BAND_LABELS[band])
+            if metric == "q_malaria" and band in ("1_11m", "1_4y"):
+                desc += " (derived as q_all x malaria fraction; see README)"
+            elif metric == "q_all" and band in ("1_11m", "1_4y"):
+                desc += " (derived by chaining component bands; see README)"
+            dictionary.append((col, SRC_IHME, desc, unit))
         parts.append(w)
     return pd.concat(parts, axis=1).reset_index()
 
@@ -126,7 +131,25 @@ def igme_wide(dictionary):
         cols[name] = d[d["indicator_code"] == code].set_index("iso3")["value"]
         unit = "births per year" if name == "wpp_live_births" else "persons"
         dictionary.append((name, SRC_WPP, desc, unit))
-    return pd.DataFrame(cols).rename_axis("igme_code").reset_index()
+    out = pd.DataFrame(cols)
+
+    # Under-5 population from the single-age series. The DM dataflow's own DM_POP_U5 disagrees
+    # with it for Togo (~15% lower); everywhere else they agree to rounding.
+    out["wpp_pop_u5"] = out[SINGLE_AGES].sum(axis=1)
+    dictionary.append(("wpp_pop_u5", SRC_WPP, "Population under 5 years (sum of single ages 0-4)",
+                       "persons"))
+    dm_u5 = d[d["indicator_code"] == "DM_POP_U5"].set_index("iso3")["value"]
+    gap = (dm_u5 / out["wpp_pop_u5"] - 1).abs()
+    for iso3 in gap[gap > 0.005].index:
+        print(f"  CAUTION {iso3}: DM_POP_U5 {dm_u5[iso3]:,.0f} vs single-age sum "
+              f"{out.at[iso3, 'wpp_pop_u5']:,.0f}; using the single-age sum")
+    # IGME deaths should equal births x q; flag countries where the DM births disagree.
+    implied = out["igme_deaths_0_27d"] / out["igme_q_0_27d"]
+    gap = (out["wpp_live_births"] / implied - 1).abs()
+    for iso3 in gap[gap > 0.03].index:
+        print(f"  CAUTION {iso3}: wpp_live_births {out.at[iso3, 'wpp_live_births']:,.0f} vs "
+              f"births implied by IGME neonatal deaths / NMR {implied[iso3]:,.0f}")
+    return out.rename_axis("igme_code").reset_index()
 
 
 def igme_states_wide(dictionary):
@@ -143,7 +166,8 @@ def igme_states_wide(dictionary):
                      "_upper": ", upper 90% uncertainty bound"}[suffix]
             dictionary.append((name + suffix, SRC_IGME_SUB,
                                f"{desc} probability in {year} (latest year IGME publishes for "
-                               f"Nigerian states; NOT 2023){bound}", "probability (0-1)"))
+                               f"Nigerian states; NOT 2023, and from an earlier estimation round "
+                               f"than the national igme_ columns){bound}", "probability (0-1)"))
     return pd.DataFrame(cols).rename_axis("igme_code").reset_index()
 
 
@@ -156,6 +180,7 @@ def map_wide(dictionary):
                       ("pfpr_2_10_upper", "PfPR2-10, upper 95% credible interval")]:
         dictionary.append(("map_" + col, SRC_MAP, desc, "proportion (0-1)"))
     out = d.set_index("key")[["map_admin_id", "pfpr_2_10", "pfpr_2_10_lower", "pfpr_2_10_upper"]]
+    out["map_admin_id"] = out["map_admin_id"].astype("Int64")
     return out.rename(columns=lambda c: c if c == "map_admin_id" else "map_" + c)
 
 
@@ -167,7 +192,8 @@ def worldpop_wide(dictionary):
              "pop_under_5": ("worldpop_pop_u5", "Population under 5 years")}
     for col, (name, desc) in names.items():
         dictionary.append((name, SRC_WP, desc + " (sum of grid cells over the unit; Nigerian "
-                           "states use MAP 202403 admin-1 boundaries)", "persons"))
+                           "states use MAP 202403 admin-1 boundaries; WorldPop applies one "
+                           "national under-1 share to every grid cell)", "persons"))
     return d.set_index("key")[list(names)].rename(columns={k: v[0] for k, v in names.items()})
 
 

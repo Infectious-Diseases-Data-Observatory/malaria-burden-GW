@@ -3,8 +3,9 @@
 # reference/countries.csv and to Nigerian state totals (using MAP's 202403 admin-1 boundaries,
 # the same units as MAP's PfPR state estimates).
 #
-# Rasters are cached in .cache/worldpop/ (git-ignored, ~400 MB). Output:
+# Rasters are cached in .cache/worldpop/ (git-ignored, ~130 MB). Outputs:
 #   WorldPop/worldpop_u5_2023.csv
+#   WorldPop/raw/fetch_log.json   (file URLs, DOI and UTC time of each catalogue lookup)
 #
 # Usage:  Rscript scripts/fetch_worldpop.R
 suppressPackageStartupMessages({
@@ -15,7 +16,9 @@ suppressPackageStartupMessages({
 })
 
 args <- commandArgs(trailingOnly = FALSE)
-root <- normalizePath(file.path(dirname(sub("--file=", "", args[grep("--file=", args)])), ".."))
+script <- gsub("~+~", " ", sub("--file=", "", args[grep("--file=", args)]), fixed = TRUE)
+root <- normalizePath(file.path(dirname(script), ".."), mustWork = TRUE)
+stopifnot(file.exists(file.path(root, "reference", "countries.csv")))
 cache <- file.path(root, ".cache", "worldpop")
 dir.create(cache, recursive = TRUE, showWarnings = FALSE)
 dir.create(file.path(root, "WorldPop"), showWarnings = FALSE)
@@ -47,11 +50,14 @@ download <- function(url) {
 }
 
 rows <- list()
+log <- list()
 nga_rasters <- NULL
 for (iso3 in countries$iso3) {
   message(iso3)
   f <- files_for(iso3)
   stopifnot(length(f$t00) == 1, length(f$t01) == 1)
+  log[[iso3]] <- list(iso3 = iso3, url_00 = f$t00, url_01 = f$t01, doi = f$doi,
+                      fetched_utc = format(Sys.time(), "%Y-%m-%dT%H:%M:%SZ", tz = "UTC"))
   r00 <- rast(download(f$t00))
   r01 <- rast(download(f$t01))
   s00 <- global(r00, "sum", na.rm = TRUE)$sum
@@ -93,4 +99,8 @@ message(sprintf("Nigeria under-5: national raster sum %.0f; sum of states %.0f (
                 nat, st, st / nat))
 write.csv(out, file.path(root, "WorldPop", "worldpop_u5_2023.csv"), row.names = FALSE,
           fileEncoding = "UTF-8")
+dir.create(file.path(root, "WorldPop", "raw"), showWarnings = FALSE)
+log[["NGA_admin1"]] <- list(url = wfs, layer = "Admin_Units:202403_Global_Admin_1")
+write_json(unname(log), file.path(root, "WorldPop", "raw", "fetch_log.json"), auto_unbox = TRUE,
+           pretty = TRUE)
 message("Wrote ", nrow(out), " rows to WorldPop/worldpop_u5_2023.csv")

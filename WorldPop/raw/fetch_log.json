@@ -1,0 +1,342 @@
+[
+  {
+    "iso3": "AGO",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/AGO/v1/1km_ua/constrained/ago_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/AGO/v1/1km_ua/constrained/ago_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:45Z"
+  },
+  {
+    "iso3": "CAF",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/CAF/v1/1km_ua/constrained/caf_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/CAF/v1/1km_ua/constrained/caf_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:45Z"
+  },
+  {
+    "iso3": "COG",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/COG/v1/1km_ua/constrained/cog_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/COG/v1/1km_ua/constrained/cog_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:45Z"
+  },
+  {
+    "iso3": "COD",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/COD/v1/1km_ua/constrained/cod_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/COD/v1/1km_ua/constrained/cod_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:46Z"
+  },
+  {
+    "iso3": "GNQ",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/GNQ/v1/1km_ua/constrained/gnq_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/GNQ/v1/1km_ua/constrained/gnq_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:46Z"
+  },
+  {
+    "iso3": "GAB",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/GAB/v1/1km_ua/constrained/gab_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/GAB/v1/1km_ua/constrained/gab_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:46Z"
+  },
+  {
+    "iso3": "BDI",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/BDI/v1/1km_ua/constrained/bdi_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/BDI/v1/1km_ua/constrained/bdi_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:47Z"
+  },
+  {
+    "iso3": "COM",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/COM/v1/1km_ua/constrained/com_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/COM/v1/1km_ua/constrained/com_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:47Z"
+  },
+  {
+    "iso3": "DJI",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/DJI/v1/1km_ua/constrained/dji_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/DJI/v1/1km_ua/constrained/dji_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:47Z"
+  },
+  {
+    "iso3": "ERI",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/ERI/v1/1km_ua/constrained/eri_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/ERI/v1/1km_ua/constrained/eri_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:48Z"
+  },
+  {
+    "iso3": "ETH",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/ETH/v1/1km_ua/constrained/eth_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/ETH/v1/1km_ua/constrained/eth_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:55Z"
+  },
+  {
+    "iso3": "KEN",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/KEN/v1/1km_ua/constrained/ken_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/KEN/v1/1km_ua/constrained/ken_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:55Z"
+  },
+  {
+    "iso3": "MDG",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/MDG/v1/1km_ua/constrained/mdg_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/MDG/v1/1km_ua/constrained/mdg_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:56Z"
+  },
+  {
+    "iso3": "MWI",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/MWI/v1/1km_ua/constrained/mwi_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/MWI/v1/1km_ua/constrained/mwi_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:56Z"
+  },
+  {
+    "iso3": "MUS",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/MUS/v1/1km_ua/constrained/mus_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/MUS/v1/1km_ua/constrained/mus_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:56Z"
+  },
+  {
+    "iso3": "MOZ",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/MOZ/v1/1km_ua/constrained/moz_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/MOZ/v1/1km_ua/constrained/moz_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:57Z"
+  },
+  {
+    "iso3": "RWA",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/RWA/v1/1km_ua/constrained/rwa_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/RWA/v1/1km_ua/constrained/rwa_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:57Z"
+  },
+  {
+    "iso3": "SYC",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/SYC/v1/1km_ua/constrained/syc_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/SYC/v1/1km_ua/constrained/syc_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:57Z"
+  },
+  {
+    "iso3": "SOM",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/SOM/v1/1km_ua/constrained/som_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/SOM/v1/1km_ua/constrained/som_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:57Z"
+  },
+  {
+    "iso3": "TZA",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/TZA/v1/1km_ua/constrained/tza_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/TZA/v1/1km_ua/constrained/tza_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:58Z"
+  },
+  {
+    "iso3": "UGA",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/UGA/v1/1km_ua/constrained/uga_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/UGA/v1/1km_ua/constrained/uga_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:58Z"
+  },
+  {
+    "iso3": "ZMB",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/ZMB/v1/1km_ua/constrained/zmb_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/ZMB/v1/1km_ua/constrained/zmb_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:59Z"
+  },
+  {
+    "iso3": "SSD",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/SSD/v1/1km_ua/constrained/ssd_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/SSD/v1/1km_ua/constrained/ssd_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:59Z"
+  },
+  {
+    "iso3": "BWA",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/BWA/v1/1km_ua/constrained/bwa_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/BWA/v1/1km_ua/constrained/bwa_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:33:59Z"
+  },
+  {
+    "iso3": "LSO",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/LSO/v1/1km_ua/constrained/lso_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/LSO/v1/1km_ua/constrained/lso_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:00Z"
+  },
+  {
+    "iso3": "NAM",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/NAM/v1/1km_ua/constrained/nam_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/NAM/v1/1km_ua/constrained/nam_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:00Z"
+  },
+  {
+    "iso3": "ZAF",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/ZAF/v1/1km_ua/constrained/zaf_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/ZAF/v1/1km_ua/constrained/zaf_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:00Z"
+  },
+  {
+    "iso3": "SWZ",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/SWZ/v1/1km_ua/constrained/swz_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/SWZ/v1/1km_ua/constrained/swz_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:00Z"
+  },
+  {
+    "iso3": "ZWE",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/ZWE/v1/1km_ua/constrained/zwe_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/ZWE/v1/1km_ua/constrained/zwe_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:01Z"
+  },
+  {
+    "iso3": "BEN",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/BEN/v1/1km_ua/constrained/ben_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/BEN/v1/1km_ua/constrained/ben_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:01Z"
+  },
+  {
+    "iso3": "BFA",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/BFA/v1/1km_ua/constrained/bfa_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/BFA/v1/1km_ua/constrained/bfa_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:01Z"
+  },
+  {
+    "iso3": "CMR",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/CMR/v1/1km_ua/constrained/cmr_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/CMR/v1/1km_ua/constrained/cmr_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:02Z"
+  },
+  {
+    "iso3": "CPV",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/CPV/v1/1km_ua/constrained/cpv_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/CPV/v1/1km_ua/constrained/cpv_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:02Z"
+  },
+  {
+    "iso3": "TCD",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/TCD/v1/1km_ua/constrained/tcd_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/TCD/v1/1km_ua/constrained/tcd_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:02Z"
+  },
+  {
+    "iso3": "CIV",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/CIV/v1/1km_ua/constrained/civ_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/CIV/v1/1km_ua/constrained/civ_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:02Z"
+  },
+  {
+    "iso3": "GMB",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/GMB/v1/1km_ua/constrained/gmb_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/GMB/v1/1km_ua/constrained/gmb_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:03Z"
+  },
+  {
+    "iso3": "GHA",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/GHA/v1/1km_ua/constrained/gha_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/GHA/v1/1km_ua/constrained/gha_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:03Z"
+  },
+  {
+    "iso3": "GIN",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/GIN/v1/1km_ua/constrained/gin_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/GIN/v1/1km_ua/constrained/gin_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:03Z"
+  },
+  {
+    "iso3": "GNB",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/GNB/v1/1km_ua/constrained/gnb_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/GNB/v1/1km_ua/constrained/gnb_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:04Z"
+  },
+  {
+    "iso3": "LBR",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/LBR/v1/1km_ua/constrained/lbr_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/LBR/v1/1km_ua/constrained/lbr_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:04Z"
+  },
+  {
+    "iso3": "MLI",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/MLI/v1/1km_ua/constrained/mli_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/MLI/v1/1km_ua/constrained/mli_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:04Z"
+  },
+  {
+    "iso3": "MRT",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/MRT/v1/1km_ua/constrained/mrt_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/MRT/v1/1km_ua/constrained/mrt_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:05Z"
+  },
+  {
+    "iso3": "NER",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/NER/v1/1km_ua/constrained/ner_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/NER/v1/1km_ua/constrained/ner_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:05Z"
+  },
+  {
+    "iso3": "NGA",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/NGA/v1/1km_ua/constrained/nga_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/NGA/v1/1km_ua/constrained/nga_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:05Z"
+  },
+  {
+    "iso3": "STP",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/STP/v1/1km_ua/constrained/stp_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/STP/v1/1km_ua/constrained/stp_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:05Z"
+  },
+  {
+    "iso3": "SEN",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/SEN/v1/1km_ua/constrained/sen_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/SEN/v1/1km_ua/constrained/sen_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:06Z"
+  },
+  {
+    "iso3": "SLE",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/SLE/v1/1km_ua/constrained/sle_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/SLE/v1/1km_ua/constrained/sle_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:06Z"
+  },
+  {
+    "iso3": "TGO",
+    "url_00": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/TGO/v1/1km_ua/constrained/tgo_t_00_2023_CN_1km_R2025A_UA_v1.tif",
+    "url_01": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2015_2030/R2025A/2023/TGO/v1/1km_ua/constrained/tgo_t_01_2023_CN_1km_R2025A_UA_v1.tif",
+    "doi": "10.5258/SOTON/WP00842",
+    "fetched_utc": "2026-10-01T20:34:06Z"
+  },
+  {
+    "url": "https://data.malariaatlas.org/geoserver/Admin_Units/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=Admin_Units:202403_Global_Admin_1&outputFormat=application/json&CQL_FILTER=iso=%27NGA%27",
+    "layer": "Admin_Units:202403_Global_Admin_1"
+  }
+]
