@@ -1,0 +1,411 @@
+"source","year","location_level","iso3","location_name","pfpr_pct","age_band","model_band","share","share_lower_95","share_upper_95","outside_observed_support"
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","AGO","Angola",23.2835893479416,"0_27d","<1",0.0740906555023312,0.0205165754234885,0.124734433766689,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","AGO","Angola",23.2835893479416,"1_5m","1-5",0.154949055696027,0.0875585382591283,0.217362287432047,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","AGO","Angola",23.2835893479416,"6_11m","6-11",0.345145175343765,0.275035147247188,0.408474990549968,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","AGO","Angola",23.2835893479416,"12_23m","12-23",0.497169029672038,0.427885408641747,0.558062338314607,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","AGO","Angola",23.2835893479416,"2_4y","24-35, 36-47, 48-59 (mean)",0.499362373902907,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BEN","Benin",35.9526482156877,"0_27d","<1",0.110265398020686,0.0518753633388368,0.165059496031009,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BEN","Benin",35.9526482156877,"1_5m","1-5",0.200132299879303,0.12688923254063,0.267231190427226,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BEN","Benin",35.9526482156877,"6_11m","6-11",0.418386308781128,0.352339404995047,0.477697904701682,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BEN","Benin",35.9526482156877,"12_23m","12-23",0.553941518487565,0.491904839965469,0.608403731073413,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BEN","Benin",35.9526482156877,"2_4y","24-35, 36-47, 48-59 (mean)",0.537995564794144,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BWA","Botswana",0.0206878134126896,"0_27d","<1",6.42834251184388e-05,-4.72741241397401e-06,0.000133289500177547,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BWA","Botswana",0.0206878134126896,"1_5m","1-5",0.000169010332698227,7.61868487197948e-05,0.000261825199820875,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BWA","Botswana",0.0206878134126896,"6_11m","6-11",0.000438599816262042,0.000307285311423766,0.000569897072300818,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BWA","Botswana",0.0206878134126896,"12_23m","12-23",0.000763983892526632,0.000588461471175972,0.000939475487616859,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BWA","Botswana",0.0206878134126896,"2_4y","24-35, 36-47, 48-59 (mean)",0.00080706713618961,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BFA","Burkina Faso",28.6647794132478,"0_27d","<1",0.0913179488051896,0.0349748662456755,0.144371435227494,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BFA","Burkina Faso",28.6647794132478,"1_5m","1-5",0.177193325822433,0.106395248305799,0.242382248093922,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BFA","Burkina Faso",28.6647794132478,"6_11m","6-11",0.382982789295944,0.314298948109474,0.44478685389884,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BFA","Burkina Faso",28.6647794132478,"12_23m","12-23",0.53059743679531,0.465036738140652,0.588123555293664,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BFA","Burkina Faso",28.6647794132478,"2_4y","24-35, 36-47, 48-59 (mean)",0.524839138282882,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BDI","Burundi",32.0422585724851,"0_27d","<1",0.100945260966979,0.0435115536638023,0.154930279739497,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BDI","Burundi",32.0422585724851,"1_5m","1-5",0.188770956867858,0.116634551880952,0.255016639124421,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BDI","Burundi",32.0422585724851,"6_11m","6-11",0.401296848688484,0.333884714573423,0.461886746585025,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BDI","Burundi",32.0422585724851,"12_23m","12-23",0.543793996083814,0.480184206679597,0.599619864029617,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","BDI","Burundi",32.0422585724851,"2_4y","24-35, 36-47, 48-59 (mean)",0.533024787369691,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CPV","Cabo Verde",0,"0_27d","<1",0,0,0,TRUE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CPV","Cabo Verde",0,"1_5m","1-5",0,0,0,TRUE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CPV","Cabo Verde",0,"6_11m","6-11",0,0,0,TRUE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CPV","Cabo Verde",0,"12_23m","12-23",0,0,0,TRUE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CPV","Cabo Verde",0,"2_4y","24-35, 36-47, 48-59 (mean)",0,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CMR","Cameroon",22.3166536902946,"0_27d","<1",0.0708669849008888,0.0180308380118146,0.120860213166702,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CMR","Cameroon",22.3166536902946,"1_5m","1-5",0.150410875106415,0.0839158123979777,0.21207931442757,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CMR","Cameroon",22.3166536902946,"6_11m","6-11",0.336998016164286,0.266887455532886,0.40040361621474,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CMR","Cameroon",22.3166536902946,"12_23m","12-23",0.489059369084076,0.419196183750297,0.550518917030452,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CMR","Cameroon",22.3166536902946,"2_4y","24-35, 36-47, 48-59 (mean)",0.492569394785771,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CAF","Central African Republic",32.5037041164375,"0_27d","<1",0.102158383877571,0.0445970177584334,0.156251777914679,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CAF","Central African Republic",32.5037041164375,"1_5m","1-5",0.190221744430345,0.117932037163217,0.25658696288602,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CAF","Central African Republic",32.5037041164375,"6_11m","6-11",0.403526321757173,0.336283693026033,0.463956444797005,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CAF","Central African Republic",32.5037041164375,"12_23m","12-23",0.54524290119142,0.481856244284256,0.600875207632048,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CAF","Central African Republic",32.5037041164375,"2_4y","24-35, 36-47, 48-59 (mean)",0.533816524618125,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TCD","Chad",13.9842328401427,"0_27d","<1",0.0435221465224452,0.00282712902490012,0.0825563843324062,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TCD","Chad",13.9842328401427,"1_5m","1-5",0.103704975251779,0.0517913238186497,0.152776396622245,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TCD","Chad",13.9842328401427,"6_11m","6-11",0.245098885048599,0.183723483079315,0.30185950282551,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TCD","Chad",13.9842328401427,"12_23m","12-23",0.380439762383621,0.313298846035151,0.441016101663762,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TCD","Chad",13.9842328401427,"2_4y","24-35, 36-47, 48-59 (mean)",0.391391332537854,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COM","Comoros",1.72455866105999,"0_27d","<1",0.00534647222478357,-0.00038291514394384,0.0110430462786053,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COM","Comoros",1.72455866105999,"1_5m","1-5",0.0139826765291372,0.00633446346720967,0.0215720215304448,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COM","Comoros",1.72455866105999,"6_11m","6-11",0.0358824612699218,0.0252860761495194,0.046363650151846,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COM","Comoros",1.72455866105999,"12_23m","12-23",0.0616587613635391,0.0478468749511405,0.0752702932308017,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COM","Comoros",1.72455866105999,"2_4y","24-35, 36-47, 48-59 (mean)",0.0649647604076636,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COG","Congo",20.9273846301788,"0_27d","<1",0.0662188955533257,0.0146357688992237,0.115101681692286,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COG","Congo",20.9273846301788,"1_5m","1-5",0.143580389875565,0.0785967364250321,0.203980952096972,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COG","Congo",20.9273846301788,"6_11m","6-11",0.324464330553452,0.254605200614399,0.387776194480098,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COG","Congo",20.9273846301788,"12_23m","12-23",0.476030397389085,0.405505703472814,0.538188766378374,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COG","Congo",20.9273846301788,"2_4y","24-35, 36-47, 48-59 (mean)",0.481319772749198,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CIV","Côte d'Ivoire",25.3326808732979,"0_27d","<1",0.080834685996224,0.0259853438892216,0.132595316541551,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CIV","Côte d'Ivoire",25.3326808732979,"1_5m","1-5",0.164004444078885,0.0950537444212376,0.227701573202403,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CIV","Côte d'Ivoire",25.3326808732979,"6_11m","6-11",0.360969781423749,0.291199120194629,0.423872582712169,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CIV","Côte d'Ivoire",25.3326808732979,"12_23m","12-23",0.512047897996428,0.444164995945661,0.57164041106985,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","CIV","Côte d'Ivoire",25.3326808732979,"2_4y","24-35, 36-47, 48-59 (mean)",0.511298691650438,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COD","Democratic Republic of the Congo",30.3723948021125,"0_27d","<1",0.0963385348801771,0.0394059671802388,0.149896818382874,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COD","Democratic Republic of the Congo",30.3723948021125,"1_5m","1-5",0.183261852722946,0.111735920057142,0.249028283052415,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COD","Democratic Republic of the Congo",30.3723948021125,"6_11m","6-11",0.392699010534157,0.324659994090594,0.453883246099792,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COD","Democratic Republic of the Congo",30.3723948021125,"12_23m","12-23",0.537876714012104,0.473370447621196,0.594481679792556,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","COD","Democratic Republic of the Congo",30.3723948021125,"2_4y","24-35, 36-47, 48-59 (mean)",0.52955163408333,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","DJI","Djibouti",1.73951572103198,"0_27d","<1",0.00539275062597755,-0.00038603640066448,0.0111381561595918,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","DJI","Djibouti",1.73951572103198,"1_5m","1-5",0.0141029355131016,0.00638928553595253,0.0217567024846591,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","DJI","Djibouti",1.73951572103198,"6_11m","6-11",0.0361874861129177,0.0255024168420909,0.0467553968527274,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","DJI","Djibouti",1.73951572103198,"12_23m","12-23",0.0621753892773951,0.0482509982215439,0.0758960620567742,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","DJI","Djibouti",1.73951572103198,"2_4y","24-35, 36-47, 48-59 (mean)",0.0655075075297401,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GNQ","Equatorial Guinea",21.5579564557049,"0_27d","<1",0.0683292658313334,0.0161467684093337,0.117744060765032,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GNQ","Equatorial Guinea",21.5579564557049,"1_5m","1-5",0.146726733616827,0.0810213227068823,0.207734319506977,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GNQ","Equatorial Guinea",21.5579564557049,"6_11m","6-11",0.330278172421752,0.260263418362515,0.393666154319574,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GNQ","Equatorial Guinea",21.5579564557049,"12_23m","12-23",0.482155016394186,0.41190031714602,0.544017052101882,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GNQ","Equatorial Guinea",21.5579564557049,"2_4y","24-35, 36-47, 48-59 (mean)",0.486655190610276,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ERI","Eritrea",0.785014163979808,"0_27d","<1",0.00243656031786754,-0.000178376608142461,0.0050446605682537,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ERI","Eritrea",0.785014163979808,"1_5m","1-5",0.00639244874541689,0.00288720511867036,0.00988537006224433,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ERI","Eritrea",0.785014163979808,"6_11m","6-11",0.0165063323490054,0.0115934719898088,0.0213947734068065,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ERI","Eritrea",0.785014163979808,"12_23m","12-23",0.0285783831582551,0.0220850206200549,0.0350286297222229,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ERI","Eritrea",0.785014163979808,"2_4y","24-35, 36-47, 48-59 (mean)",0.0301553106937552,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SWZ","Eswatini",0.0563257291903543,"0_27d","<1",0.000175011768705491,-1.28710119622344e-05,0.000362859249888325,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SWZ","Eswatini",0.0563257291903543,"1_5m","1-5",0.000460089329597513,0.00020741675327085,0.00071269804924845,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SWZ","Eswatini",0.0563257291903543,"6_11m","6-11",0.00119370350219161,0.000836409633061308,0.0015508696055484,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SWZ","Eswatini",0.0563257291903543,"12_23m","12-23",0.00207869335359756,0.00160136369822861,0.00255579479992107,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SWZ","Eswatini",0.0563257291903543,"2_4y","24-35, 36-47, 48-59 (mean)",0.00219580167242646,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ETH","Ethiopia",3.3652421886278,"0_27d","<1",0.0104169191251812,-0.000684595189790693,0.0213952741343357,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ETH","Ethiopia",3.3652421886278,"1_5m","1-5",0.0270563876663029,0.0123419964047112,0.0415515600187064,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ETH","Ethiopia",3.3652421886278,"6_11m","6-11",0.0686776948588768,0.0487043476870173,0.0882316828165135,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ETH","Ethiopia",3.3652421886278,"12_23m","12-23",0.116444461859277,0.0910377802398704,0.141140993533089,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ETH","Ethiopia",3.3652421886278,"2_4y","24-35, 36-47, 48-59 (mean)",0.122351872401164,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GAB","Gabon",17.4512312690767,"0_27d","<1",0.0547032124458354,0.00754654545946598,0.0996192189447135,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GAB","Gabon",17.4512312690767,"1_5m","1-5",0.12480299368418,0.0651179995094943,0.180677562021419,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GAB","Gabon",17.4512312690767,"6_11m","6-11",0.288345453240406,0.221010050699362,0.349860425826692,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GAB","Gabon",17.4512312690767,"12_23m","12-23",0.435063280141946,0.364479256672925,0.497807898805716,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GAB","Gabon",17.4512312690767,"2_4y","24-35, 36-47, 48-59 (mean)",0.44395897243224,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GMB","Gambia",3.6315687366685,"0_27d","<1",0.0112392121884684,-0.000723657689926105,0.0230590752990827,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GMB","Gambia",3.6315687366685,"1_5m","1-5",0.0291547013435265,0.0133166377946676,0.0447385351500118,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GMB","Gambia",3.6315687366685,"6_11m","6-11",0.0738719649999864,0.0524453181941205,0.0948141002497822,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GMB","Gambia",3.6315687366685,"12_23m","12-23",0.124977254299382,0.0978297991273916,0.151307807825094,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GMB","Gambia",3.6315687366685,"2_4y","24-35, 36-47, 48-59 (mean)",0.131256872006283,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GHA","Ghana",16.1001407436532,"0_27d","<1",0.0503122360481985,0.00543729469142784,0.0931624077740297,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GHA","Ghana",16.1001407436532,"1_5m","1-5",0.116850637719949,0.0598992987682083,0.17035186222741,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GHA","Ghana",16.1001407436532,"6_11m","6-11",0.272352481412521,0.206909264448163,0.33239554117587,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GHA","Ghana",16.1001407436532,"12_23m","12-23",0.41547786661034,0.345763821512049,0.477763328203514,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GHA","Ghana",16.1001407436532,"2_4y","24-35, 36-47, 48-59 (mean)",0.425363851122502,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GIN","Guinea",24.6916965625587,"0_27d","<1",0.0787422174767778,0.0242550938153605,0.130186694821441,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GIN","Guinea",24.6916965625587,"1_5m","1-5",0.161252016572307,0.0927462746420952,0.224584964446966,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GIN","Guinea",24.6916965625587,"6_11m","6-11",0.356220862820916,0.286304303915806,0.419288108726168,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GIN","Guinea",24.6916965625587,"12_23m","12-23",0.507709185471565,0.43937312502322,0.567715611066437,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GIN","Guinea",24.6916965625587,"2_4y","24-35, 36-47, 48-59 (mean)",0.507898347712049,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GNB","Guinea-Bissau",6.13055917330613,"0_27d","<1",0.0189556619116441,-0.000887442911769343,0.0384053670457903,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GNB","Guinea-Bissau",6.13055917330613,"1_5m","1-5",0.0484739543451798,0.0224730267483542,0.0737832915773461,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GNB","Guinea-Bissau",6.13055917330613,"6_11m","6-11",0.12077309073459,0.0866992120941023,0.153575724215782,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GNB","Guinea-Bissau",6.13055917330613,"12_23m","12-23",0.200130053311731,0.158529526865926,0.239673937420315,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","GNB","Guinea-Bissau",6.13055917330613,"2_4y","24-35, 36-47, 48-59 (mean)",0.209235236764873,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","KEN","Kenya",5.29415926288388,"0_27d","<1",0.0163718762220046,-0.000879364534649207,0.0333257731446366,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","KEN","Kenya",5.29415926288388,"1_5m","1-5",0.0420860650106325,0.0194046279984924,0.064242874230694,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","KEN","Kenya",5.29415926288388,"6_11m","6-11",0.105451425545498,0.0754074691518639,0.134519125603863,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","KEN","Kenya",5.29415926288388,"12_23m","12-23",0.175963398657504,0.138826782386258,0.211498562120104,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","KEN","Kenya",5.29415926288388,"2_4y","24-35, 36-47, 48-59 (mean)",0.184255214895863,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","LBR","Liberia",15.178311726852,"0_27d","<1",0.0473418263229095,0.00419936027752499,0.0886151708772737,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","LBR","Liberia",15.178311726852,"1_5m","1-5",0.111224801994621,0.0563561582572022,0.162903080964731,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","LBR","Liberia",15.178311726852,"6_11m","6-11",0.26080968947285,0.196970676312508,0.319573645619617,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","LBR","Liberia",15.178311726852,"12_23m","12-23",0.400877971197491,0.332094639059857,0.462577744710446,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","LBR","Liberia",15.178311726852,"2_4y","24-35, 36-47, 48-59 (mean)",0.411301898286726,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MDG","Madagascar",9.69471831930549,"0_27d","<1",0.0300127924490554,-0.000188396636561228,0.0593020415189186,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MDG","Madagascar",9.69471831930549,"1_5m","1-5",0.0746856665206947,0.0356402491587506,0.112150196028663,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MDG","Madagascar",9.69471831930549,"6_11m","6-11",0.181651534346733,0.132795873040242,0.227754815253395,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MDG","Madagascar",9.69471831930549,"12_23m","12-23",0.292171872480184,0.235523334387329,0.344622693347116,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MDG","Madagascar",9.69471831930549,"2_4y","24-35, 36-47, 48-59 (mean)",0.303340072584573,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MWI","Malawi",26.7824414351149,"0_27d","<1",0.0854883898786709,0.0299193945347588,0.13787423402243,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MWI","Malawi",26.7824414351149,"1_5m","1-5",0.169969059058253,0.100130146530184,0.234387772560545,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MWI","Malawi",26.7824414351149,"6_11m","6-11",0.371077377747933,0.301729377737533,0.433538155308876,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MWI","Malawi",26.7824414351149,"12_23m","12-23",0.520897409871792,0.454048468963231,0.579561043758481,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MWI","Malawi",26.7824414351149,"2_4y","24-35, 36-47, 48-59 (mean)",0.517985680497129,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MLI","Mali",17.1533112244725,"0_27d","<1",0.053730979509763,0.00705062108771126,0.0982168092794093,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MLI","Mali",17.1533112244725,"1_5m","1-5",0.123080040446115,0.0639649884414994,0.17846169644486,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MLI","Mali",17.1533112244725,"6_11m","6-11",0.284913555680616,0.217949154349724,0.346144019032224,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MLI","Mali",17.1533112244725,"12_23m","12-23",0.430927544293685,0.36048700334376,0.493609259644659,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MLI","Mali",17.1533112244725,"2_4y","24-35, 36-47, 48-59 (mean)",0.440062105626373,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MRT","Mauritania",1.7175951233655,"0_27d","<1",0.00532492601724266,-0.000381460221604346,0.0109987618288759,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MRT","Mauritania",1.7175951233655,"1_5m","1-5",0.0139266813642107,0.00630893952269485,0.0214860247828443,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MRT","Mauritania",1.7175951233655,"6_11m","6-11",0.0357404140827133,0.0251853370526673,0.0461812030789978,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MRT","Mauritania",1.7175951233655,"12_23m","12-23",0.0614181283159944,0.0476586633392593,0.0749787960031884,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MRT","Mauritania",1.7175951233655,"2_4y","24-35, 36-47, 48-59 (mean)",0.0647119519943279,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MOZ","Mozambique",26.3699026410119,"0_27d","<1",0.0841767290766485,0.0287998968806525,0.136396031187738,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MOZ","Mozambique",26.3699026410119,"1_5m","1-5",0.168308026638404,0.0987067776496003,0.232534405672935,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MOZ","Mozambique",26.3699026410119,"6_11m","6-11",0.368287857982385,0.29880894077561,0.430882317846584,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MOZ","Mozambique",26.3699026410119,"12_23m","12-23",0.51850913346627,0.451367087377348,0.57743429309197,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","MOZ","Mozambique",26.3699026410119,"2_4y","24-35, 36-47, 48-59 (mean)",0.51621713257744,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NAM","Namibia",0.326548898765277,"0_27d","<1",0.00101421763010789,-7.45556795689328e-05,0.00210180560083861,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NAM","Namibia",0.326548898765277,"1_5m","1-5",0.00266437834392619,0.00120192206559877,0.0041246932701493,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NAM","Namibia",0.326548898765277,"6_11m","6-11",0.00690055507328835,0.00483932454752667,0.00895751626708685,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NAM","Namibia",0.326548898765277,"12_23m","12-23",0.0119909053152231,0.00924809685169303,0.0147261205576412,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NAM","Namibia",0.326548898765277,"2_4y","24-35, 36-47, 48-59 (mean)",0.0126613593481629,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NER","Niger",19.0698596431844,"0_27d","<1",0.0600278633748679,0.0105540967734762,0.107027868071999,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NER","Niger",19.0698596431844,"1_5m","1-5",0.133852853355915,0.0713976038720924,0.192107534109405,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NER","Niger",19.0698596431844,"6_11m","6-11",0.30605448436382,0.237148418082942,0.368736474975388,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NER","Niger",19.0698596431844,"12_23m","12-23",0.455757595091945,0.384839699022053,0.51849982056836,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NER","Niger",19.0698596431844,"2_4y","24-35, 36-47, 48-59 (mean)",0.463152740066342,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NGA","Nigeria",23.9095387529452,"0_27d","<1",0.0761663152238427,0.0221647550858068,0.12718560558534,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NGA","Nigeria",23.9095387529452,"1_5m","1-5",0.157795025592833,0.0898834636654523,0.220639126311355,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NGA","Nigeria",23.9095387529452,"6_11m","6-11",0.350180740787137,0.280132185484213,0.413413044549037,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NGA","Nigeria",23.9095387529452,"12_23m","12-23",0.502032358244407,0.433158729787859,0.562537547516922,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","NGA","Nigeria",23.9095387529452,"2_4y","24-35, 36-47, 48-59 (mean)",0.503345855626794,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","RWA","Rwanda",2.21889287274173,"0_27d","<1",0.00687535138297857,-0.000483068566153877,0.0141796511317307,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","RWA","Rwanda",2.21889287274173,"1_5m","1-5",0.0179472102532963,0.0081456313900542,0.0276519291830111,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","RWA","Rwanda",2.21889287274173,"6_11m","6-11",0.0459054709882011,0.0324086531029726,0.0592140233483076,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","RWA","Rwanda",2.21889287274173,"12_23m","12-23",0.0785665370531217,0.0611027743625325,0.0957054686557222,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","RWA","Rwanda",2.21889287274173,"2_4y","24-35, 36-47, 48-59 (mean)",0.0827123508553439,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","STP","Sao Tome and Principe",0.65883859495774,"0_27d","<1",0.00204528775927293,-0.000149965457871826,0.00423572256232596,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","STP","Sao Tome and Principe",0.65883859495774,"1_5m","1-5",0.00536795325071038,0.00242362881285718,0.00830358758057215,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","STP","Sao Tome and Principe",0.65883859495774,"6_11m","6-11",0.0138724046081633,0.00973934756737582,0.0179882114830875,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","STP","Sao Tome and Principe",0.65883859495774,"12_23m","12-23",0.0240422483953148,0.0185693794756252,0.029484598301652,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","STP","Sao Tome and Principe",0.65883859495774,"2_4y","24-35, 36-47, 48-59 (mean)",0.0253737814674496,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SEN","Senegal",1.96541433106832,"0_27d","<1",0.00609154948433177,-0.000432518340581112,0.0125730722497793,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SEN","Senegal",1.96541433106832,"1_5m","1-5",0.0159169373933967,0.00721709815135696,0.0245405392196869,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SEN","Senegal",1.96541433106832,"6_11m","6-11",0.0407810179656556,0.0287635331847833,0.0526498057552255,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SEN","Senegal",1.96541433106832,"12_23m","12-23",0.0699398101074284,0.0543315006153168,0.0852905036111045,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SEN","Senegal",1.96541433106832,"2_4y","24-35, 36-47, 48-59 (mean)",0.0736610323239036,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SLE","Sierra Leone",29.4660442627939,"0_27d","<1",0.0937092263499534,0.0370783767378139,0.147009531657845,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SLE","Sierra Leone",29.4660442627939,"1_5m","1-5",0.180096925182598,0.108942781541714,0.245569152946041,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SLE","Sierra Leone",29.4660442627939,"6_11m","6-11",0.387664004021835,0.319281108852774,0.449177366976473,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SLE","Sierra Leone",29.4660442627939,"12_23m","12-23",0.534179717719089,0.469129938990826,0.591258668888247,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SLE","Sierra Leone",29.4660442627939,"2_4y","24-35, 36-47, 48-59 (mean)",0.52721180312903,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SOM","Somalia",2.93502797184825,"0_27d","<1",0.00908829507264441,-0.000614835402291014,0.0186973326582056,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SOM","Somalia",2.93502797184825,"1_5m","1-5",0.0236522039283581,0.0107675058222104,0.0363690795597452,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SOM","Somalia",2.93502797184825,"6_11m","6-11",0.0602097485033196,0.0426253350122102,0.0774711833225104,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SOM","Somalia",2.93502797184825,"12_23m","12-23",0.102447837049876,0.0799362083877672,0.124408663224548,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SOM","Somalia",2.93502797184825,"2_4y","24-35, 36-47, 48-59 (mean)",0.107724543999311,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZAF","South Africa",0.0133945415187359,"0_27d","<1",4.16214486353983e-05,-3.06081024925575e-06,8.63017110219744e-05,TRUE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZAF","South Africa",0.0133945415187359,"1_5m","1-5",0.000109430770783181,4.93286357713396e-05,0.000169529293350235,TRUE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZAF","South Africa",0.0133945415187359,"6_11m","6-11",0.00028399800512946,0.000198965871987422,0.000369022906369088,TRUE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZAF","South Africa",0.0133945415187359,"12_23m","12-23",0.000494716011377294,0.000381045076012554,0.000608374020735214,TRUE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZAF","South Africa",0.0133945415187359,"2_4y","24-35, 36-47, 48-59 (mean)",0.000522620071146673,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SSD","South Sudan",26.8792249894059,"0_27d","<1",0.0857945116071898,0.0301817468075186,0.138218246298918,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SSD","South Sudan",26.8792249894059,"1_5m","1-5",0.170354630200777,0.100461543216738,0.23481710599602,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SSD","South Sudan",26.8792249894059,"6_11m","6-11",0.371722111963848,0.3024058176338,0.434150807771569,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SSD","South Sudan",26.8792249894059,"12_23m","12-23",0.521443369512746,0.454662840151727,0.580046133942106,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","SSD","South Sudan",26.8792249894059,"2_4y","24-35, 36-47, 48-59 (mean)",0.518385880735835,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TGO","Togo",24.9833499971076,"0_27d","<1",0.0796965967071726,0.0250409259620252,0.131288300539094,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TGO","Togo",24.9833499971076,"1_5m","1-5",0.162513307249156,0.0938007022893251,0.226015775661437,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TGO","Togo",24.9833499971076,"6_11m","6-11",0.358403667490559,0.288549719287092,0.421398985917785,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TGO","Togo",24.9833499971076,"12_23m","12-23",0.509717336045734,0.441586507510849,0.569535668805922,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TGO","Togo",24.9833499971076,"2_4y","24-35, 36-47, 48-59 (mean)",0.509481218611521,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","UGA","Uganda",24.3408208658391,"0_27d","<1",0.077589433898401,0.0233138566595281,0.128848854611763,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","UGA","Uganda",24.3408208658391,"1_5m","1-5",0.159714707336626,0.0914681513106527,0.222834759084158,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","UGA","Uganda",24.3408208658391,"6_11m","6-11",0.353545227324748,0.283562579356866,0.416691868580139,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","UGA","Uganda",24.3408208658391,"12_23m","12-23",0.505215977973197,0.436636035682755,0.565447483404955,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","UGA","Uganda",24.3408208658391,"2_4y","24-35, 36-47, 48-59 (mean)",0.505912620686564,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TZA","United Republic of Tanzania",9.25500097484039,"0_27d","<1",0.0286426360571491,-0.000350399808945356,0.0567953702360615,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TZA","United Republic of Tanzania",9.25500097484039,"1_5m","1-5",0.0715472088008311,0.0340053165069685,0.107630093399219,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TZA","United Republic of Tanzania",9.25500097484039,"6_11m","6-11",0.174535093186527,0.127289751723279,0.219222744632514,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TZA","United Republic of Tanzania",9.25500097484039,"12_23m","12-23",0.281758933606563,0.226634745918429,0.332953960975896,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","TZA","United Republic of Tanzania",9.25500097484039,"2_4y","24-35, 36-47, 48-59 (mean)",0.292789676595138,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZMB","Zambia",25.532184652695,"0_27d","<1",0.0814820079327188,0.0265258706663286,0.133335672383206,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZMB","Zambia",25.532184652695,"1_5m","1-5",0.164846533115888,0.0957643626946629,0.228650935140008,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZMB","Zambia",25.532184652695,"6_11m","6-11",0.362412012168294,0.292692624614169,0.425259149877335,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZMB","Zambia",25.532184652695,"12_23m","12-23",0.513343175859519,0.445602545599297,0.572806724485208,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZMB","Zambia",25.532184652695,"2_4y","24-35, 36-47, 48-59 (mean)",0.512299302513526,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZWE","Zimbabwe",2.29532123434793,"0_27d","<1",0.00711162212472782,-0.000497945428067359,0.0146633129786202,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZWE","Zimbabwe",2.29532123434793,"1_5m","1-5",0.0185582734621161,0.00842553807440161,0.028587464103188,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZWE","Zimbabwe",2.29532123434793,"6_11m","6-11",0.0474443364788464,0.0335047739528971,0.0611828515519184,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZWE","Zimbabwe",2.29532123434793,"12_23m","12-23",0.0811498458348988,0.0631336919900902,0.0988195449117382,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"country","ZWE","Zimbabwe",2.29532123434793,"2_4y","24-35, 36-47, 48-59 (mean)",0.0854211870491897,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Abia",19.5275436741584,"0_27d","<1",0.0615469395680528,0.0115015090847767,0.109058683722746,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Abia",19.5275436741584,"1_5m","1-5",0.136314554096467,0.0731753883761932,0.19515241599091,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Abia",19.5275436741584,"6_11m","6-11",0.310775419455918,0.241557306973609,0.373676446758731,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Abia",19.5275436741584,"12_23m","12-23",0.46107986991108,0.390192694573751,0.523726751006948,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Abia",19.5275436741584,"2_4y","24-35, 36-47, 48-59 (mean)",0.467990421291607,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Adamawa",26.7365615638754,"0_27d","<1",0.0853430568624222,0.0297949804125752,0.137710786133082,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Adamawa",26.7365615638754,"1_5m","1-5",0.169785736011112,0.0999727102249174,0.234183527587418,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Adamawa",26.7365615638754,"6_11m","6-11",0.370770464691631,0.301407559527584,0.433246360586665,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Adamawa",26.7365615638754,"12_23m","12-23",0.520636714687173,0.45375529030733,0.579329272707847,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Adamawa",26.7365615638754,"2_4y","24-35, 36-47, 48-59 (mean)",0.517794037317679,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Akwa Ibom",22.9878143017704,"0_27d","<1",0.0731064201857495,0.0197475653830641,0.123560750311619,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Akwa Ibom",22.9878143017704,"1_5m","1-5",0.153579319594752,0.0864504621035866,0.21577545770822,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Akwa Ibom",22.9878143017704,"6_11m","6-11",0.342701355406813,0.272578084488479,0.406064762456007,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Akwa Ibom",22.9878143017704,"12_23m","12-23",0.494767261984877,0.425298441806806,0.555838824650535,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Akwa Ibom",22.9878143017704,"2_4y","24-35, 36-47, 48-59 (mean)",0.497369232322199,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Anambra",17.507404925796,"0_27d","<1",0.0548867922886512,0.00764203578461287,0.0998822928814008,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Anambra",17.507404925796,"1_5m","1-5",0.125125896284423,0.065335527490562,0.181091482703805,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Anambra",17.507404925796,"6_11m","6-11",0.288986545050477,0.22158408613435,0.350552674843553,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Anambra",17.507404925796,"12_23m","12-23",0.435831589474402,0.365223480691381,0.498585745134921,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Anambra",17.507404925796,"2_4y","24-35, 36-47, 48-59 (mean)",0.444680943960133,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Bauchi",26.4390565044287,"0_27d","<1",0.0843973529550052,0.0289876575367018,0.136645158238565,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Bauchi",26.4390565044287,"1_5m","1-5",0.168588455838958,0.0989465847289304,0.232847749035725,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Bauchi",26.4390565044287,"6_11m","6-11",0.368760176276349,0.299302696387553,0.431332598255502,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Bauchi",26.4390565044287,"12_23m","12-23",0.518916472666982,0.451823700842171,0.577797579671458,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Bauchi",26.4390565044287,"2_4y","24-35, 36-47, 48-59 (mean)",0.516520782431934,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Bayelsa",21.6685063526171,"0_27d","<1",0.0686992485696919,0.0164170817286474,0.118202366569182,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Bayelsa",21.6685063526171,"1_5m","1-5",0.147270402203727,0.081444769095591,0.208378829608488,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Bayelsa",21.6685063526171,"6_11m","6-11",0.331275777667224,0.26124115906438,0.394671087836704,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Bayelsa",21.6685063526171,"12_23m","12-23",0.483191998874681,0.412990171682105,0.544998231473384,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Bayelsa",21.6685063526171,"2_4y","24-35, 36-47, 48-59 (mean)",0.487550523781036,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Benue",29.0999744175842,"0_27d","<1",0.0926241299169782,0.0361221063361729,0.145814034099972,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Benue",29.0999744175842,"1_5m","1-5",0.17878281517766,0.107787953138922,0.244128492749957,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Benue",29.0999744175842,"6_11m","6-11",0.385552741464726,0.317031704147725,0.447199180672983,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Benue",29.0999744175842,"12_23m","12-23",0.532581003444913,0.467301141591287,0.589861110284311,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Benue",29.0999744175842,"2_4y","24-35, 36-47, 48-59 (mean)",0.526164929274805,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Borno",21.1840391625138,"0_27d","<1",0.0670777579838172,0.0152441936404905,0.116183013059828,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Borno",21.1840391625138,"1_5m","1-5",0.144870352273535,0.079585362262964,0.205524679378571,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Borno",21.1840391625138,"6_11m","6-11",0.326856274446872,0.256924832162127,0.39020640863293,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Borno",21.1840391625138,"12_23m","12-23",0.478566875700487,0.408145264775972,0.54060939799048,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Borno",21.1840391625138,"2_4y","24-35, 36-47, 48-59 (mean)",0.483539005079806,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Cross River",27.2590319911498,"0_27d","<1",0.086989630920095,0.0312096489836693,0.139557972297174,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Cross River",27.2590319911498,"1_5m","1-5",0.171852737943623,0.101752565799844,0.236482219109071,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Cross River",27.2590319911498,"6_11m","6-11",0.374217199867363,0.305028519142637,0.436517722340584,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Cross River",27.2590319911498,"12_23m","12-23",0.523534484899744,0.457020709909344,0.58190046798682,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Cross River",27.2590319911498,"2_4y","24-35, 36-47, 48-59 (mean)",0.519903922924132,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Delta",16.0201765328144,"0_27d","<1",0.0500537782581759,0.00532356095461695,0.0927724948751961,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Delta",16.0201765328144,"1_5m","1-5",0.116368956226307,0.0595913371887279,0.169718599585802,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Delta",16.0201765328144,"6_11m","6-11",0.271371456029604,0.20605723540633,0.331312559589698,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Delta",16.0201765328144,"12_23m","12-23",0.414251512717608,0.344607038112792,0.476495308454871,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Delta",16.0201765328144,"2_4y","24-35, 36-47, 48-59 (mean)",0.424188610153618,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ebonyi",20.9617781571196,"0_27d","<1",0.0663339717177052,0.014716753884665,0.115247056310555,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ebonyi",20.9617781571196,"1_5m","1-5",0.143754002324837,0.0787293477472002,0.2041891199487,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ebonyi",20.9617781571196,"6_11m","6-11",0.324786930202607,0.254917367398218,0.388104527368728,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ebonyi",20.9617781571196,"12_23m","12-23",0.476373837523962,0.40586238252073,0.538517087686426,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ebonyi",20.9617781571196,"2_4y","24-35, 36-47, 48-59 (mean)",0.481621028328574,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Edo",22.5798567611091,"0_27d","<1",0.0717460479308155,0.0186990226836605,0.121925464816601,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Edo",22.5798567611091,"1_5m","1-5",0.151663458355682,0.0849129737819597,0.21354486811666,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Edo",22.5798567611091,"6_11m","6-11",0.339261117143128,0.269138106531623,0.40265613076756,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Edo",22.5798567611091,"12_23m","12-23",0.491341277949652,0.421628036764069,0.552651732856646,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Edo",22.5798567611091,"2_4y","24-35, 36-47, 48-59 (mean)",0.494498541622216,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ekiti",23.2271470354517,"0_27d","<1",0.0739029867672877,0.0203692974623985,0.12451123091905,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ekiti",23.2271470354517,"1_5m","1-5",0.154688915310336,0.0873475359073527,0.217061413832244,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ekiti",23.2271470354517,"6_11m","6-11",0.344682056583469,0.274568673695063,0.408018937986757,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ekiti",23.2271470354517,"12_23m","12-23",0.496715939879984,0.427396506887895,0.55764355576277,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ekiti",23.2271470354517,"2_4y","24-35, 36-47, 48-59 (mean)",0.498987633959045,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Enugu",17.8251220045796,"0_27d","<1",0.0559267087036897,0.00819403833938892,0.101362147645533,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Enugu",17.8251220045796,"1_5m","1-5",0.126940414436189,0.0665665417543617,0.183409344060317,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Enugu",17.8251220045796,"6_11m","6-11",0.292576689979337,0.224812157505095,0.354417455838931,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Enugu",17.8251220045796,"12_23m","12-23",0.440108755162043,0.369381874572572,0.502903273143752,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Enugu",17.8251220045796,"2_4y","24-35, 36-47, 48-59 (mean)",0.448688266132726,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Federal Capital Territory",21.3405460963516,"0_27d","<1",0.0676015847105954,0.0156197165021948,0.116838462321628,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Federal Capital Territory",21.3405460963516,"1_5m","1-5",0.145650658953472,0.0801870665337291,0.206455171492321,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Federal Capital Territory",21.3405460963516,"6_11m","6-11",0.328297552062857,0.258328143685055,0.391666038392647,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Federal Capital Territory",21.3405460963516,"12_23m","12-23",0.480084027150599,0.40972996329278,0.542052616575528,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Federal Capital Territory",21.3405460963516,"2_4y","24-35, 36-47, 48-59 (mean)",0.48485998673844,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Gombe",27.1584886647004,"0_27d","<1",0.0866742375364553,0.0309378337282518,0.139204916451463,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Gombe",27.1584886647004,"1_5m","1-5",0.171458472177309,0.101412284118536,0.236044460441617,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Gombe",27.1584886647004,"6_11m","6-11",0.37356209198589,0.30433916252039,0.435896874662581,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Gombe",27.1584886647004,"12_23m","12-23",0.522988809492046,0.456404710424535,0.581417131028639,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Gombe",27.1584886647004,"2_4y","24-35, 36-47, 48-59 (mean)",0.519510100384691,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Imo",21.9533955469033,"0_27d","<1",0.0696524551996149,0.0171205208330028,0.11937671661467,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Imo",21.9533955469033,"1_5m","1-5",0.14866063675773,0.0825334495641025,0.210021650313678,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Imo",21.9533955469033,"6_11m","6-11",0.333817411385607,0.263741118730562,0.397223921281891,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Imo",21.9533955469033,"12_23m","12-23",0.485815179742183,0.415756434548216,0.547472929070055,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Imo",21.9533955469033,"2_4y","24-35, 36-47, 48-59 (mean)",0.489804443702173,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Jigawa",26.1426379806613,"0_27d","<1",0.0834496358857878,0.0281827291422119,0.135573533061004,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Jigawa",26.1426379806613,"1_5m","1-5",0.167380754502286,0.0979153108901719,0.231496979893005,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Jigawa",26.1426379806613,"6_11m","6-11",0.36672212447657,0.297174328845265,0.42938784952382,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Jigawa",26.1426379806613,"12_23m","12-23",0.517150281806899,0.449846026192282,0.576220728270805,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Jigawa",26.1426379806613,"2_4y","24-35, 36-47, 48-59 (mean)",0.515198410353801,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kaduna",21.7448812170986,"0_27d","<1",0.0689548311766152,0.0166047129941614,0.118518140321107,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kaduna",21.7448812170986,"1_5m","1-5",0.147644630290354,0.0817369976014564,0.208821792476456,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kaduna",21.7448812170986,"6_11m","6-11",0.331961269908293,0.261914150951308,0.395360654214224,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kaduna",21.7448812170986,"12_23m","12-23",0.483902148693441,0.413737733996728,0.545669220809514,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kaduna",21.7448812170986,"2_4y","24-35, 36-47, 48-59 (mean)",0.488162270099418,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kano",20.6018660855356,"0_27d","<1",0.065130167591295,0.013878050278831,0.113718537757928,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kano",20.6018660855356,"1_5m","1-5",0.141925696724733,0.0773398601692249,0.20199055084749,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kano",20.6018660855356,"6_11m","6-11",0.321379123012374,0.2516305427681,0.384627084612901,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kano",20.6018660855356,"12_23m","12-23",0.472724853453015,0.40208417289878,0.535019700826418,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kano",20.6018660855356,"2_4y","24-35, 36-47, 48-59 (mean)",0.478408261749159,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Katsina",28.8770810366152,"0_27d","<1",0.0919572876159753,0.0355358534355189,0.145078051422816,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Katsina",28.8770810366152,"1_5m","1-5",0.177972444032686,0.10707732997309,0.24323871993391,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Katsina",28.8770810366152,"6_11m","6-11",0.38424472638658,0.315640067367852,0.445972011358915,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Katsina",28.8770810366152,"12_23m","12-23",0.531576531110413,0.466153791111973,0.588981728158013,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Katsina",28.8770810366152,"2_4y","24-35, 36-47, 48-59 (mean)",0.525497162369196,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kebbi",37.0335515628677,"0_27d","<1",0.112412903638597,0.0538042654609593,0.167391243830681,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kebbi",37.0335515628677,"1_5m","1-5",0.202914673661841,0.129440343187608,0.270187846988034,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kebbi",37.0335515628677,"6_11m","6-11",0.42245054463163,0.356751705985315,0.481439163539102,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kebbi",37.0335515628677,"12_23m","12-23",0.556022703070784,0.494303105571583,0.610209510162465,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kebbi",37.0335515628677,"2_4y","24-35, 36-47, 48-59 (mean)",0.538851640518975,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kogi",22.6684013681003,"0_27d","<1",0.0720415510884675,0.0189253215011114,0.12228202217608,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kogi",22.6684013681003,"1_5m","1-5",0.152081920334331,0.0852475351052102,0.214033197596678,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kogi",22.6684013681003,"6_11m","6-11",0.340014726373322,0.269889745210296,0.403404405640703,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kogi",22.6684013681003,"12_23m","12-23",0.492096212655596,0.422434838465446,0.553355578938678,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kogi",22.6684013681003,"2_4y","24-35, 36-47, 48-59 (mean)",0.495133811205468,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kwara",21.6430039273656,"0_27d","<1",0.0686139016707411,0.0163545888588676,0.118096771117316,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kwara",21.6430039273656,"1_5m","1-5",0.147145193651358,0.0813471327830178,0.208230500694469,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kwara",21.6430039273656,"6_11m","6-11",0.331046208811288,0.261015985556768,0.394439979756656,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kwara",21.6430039273656,"12_23m","12-23",0.482953734697881,0.412739574662467,0.544772933900298,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Kwara",21.6430039273656,"2_4y","24-35, 36-47, 48-59 (mean)",0.48734501933855,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Lagos",10.7082957493022,"0_27d","<1",0.0331798736169923,0.000280053684084347,0.0649969921837761,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Lagos",10.7082957493022,"1_5m","1-5",0.0818095857930692,0.039422543925001,0.122326230529742,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Lagos",10.7082957493022,"6_11m","6-11",0.197625162007737,0.145289128185865,0.246756532677975,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Lagos",10.7082957493022,"12_23m","12-23",0.315187920635728,0.255360109324527,0.370208889000276,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Lagos",10.7082957493022,"2_4y","24-35, 36-47, 48-59 (mean)",0.32655492411674,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Nasarawa",26.1200203095755,"0_27d","<1",0.0833771067914623,0.0281213048403723,0.135491360662052,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Nasarawa",26.1200203095755,"1_5m","1-5",0.167287993226091,0.0978362623507718,0.231393086101808,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Nasarawa",26.1200203095755,"6_11m","6-11",0.366565159283297,0.29701064632258,0.429237874891186,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Nasarawa",26.1200203095755,"12_23m","12-23",0.517013338636586,0.44969292191399,0.57609828340511,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Nasarawa",26.1200203095755,"2_4y","24-35, 36-47, 48-59 (mean)",0.515095261134102,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Niger",29.8291519522044,"0_27d","<1",0.0947726654714866,0.0380181186793133,0.148178834665152,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Niger",29.8291519522044,"1_5m","1-5",0.181379942681577,0.110073121542357,0.246973190195744,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Niger",29.8291519522044,"6_11m","6-11",0.38971359415258,0.321468337662687,0.451094889398089,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Niger",29.8291519522044,"12_23m","12-23",0.53570457314577,0.470877134562908,0.59258943909053,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Niger",29.8291519522044,"2_4y","24-35, 36-47, 48-59 (mean)",0.52819113045864,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ogun",22.075564089681,"0_27d","<1",0.0700610542975768,0.017425060902508,0.119877366780337,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ogun",22.075564089681,"1_5m","1-5",0.14925206028714,0.0829991130808282,0.210718258564267,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ogun",22.075564089681,"6_11m","6-11",0.334894564205271,0.264804453756525,0.39830261080336,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ogun",22.075564089681,"12_23m","12-23",0.486918687195155,0.416924146516792,0.548510829291056,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ogun",22.075564089681,"2_4y","24-35, 36-47, 48-59 (mean)",0.490747798708507,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ondo",26.7117955128391,"0_27d","<1",0.0852645483142357,0.0297278099131079,0.137622457780815,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ondo",26.7117955128391,"1_5m","1-5",0.169686632061604,0.0998876354884326,0.234073082252008,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ondo",26.7117955128391,"6_11m","6-11",0.370604449354535,0.30123353254595,0.433088481455561,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ondo",26.7117955128391,"12_23m","12-23",0.520495484650335,0.453596512164042,0.579203673916253,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Ondo",26.7117955128391,"2_4y","24-35, 36-47, 48-59 (mean)",0.517690069243291,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Osun",21.7450044277011,"0_27d","<1",0.0689552434712626,0.0166050162604807,0.118518649176611,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Osun",21.7450044277011,"1_5m","1-5",0.147645233103612,0.0817374688219613,0.208822505564985,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Osun",21.7450044277011,"6_11m","6-11",0.331962373323208,0.261915234997593,0.395361763557732,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Osun",21.7450044277011,"12_23m","12-23",0.483903290218117,0.413738936449208,0.545670298766807,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Osun",21.7450044277011,"2_4y","24-35, 36-47, 48-59 (mean)",0.488163252521916,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Oyo",23.1825101609949,"0_27d","<1",0.0737545183109996,0.0202529965118251,0.124334456451702,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Oyo",23.1825101609949,"1_5m","1-5",0.154482770879282,0.0871805143208457,0.216822826467077,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Oyo",23.1825101609949,"6_11m","6-11",0.344314727941796,0.274198964052856,0.40765698214662,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Oyo",23.1825101609949,"12_23m","12-23",0.496355878510985,0.427008276472874,0.557310532255126,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Oyo",23.1825101609949,"2_4y","24-35, 36-47, 48-59 (mean)",0.498689412359481,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Plateau",17.285590797895,"0_27d","<1",0.0541623731614861,0.00726863743394124,0.0988409855098313,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Plateau",17.285590797895,"1_5m","1-5",0.123847209384679,0.0644767963853361,0.179449842038123,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Plateau",17.285590797895,"6_11m","6-11",0.286443964495929,0.219311637407844,0.347803502394103,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Plateau",17.285590797895,"12_23m","12-23",0.432776533343767,0.362268997691497,0.495488756292466,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Plateau",17.285590797895,"2_4y","24-35, 36-47, 48-59 (mean)",0.44180646453942,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Rivers",19.860193965069,"0_27d","<1",0.0626542409334239,0.0122155651244678,0.110517395274802,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Rivers",19.860193965069,"1_5m","1-5",0.138076848358346,0.0744667497569679,0.197315148709349,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Rivers",19.860193965069,"6_11m","6-11",0.314129267475965,0.244717975466771,0.377161581432075,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Rivers",19.860193965069,"12_23m","12-23",0.464809894642775,0.393974565023039,0.527365631306932,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Rivers",19.860193965069,"2_4y","24-35, 36-47, 48-59 (mean)",0.471353292344326,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Sokoto",30.2611778459447,"0_27d","<1",0.0960204827687008,0.03912370493563,0.149548207431853,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Sokoto",30.2611778459447,"1_5m","1-5",0.182880216117459,0.111398265241839,0.248611931425088,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Sokoto",30.2611778459447,"6_11m","6-11",0.392095595668294,0.324014370068711,0.45332008781984,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Sokoto",30.2611778459447,"12_23m","12-23",0.53744242491486,0.472871551628249,0.594103655514049,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Sokoto",30.2611778459447,"2_4y","24-35, 36-47, 48-59 (mean)",0.529283001592635,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Taraba",27.3054117757794,"0_27d","<1",0.0871348754142445,0.031334953550917,0.139720444399487,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Taraba",27.3054117757794,"1_5m","1-5",0.172034049418152,0.101909172669774,0.236683423924074,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Taraba",27.3054117757794,"6_11m","6-11",0.374518096079068,0.305345319640044,0.436802740708768,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Taraba",27.3054117757794,"12_23m","12-23",0.523784308159229,0.457302895359501,0.582121623247627,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Taraba",27.3054117757794,"2_4y","24-35, 36-47, 48-59 (mean)",0.520083666938532,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Yobe",34.027118778027,"0_27d","<1",0.105958797755243,0.0480052896714526,0.160384335501825,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Yobe",34.027118778027,"1_5m","1-5",0.194798529114444,0.122046594221966,0.261521847914353,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Yobe",34.027118778027,"6_11m","6-11",0.410467130728763,0.343768603972438,0.470386503823142,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Yobe",34.027118778027,"12_23m","12-23",0.549517088801243,0.486793420953653,0.604574723770678,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Yobe",34.027118778027,"2_4y","24-35, 36-47, 48-59 (mean)",0.535997733670979,NA,NA,NA
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Zamfara",43.7603097358961,"0_27d","<1",0.120938622042255,0.0611219525083628,0.176944323832588,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Zamfara",43.7603097358961,"1_5m","1-5",0.21706625837998,0.142605977285816,0.285060045290909,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Zamfara",43.7603097358961,"6_11m","6-11",0.442756649313661,0.378729459577839,0.500185295003469,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Zamfara",43.7603097358961,"12_23m","12-23",0.564373464704583,0.503399272194189,0.617861054912315,FALSE
+"PfPR-ACM primary_map_regional17_dhsmics_gamma2_v9",2023,"nigeria_state","NGA","Zamfara",43.7603097358961,"2_4y","24-35, 36-47, 48-59 (mean)",0.541861340148508,NA,NA,NA
