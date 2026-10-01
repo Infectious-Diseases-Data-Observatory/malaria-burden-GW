@@ -1,38 +1,38 @@
-gbd_location_id,state_name,gbd_name,igme_code
-25318,Abia,Abia,NGA-1_1
-25319,Adamawa,Adamawa,NGA-2_1
-25320,Akwa Ibom,Akwa Ibom,NGA-3_1
-25321,Anambra,Anambra,NGA-4_1
-25322,Bauchi,Bauchi,NGA-5_1
-25323,Bayelsa,Bayelsa,NGA-6_1
-25324,Benue,Benue,NGA-7_1
-25325,Borno,Borno,NGA-8_1
-25326,Cross River,Cross River,NGA-9_1
-25327,Delta,Delta,NGA-10_1
-25328,Ebonyi,Ebonyi,NGA-11_1
-25329,Edo,Edo,NGA-12_1
-25330,Ekiti,Ekiti,NGA-13_1
-25331,Enugu,Enugu,NGA-14_1
-25332,Federal Capital Territory,FCT (Abuja),NGA-15_1
-25333,Gombe,Gombe,NGA-16_1
-25334,Imo,Imo,NGA-17_1
-25335,Jigawa,Jigawa,NGA-18_1
-25336,Kaduna,Kaduna,NGA-19_1
-25337,Kano,Kano,NGA-20_1
-25338,Katsina,Katsina,NGA-21_1
-25339,Kebbi,Kebbi,NGA-22_1
-25340,Kogi,Kogi,NGA-23_1
-25341,Kwara,Kwara,NGA-24_1
-25342,Lagos,Lagos,NGA-25_1
-25343,Nasarawa,Nasarawa,NGA-26_1
-25344,Niger,Niger,NGA-27_1
-25345,Ogun,Ogun,NGA-28_1
-25346,Ondo,Ondo,NGA-29_1
-25347,Osun,Osun,NGA-30_1
-25348,Oyo,Oyo,NGA-31_1
-25349,Plateau,Plateau,NGA-32_1
-25350,Rivers,Rivers,NGA-33_1
-25351,Sokoto,Sokoto,NGA-34_1
-25352,Taraba,Taraba,NGA-35_1
-25353,Yobe,Yobe,NGA-36_1
-25354,Zamfara,Zamfara,NGA-37_1
+gbd_location_id,state_name,gbd_name,igme_code,map_name
+25318,Abia,Abia,NGA-1_1,Abia
+25319,Adamawa,Adamawa,NGA-2_1,Adamawa
+25320,Akwa Ibom,Akwa Ibom,NGA-3_1,Akwa Ibom
+25321,Anambra,Anambra,NGA-4_1,Anambra
+25322,Bauchi,Bauchi,NGA-5_1,Bauchi
+25323,Bayelsa,Bayelsa,NGA-6_1,Bayelsa
+25324,Benue,Benue,NGA-7_1,Benue
+25325,Borno,Borno,NGA-8_1,Borno
+25326,Cross River,Cross River,NGA-9_1,Cross River
+25327,Delta,Delta,NGA-10_1,Delta
+25328,Ebonyi,Ebonyi,NGA-11_1,Ebonyi
+25329,Edo,Edo,NGA-12_1,Edo
+25330,Ekiti,Ekiti,NGA-13_1,Ekiti
+25331,Enugu,Enugu,NGA-14_1,Enugu
+25332,Federal Capital Territory,FCT (Abuja),NGA-15_1,Abuja
+25333,Gombe,Gombe,NGA-16_1,Gombe
+25334,Imo,Imo,NGA-17_1,Imo
+25335,Jigawa,Jigawa,NGA-18_1,Jigawa
+25336,Kaduna,Kaduna,NGA-19_1,Kaduna
+25337,Kano,Kano,NGA-20_1,Kano
+25338,Katsina,Katsina,NGA-21_1,Katsina
+25339,Kebbi,Kebbi,NGA-22_1,Kebbi
+25340,Kogi,Kogi,NGA-23_1,Kogi
+25341,Kwara,Kwara,NGA-24_1,Kwara
+25342,Lagos,Lagos,NGA-25_1,Lagos
+25343,Nasarawa,Nasarawa,NGA-26_1,Nassarawa
+25344,Niger,Niger,NGA-27_1,Niger
+25345,Ogun,Ogun,NGA-28_1,Ogun
+25346,Ondo,Ondo,NGA-29_1,Ondo
+25347,Osun,Osun,NGA-30_1,Osun
+25348,Oyo,Oyo,NGA-31_1,Oyo
+25349,Plateau,Plateau,NGA-32_1,Plateau
+25350,Rivers,Rivers,NGA-33_1,Rivers
+25351,Sokoto,Sokoto,NGA-34_1,Sokoto
+25352,Taraba,Taraba,NGA-35_1,Taraba
+25353,Yobe,Yobe,NGA-36_1,Yobe
+25354,Zamfara,Zamfara,NGA-37_1,Zamfara

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "pfpr_admin0_mean",
+    "url": "https://data.malariaatlas.org/map-platform-app-backend/api/v1/trends/malaria/Pf_PR-rate/admin0/mean?version=202608",
+    "fetched_utc": "2026-10-01T19:48:06+00:00"
+  },
+  {
+    "name": "pfpr_admin0_lci",
+    "url": "https://data.malariaatlas.org/map-platform-app-backend/api/v1/trends/malaria/Pf_PR-rate/admin0/lci?version=202608",
+    "fetched_utc": "2026-10-01T19:48:09+00:00"
+  },
+  {
+    "name": "pfpr_admin0_uci",
+    "url": "https://data.malariaatlas.org/map-platform-app-backend/api/v1/trends/malaria/Pf_PR-rate/admin0/uci?version=202608",
+    "fetched_utc": "2026-10-01T19:48:11+00:00"
+  },
+  {
+    "name": "pfpr_admin1_mean",
+    "url": "https://data.malariaatlas.org/map-platform-app-backend/api/v1/trends/malaria/Pf_PR-rate/admin1/mean?version=202608",
+    "fetched_utc": "2026-10-01T19:48:15+00:00"
+  },
+  {
+    "name": "pfpr_admin1_lci",
+    "url": "https://data.malariaatlas.org/map-platform-app-backend/api/v1/trends/malaria/Pf_PR-rate/admin1/lci?version=202608",
+    "fetched_utc": "2026-10-01T19:48:18+00:00"
+  },
+  {
+    "name": "pfpr_admin1_uci",
+    "url": "https://data.malariaatlas.org/map-platform-app-backend/api/v1/trends/malaria/Pf_PR-rate/admin1/uci?version=202608",
+    "fetched_utc": "2026-10-01T19:48:20+00:00"
+  },
+  {
+    "name": "admin1_units",
+    "url": "https://data.malariaatlas.org/admin-unit-metadata/admin-units/ADMIN1?mapAdmin=2023_mg_5k",
+    "fetched_utc": "2026-10-01T19:48:23+00:00"
+  }
+]
