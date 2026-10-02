@@ -22,23 +22,31 @@ Every column is copied from the full file below. The age-band suffixes are `0_27
 | `blend_live_births` | Live births |
 | `blend_deaths_all_u5`, `blend_deaths_all_{band}` | All-cause deaths, under 5 and by band |
 | `blend_q_all_{band}` | Probability of death, all causes |
-| `blend_q_malaria_{band}` | Probability of death, malaria |
+| `blend_q_malaria_adj_{band}` | Probability of death, malaria, × 1.6 for indirect malaria deaths |
 | `blend_pop_{band}` | Population |
-| `blend_malaria_fraction_{band}` | Share of all-cause deaths assigned to malaria |
+| `blend_malaria_fraction_adj_{band}` | Share of all-cause deaths due to malaria, × 1.6 for indirect malaria deaths |
 | `map_pfpr_2_10` | MAP population-weighted PfPR2–10 |
 | `pfpracm_share_{band}`, `pfpracm_share_u5` | PfPR-ACM malaria share of all-cause deaths; under 5 weighted by `blend_deaths_all_{band}` |
-| `combined_q_malaria_{band}` | 0.5 × `blend_q_malaria` + 0.5 × PfPR-ACM malaria *q* |
+| `combined_q_malaria_{band}` | 0.5 × `blend_q_malaria_adj` + 0.5 × PfPR-ACM malaria *q* |
 
 All `blend_` columns average IHME and IGME/WPP for countries and use IHME only for Nigerian
-states. `combined_q_malaria` is therefore ¼ IHME + ¼ IGME + ½ PfPR-ACM for countries and
-½ IHME + ½ PfPR-ACM for states.
+states.
+
+**Indirect deaths:** the IHME/IGME malaria share and malaria *q* count only deaths assigned to
+malaria as the cause. In the main file they are multiplied by 1.6 (a 60% adjustment for
+indirect malaria deaths), for every age band, country and Nigerian state. PfPR-ACM is not
+adjusted, because it already counts indirect deaths. The unadjusted values (`blend_q_malaria`,
+`blend_malaria_fraction`) are in the full file.
+
+`combined_q_malaria` is therefore 0.5 × (1.6 × IHME/IGME blend) + 0.5 × PfPR-ACM for countries,
+and 0.5 × (1.6 × IHME) + 0.5 × PfPR-ACM for states.
 
 What's blank in the main file:
 - **Mauritius and Seychelles:** every `blend_`, `pfpracm_` and `combined_` column (no IHME).
 - **Lesotho:** `map_`, `pfpracm_` and `combined_` columns (no MAP PfPR).
 
 **Full file:** [`output/malaria_burden_inputs_2023.csv`](output/malaria_burden_inputs_2023.csv),
-the same rows with all 169 columns: every source on the five bands, uncertainty bounds and the
+the same rows with all 179 columns: every source on the five bands, uncertainty bounds and the
 sources as published. Every column is defined in
 [`output/data_dictionary.csv`](output/data_dictionary.csv).
 
@@ -52,6 +60,7 @@ these columns:
 | `{source}_q_all` | `{source}_q_all_{band}` | |
 | `{source}_q_malaria` | `{source}_q_malaria_{band}` | |
 | `{source}_malaria_fraction` | `{source}_malaria_fraction_{band}` | |
+| `blend_q_malaria_adj`, `blend_malaria_fraction_adj` | `blend_q_malaria_adj_{band}`, `blend_malaria_fraction_adj_{band}` | × 1.6 for indirect deaths |
 | `{source}_deaths_*` | `{source}_deaths_*_{band}` | |
 | `pfpracm_share_lower_95`, `pfpracm_share_upper_95` | `pfpracm_share_{band}_lower`, `pfpracm_share_{band}_upper` | |
 | `map_pfpr_2_10_pct` | `map_pfpr_2_10` | percent in the long file, proportion in the wide file |
@@ -59,9 +68,9 @@ these columns:
 
 | Column prefix | What it is |
 |---|---|
-| `blend_` | **Headline estimates.** 50:50 IHME and UN IGME/WPP for countries; IHME only for Nigerian states |
+| `blend_` | **Headline estimates.** 50:50 IHME and UN IGME/WPP for countries; IHME only for Nigerian states. `_adj` columns multiply the malaria share and *q* by 1.6 for indirect deaths |
 | `pfpracm_` | **PfPR-ACM:** malaria share of all-cause deaths from the in-house PfPR model, and the malaria probability of death it implies with `blend_q_all` |
-| `combined_` | 50:50 of the blended and PfPR-ACM malaria probabilities of death |
+| `combined_` | 50:50 of the indirect-adjusted blended and PfPR-ACM malaria probabilities of death |
 | `map_` | MAP PfPR2–10 (the PfPR-ACM exposure) |
 | `ihme_`, `igme_`, `wpp_` | Each source on the five age bands (IGME split into bands with IHME proportions) |
 | `igme_published_`, `cacode_`, `wpp_pop_u1/u5` | IGME, CA-CODE and WPP as published, for reference |
@@ -71,21 +80,26 @@ these columns:
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="figures/u5_malaria_probability_dark.png">
-  <img alt="Dot plot of the probability of dying from malaria before age 5 in 2023 for 45 sub-Saharan African countries, comparing the IHME/IGME blend with PfPR-ACM. PfPR-ACM is higher in 35 countries; the largest values are Niger, Central African Republic, Sierra Leone and Nigeria at about 30 per 1,000." src="figures/u5_malaria_probability_light.png" width="720">
+  <img alt="Dot plot of the probability of dying from malaria before age 5 in 2023 for 45 sub-Saharan African countries, comparing the IHME/IGME blend multiplied by 1.6 for indirect deaths with PfPR-ACM. The two are similar in most high-prevalence countries; Sierra Leone has the highest adjusted blend at 40 per 1,000 and Niger the highest PfPR-ACM at 33." src="figures/u5_malaria_probability_light.png" width="720">
 </picture>
 
 The figure shows the cumulative probability of dying from malaria before age 5:
 Σ<sub>band</sub> *S*<sub>band</sub> × *q*<sub>malaria,band</sub>, where *S* is survival to the start
-of the band. Both series use the blended all-cause probabilities for *S*.
+of the band. Both series use the blended all-cause probabilities for *S*. The IHME/IGME series
+includes the × 1.6 indirect-death adjustment; PfPR-ACM already counts indirect deaths.
 
-- PfPR-ACM is higher than the blend in 35 of 45 countries, with a median ratio of 1.5.
-- Nigeria: 19.6 per 1,000 (blend) against 29.8 (PfPR-ACM).
-- PfPR-ACM is lower mainly in low-prevalence countries (Rwanda, Senegal, Mauritania, Ethiopia)
-  and in Liberia.
-- PfPR-ACM counts all deaths that would not occur at PfPR 0, including indirect ones, so it is
-  expected to exceed cause-assigned estimates.
+- **Overall:** with the adjustment, PfPR-ACM is higher in 19 of 45 countries and lower in 26
+  (median ratio 0.92).
+- **Higher-prevalence countries:** in the 25 countries with PfPR of at least 10%, the two
+  are close, with a median ratio of 1.04 and PfPR-ACM higher in 16.
+- **Nigeria:** 31.4 per 1,000 (IHME/IGME × 1.6) against 29.8 (PfPR-ACM); the combined estimate
+  is 30.6. Unadjusted, the IHME/IGME blend is 19.6.
+- **PfPR-ACM much higher:** Zambia (13.3 vs 7.5), Angola (14.6 vs 8.6) and South Sudan (27.3 vs
+  18.7).
+- **Adjusted blend much higher:** Liberia (28.0 vs 16.4), DRC (33.9 vs 26.0) and Sierra Leone
+  (39.6 vs 31.0), and most low-prevalence countries.
 
-The plotted values are in
+The plotted values, with the unadjusted blend and the combined estimate, are in
 [`figures/u5_malaria_probability_blend_vs_pfpracm.csv`](figures/u5_malaria_probability_blend_vs_pfpracm.csv).
 
 ## Coverage
@@ -165,7 +179,14 @@ is an average of ratios, it can differ from `blend_q_malaria` ÷ `blend_q_all`. 
 identical for most countries and differ by up to 5 points where the sources disagree most
 (Equatorial Guinea, 2–4 years).
 
-**Combined malaria probability:** `combined_q_malaria` = 0.5 × `blend_q_malaria` + 0.5 ×
+**Indirect-death adjustment:** `blend_malaria_fraction_adj` and `blend_q_malaria_adj` are
+1.6 × `blend_malaria_fraction` and 1.6 × `blend_q_malaria`. This 60% adjustment for indirect
+malaria deaths applies to every band, country and Nigerian state. It applies only to the
+cause-assigned IHME/IGME estimates, because PfPR-ACM already includes indirect deaths. The
+multiplier is `INDIRECT_MULTIPLIER` in `scripts/derive_bands.py`, which also checks that no
+adjusted share exceeds 1 (the largest is 0.82, Sierra Leone at 2–4 years).
+
+**Combined malaria probability:** `combined_q_malaria` = 0.5 × `blend_q_malaria_adj` + 0.5 ×
 `pfpracm_q_malaria`. It is blank where PfPR-ACM is (Lesotho, Mauritius, Seychelles). The weight
 is `ACM_WEIGHT` in `scripts/derive_bands.py`.
 
@@ -252,8 +273,10 @@ download has none. `IHME/ihme_2023_by_age_band.csv` also has single-year populat
 - **PfPR-ACM shares are attributable fractions, not cause-of-death assignments.** They count
   deaths that would not occur at PfPR 0, including indirect malaria deaths, so they are much
   larger than IHME's or CA-CODE's malaria shares.
-  - Nigeria 2–4 years: PfPR-ACM share 50%, IHME 33%, IGME (CA-CODE-based) 36%.
-  - Nigeria 2–4-year malaria *q*: 0.0153 (PfPR-ACM) against 0.0105 (blended).
+  - Nigeria 2–4 years: PfPR-ACM share 50%, IHME 33%, IGME (CA-CODE-based) 36%. With the
+    × 1.6 indirect-death adjustment, the blended share is 55%.
+  - Nigeria 2–4-year malaria *q*: 0.0153 (PfPR-ACM) against 0.0105 (blended) and 0.0169
+    (blended × 1.6).
 - **PfPR-ACM model caveats.**
   - Its curves are transported to every country, including those outside the fitting sample.
   - They are evaluated at national or state mean PfPR, not applied subnationally and then

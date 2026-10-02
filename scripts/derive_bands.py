@@ -19,8 +19,10 @@ IGME/WPP onto the five bands, using IHME proportions only where IGME has no spli
 Blend: 0.5 x IHME + 0.5 x IGME/WPP for countries (q_all, q_malaria, population, deaths, malaria
 fraction); Nigerian states use IHME only. Mauritius and Seychelles (no IHME) get only the IGME/WPP
 values that need no IHME split, and no blend.
-PfPR-ACM: q_malaria = PfPR-ACM share x blended q_all.
-Combined: combined_q_malaria = 0.5 x blended q_malaria + 0.5 x PfPR-ACM q_malaria.
+Indirect deaths: blended malaria share and q are also given x 1.6 (_adj), the adjustment for
+indirect malaria deaths, which applies to the cause-assigned IHME/IGME estimates only.
+PfPR-ACM: q_malaria = PfPR-ACM share x blended q_all (already includes indirect deaths).
+Combined: combined_q_malaria = 0.5 x adjusted blended q_malaria + 0.5 x PfPR-ACM q_malaria.
 
 Inputs: IHME/ihme_2023_by_age_band.csv, UN-IGME/igme_national_2023.csv,
         PfPR-ACM/pfpr_acm_shares_2023.csv, reference/*.csv
@@ -43,6 +45,9 @@ PARENTS = {("CME_MRM1T11", "CME_TMM1T11"): ("1_5m", "6_11m"),
            ("CME_MRY1T4", "CME_TMY1T4"): ("12_23m", "2_4y")}
 IHME_WEIGHT = 0.5   # IHME's weight in the IHME : IGME/WPP blend (countries; states use IHME only)
 ACM_WEIGHT = 0.5    # PfPR-ACM's weight against the blend in combined_q_malaria
+# Adjustment for indirect malaria deaths (+60%), applied to the cause-assigned IHME/IGME malaria
+# share and q only; PfPR-ACM already counts indirect deaths.
+INDIRECT_MULTIPLIER = 1.6
 
 
 def hazard(q):
@@ -159,15 +164,20 @@ def main():
                              "malaria_fraction": "igme_malaria_fraction"}.items():
                 own = r[f"ihme_{m}"]
                 r[f"blend_{m}"] = own if weight == 1.0 else weight * own + (1 - weight) * r[other]
+            r["blend_malaria_fraction_adj"] = INDIRECT_MULTIPLIER * r["blend_malaria_fraction"]
+            r["blend_q_malaria_adj"] = INDIRECT_MULTIPLIER * r["blend_q_malaria"]
             a = acm.loc[f"{key}|{band}"] if f"{key}|{band}" in acm.index else None
             r["map_pfpr_2_10_pct"] = a["pfpr_pct"] if a is not None else np.nan
             for col in ["share", "share_lower_95", "share_upper_95", "outside_central95"]:
                 r[f"pfpracm_{col}"] = a[col] if a is not None else np.nan
             r["pfpracm_q_malaria"] = r["pfpracm_share"] * r["blend_q_all"]
-            r["combined_q_malaria"] = ((1 - ACM_WEIGHT) * r["blend_q_malaria"]
+            r["combined_q_malaria"] = ((1 - ACM_WEIGHT) * r["blend_q_malaria_adj"]
                                        + ACM_WEIGHT * r["pfpracm_q_malaria"])
             rows.append(r)
     out = pd.DataFrame(rows)
+    adj = out.dropna(subset=["blend_q_malaria_adj"])
+    assert (adj["blend_malaria_fraction_adj"] <= 1).all(), adj["blend_malaria_fraction_adj"].max()
+    assert (adj["blend_q_malaria_adj"] <= adj["blend_q_all"]).all()
     out.to_csv(ROOT / "output" / "burden_by_age_band_2023.csv", index=False)
     print(f"Wrote {len(out)} rows ({len(locs)} locations x {len(BANDS)} bands) "
           "to output/burden_by_age_band_2023.csv")
