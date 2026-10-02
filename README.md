@@ -67,6 +67,27 @@ these columns:
 | `igme_published_`, `cacode_`, `wpp_pop_u1/u5` | IGME, CA-CODE and WPP as published, for reference |
 | `worldpop_` | WorldPop under-5 population |
 
+## IHME/IGME blend vs PfPR-ACM
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/u5_malaria_probability_dark.png">
+  <img alt="Dot plot of the probability of dying from malaria before age 5 in 2023 for 45 sub-Saharan African countries, comparing the IHME/IGME blend with PfPR-ACM. PfPR-ACM is higher in 35 countries; the largest values are Niger, Central African Republic, Sierra Leone and Nigeria at about 30 per 1,000." src="figures/u5_malaria_probability_light.png" width="720">
+</picture>
+
+The figure shows the cumulative probability of dying from malaria before age 5:
+Σ<sub>band</sub> *S*<sub>band</sub> × *q*<sub>malaria,band</sub>, where *S* is survival to the start
+of the band. Both series use the blended all-cause probabilities for *S*.
+
+- PfPR-ACM is higher than the blend in 35 of 45 countries, with a median ratio of 1.5.
+- Nigeria: 19.6 per 1,000 (blend) against 29.8 (PfPR-ACM).
+- PfPR-ACM is lower mainly in low-prevalence countries (Rwanda, Senegal, Mauritania, Ethiopia)
+  and in Liberia.
+- PfPR-ACM counts all deaths that would not occur at PfPR 0, including indirect ones, so it is
+  expected to exceed cause-assigned estimates.
+
+The plotted values are in
+[`figures/u5_malaria_probability_blend_vs_pfpracm.csv`](figures/u5_malaria_probability_blend_vs_pfpracm.csv).
+
 ## Coverage
 
 - **Countries:** the 48 countries in the UN SDG "Sub-Saharan Africa" region
@@ -313,6 +334,7 @@ python3 scripts/process_ihme.py    # IHME/ downloads -> IHME/ihme_2023_by_age_ba
 Rscript scripts/pfpr_acm.R         # PfPR-ACM shares -> PfPR-ACM/
 python3 scripts/derive_bands.py    # five bands, blend, PfPR-ACM q -> output/burden_by_age_band_2023.csv
 python3 scripts/build_merged.py    # -> output/malaria_burden_main_2023.csv and the full file, with dictionaries
+Rscript scripts/plot_readme.R      # README figure -> figures/ (needs ggplot2)
 ```
 
 - **Offline:** `fetch_igme.py` and `fetch_map.py` accept `--offline` to re-tidy from the saved
