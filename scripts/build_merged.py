@@ -17,6 +17,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from derive_bands import INDIRECT_MULTIPLIER
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output"
 BANDS = ["0_27d", "1_5m", "6_11m", "12_23m", "2_4y"]
@@ -26,14 +28,15 @@ Q_DESC = "within {band}, conditional on survival to the start of the band"
 IHME_WEIGHT = 0.5
 MAIN_IDS = ["location_level", "iso3", "country_name", "state_name"]
 MAIN_COLUMNS = ["blend_live_births", "blend_deaths_all_u5", "blend_deaths_all_{b}",
-                "blend_q_all_{b}", "blend_q_malaria_{b}", "blend_pop_{b}",
-                "blend_malaria_fraction_{b}", "map_pfpr_2_10", "pfpracm_share_{b}",
+                "blend_q_all_{b}", "blend_q_malaria_adj_{b}", "blend_pop_{b}",
+                "blend_malaria_fraction_adj_{b}", "map_pfpr_2_10", "pfpracm_share_{b}",
                 "pfpracm_share_u5", "combined_q_malaria_{b}"]
 
 SRC_BLEND = "Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README"
 SRC_ACM = ("Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; "
            "see README and PfPR-ACM/provenance.json")
-SRC_COMBINED = "Derived: 50:50 blended (IHME : IGME) and PfPR-ACM malaria probability; see README"
+SRC_COMBINED = ("Derived: 50:50 indirect-adjusted blended (IHME : IGME) and PfPR-ACM malaria "
+                "probability; see README")
 SRC_IHME = "IHME GBD 2023 (IHME/ downloads)"
 SRC_IGME5 = "Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README"
 SRC_IGME = "UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0"
@@ -132,10 +135,17 @@ def main():
              ", blended (IHME malaria q and CA-CODE-based IGME malaria q)", "probability (0-1)"),
             ("blend_malaria_fraction", "blend_malaria_fraction", "Share of all-cause deaths at "
              "{band} assigned to malaria, blended (average of the IHME and CA-CODE-based IGME "
-             "shares)", "proportion (0-1)")]:
+             "shares)", "proportion (0-1)"),
+            ("blend_q_malaria_adj", "blend_q_malaria_adj", "Probability of death from malaria " +
+             Q_DESC + ", blended, including indirect malaria deaths: {multiplier} x "
+             "blend_q_malaria", "probability (0-1)"),
+            ("blend_malaria_fraction_adj", "blend_malaria_fraction_adj", "Share of all-cause "
+             "deaths at {band} due to malaria, blended, including indirect malaria deaths: "
+             "{multiplier} x blend_malaria_fraction", "proportion (0-1)")]:
         w = band(metric)
         for b in BANDS:
-            cols.add(f"{prefix}_{b}", w[b], SRC_BLEND, desc.format(band=LABEL[b]), unit)
+            cols.add(f"{prefix}_{b}", w[b], SRC_BLEND,
+                     desc.format(band=LABEL[b], multiplier=INDIRECT_MULTIPLIER), unit)
     blend_deaths = band("blend_deaths_all")
     cols.add("blend_deaths_all_u5", blend_deaths.sum(axis=1, min_count=len(BANDS)), SRC_BLEND,
              "All-cause deaths under 5 years, blended (sum of the five bands)", "deaths per year")
@@ -168,9 +178,9 @@ def main():
     q_comb = band("combined_q_malaria")
     for b in BANDS:
         cols.add(f"combined_q_malaria_{b}", q_comb[b], SRC_COMBINED, f"Probability of malaria "
-                 f"death {Q_DESC.format(band=LABEL[b])}: 0.5 x blend_q_malaria + 0.5 x "
-                 "pfpracm_q_malaria (countries: 1/4 IHME + 1/4 IGME + 1/2 PfPR-ACM; Nigerian "
-                 "states: 1/2 IHME + 1/2 PfPR-ACM)", "probability (0-1)")
+                 f"death {Q_DESC.format(band=LABEL[b])}: 0.5 x blend_q_malaria_adj + 0.5 x "
+                 f"pfpracm_q_malaria, i.e. 0.5 x ({INDIRECT_MULTIPLIER} x IHME/IGME blend) + "
+                 "0.5 x PfPR-ACM (Nigerian states: IHME in place of the blend)", "probability (0-1)")
     flag = band("pfpracm_outside_central95").astype(float)
     cols.add("pfpracm_outside_central95", flag.max(axis=1, skipna=True).map({1.0: True, 0.0: False}),
              SRC_ACM, "TRUE if the location's PfPR is outside the central 95% of the PfPR values the "
