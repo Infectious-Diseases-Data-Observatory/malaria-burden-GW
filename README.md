@@ -218,7 +218,7 @@ download has none. `IHME/ihme_2023_by_age_band.csv` also has single-year populat
 
   | | Countries (MAP PfPR2–10) |
   |---|---|
-  | CA-CODE far higher | Eritrea 8.0% vs 0.6% (PfPR 0.8%), Comoros 3.4% vs 0.7% (1.7%), Djibouti 4.2% vs 1.6% (1.7%), Namibia 3.0% vs 1.4% (0.3%), Chad 26.7% vs 7.0% (14.0%), Central African Republic 39.2% vs 16.3% (32.5%) |
+  | CA-CODE far higher | Eritrea 8.0% vs 0.6% (PfPR 0.8%), Comoros 3.4% vs 0.7% (1.7%), Djibouti 4.2% vs 1.6% (1.7%), Namibia 3.0% vs 1.4% (0.3%), South Africa 0.05% vs 0.01% (0.01%), Chad 26.7% vs 7.0% (14.0%), Central African Republic 39.2% vs 16.3% (32.5%) |
   | CA-CODE far lower | Equatorial Guinea 4.1% vs 40.8% (21.6%), Gabon 3.0% vs 22.7% (17.5%), Ghana 8.5% vs 31.0% (16.1%); CA-CODE is 0 in Botswana, Cabo Verde and São Tomé and Príncipe, which halves IHME's malaria *q* in the blend |
 
   Lesotho is the extreme case. CA-CODE assigns it 7.9% of 1–59 month deaths although it has no
@@ -229,9 +229,9 @@ download has none. `IHME/ihme_2023_by_age_band.csv` also has single-year populat
   CA-CODE share is applied to IGME's deaths, so IGME-arm malaria deaths there are lower than
   CA-CODE's published counts.
 - **IGME's own rates don't chain exactly.** The IGME arm uses the published neonatal, 1–11 month
-  and 1–4 year rates. These multiply to slightly less than IGME's published infant and under-5
-  rates: at most 3.7% below for infants and 2.4% below for under-5, both in South Sudan; under
-  1% in most countries.
+  and 1–4 year rates. Multiplied together, these differ slightly from IGME's published infant
+  and under-5 rates. The biggest gaps are in South Sudan, 3.7% below for infants and 2.4% below
+  for under-5; the largest overshoot is about 0.3%, in Namibia. Most countries are within 1%.
 - **Togo's WPP births look wrong in the UNICEF DM dataflow.** `wpp_live_births` for Togo
   (268,455) is about 7% below the births implied by IGME's own neonatal deaths ÷ NMR (about
   290,000); every other country agrees within 1%. This feeds into Togo's `blend_live_births`.

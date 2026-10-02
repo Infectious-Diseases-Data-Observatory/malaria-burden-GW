@@ -197,7 +197,9 @@ def main():
             ("wpp_population", "wpp_pop", "Population aged {band}", how_pop, "persons", SRC_WPP)]:
         w = band(metric)
         for b in BANDS:
-            cols.add(f"{prefix}_{b}", w[b], src, f"{desc.format(band=LABEL[b])} ({how[b]})", unit)
+            band_src = {"igme_q_all_0_27d": SRC_IGME,
+                        "igme_malaria_fraction_0_27d": SRC_IHME}.get(f"{prefix}_{b}", src)
+            cols.add(f"{prefix}_{b}", w[b], band_src, f"{desc.format(band=LABEL[b])} ({how[b]})", unit)
     cols.add("wpp_live_births", wpp_births, SRC_WPP, "Live births (UNICEF DM dataflow; see README "
              "caution for Togo)", "births per year")
 
