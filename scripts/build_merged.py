@@ -1,6 +1,8 @@
-"""Build the main wide file: one row per sub-Saharan African country and per Nigerian state, with
-the blended (IHME : IGME/WPP, 50:50) and PfPR-ACM estimates first, then the source values on the
-five age bands, then the sources as published. Also writes a data dictionary.
+"""Build the wide files: one row per sub-Saharan African country and per Nigerian state.
+
+The full file has the blended (IHME : IGME/WPP, 50:50) and PfPR-ACM estimates first, then the
+source values on the five age bands, then the sources as published. The main file is a copy of
+the headline columns of the full file (MAIN_COLUMNS). Each has a data dictionary.
 
 Age bands (column suffixes): 0_27d, 1_5m, 6_11m, 12_23m, 2_4y.
 
@@ -8,8 +10,8 @@ Inputs (produced by the other scripts in scripts/):
   output/burden_by_age_band_2023.csv (derive_bands.py), IHME/ihme_2023_by_age_band.csv,
   UN-IGME/igme_national_2023.csv, MAP/map_pfpr_2023.csv, WorldPop/worldpop_u5_2023.csv
 Outputs:
-  output/malaria_burden_inputs_2023.csv
-  output/data_dictionary.csv
+  output/malaria_burden_main_2023.csv, output/malaria_burden_main_2023_dictionary.csv
+  output/malaria_burden_inputs_2023.csv, output/data_dictionary.csv (full)
 """
 from pathlib import Path
 
@@ -22,10 +24,16 @@ LABEL = {"0_27d": "0-27 days (neonatal)", "1_5m": "1-5 months", "6_11m": "6-11 m
          "12_23m": "12-23 months", "2_4y": "2-4 years", "u5": "under 5 years"}
 Q_DESC = "within {band}, conditional on survival to the start of the band"
 IHME_WEIGHT = 0.5
+MAIN_IDS = ["location_level", "iso3", "country_name", "state_name"]
+MAIN_COLUMNS = ["blend_live_births", "blend_deaths_all_u5", "blend_deaths_all_{b}",
+                "blend_q_all_{b}", "blend_q_malaria_{b}", "blend_pop_{b}",
+                "blend_malaria_fraction_{b}", "map_pfpr_2_10", "pfpracm_share_{b}",
+                "pfpracm_share_u5", "combined_q_malaria_{b}"]
 
 SRC_BLEND = "Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README"
 SRC_ACM = ("Derived: in-house PfPR-ACM model (MIS/DHS project, primary v9) at MAP 2023 PfPR2-10; "
            "see README and PfPR-ACM/provenance.json")
+SRC_COMBINED = "Derived: 50:50 blended (IHME : IGME) and PfPR-ACM malaria probability; see README"
 SRC_IHME = "IHME GBD 2023 (IHME/ downloads)"
 SRC_IGME5 = "Derived from UN IGME 2025 round and CA-CODE 2026, split with IHME proportions; see README"
 SRC_IGME = "UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0"
@@ -121,10 +129,20 @@ def main():
             ("blend_q_all", "blend_q_all", "Probability of death from all causes " + Q_DESC +
              ", blended", "probability (0-1)"),
             ("blend_q_malaria", "blend_q_malaria", "Probability of death from malaria " + Q_DESC +
-             ", blended (IHME malaria q and CA-CODE-based IGME malaria q)", "probability (0-1)")]:
+             ", blended (IHME malaria q and CA-CODE-based IGME malaria q)", "probability (0-1)"),
+            ("blend_malaria_fraction", "blend_malaria_fraction", "Share of all-cause deaths at "
+             "{band} assigned to malaria, blended (average of the IHME and CA-CODE-based IGME "
+             "shares)", "proportion (0-1)")]:
         w = band(metric)
         for b in BANDS:
             cols.add(f"{prefix}_{b}", w[b], SRC_BLEND, desc.format(band=LABEL[b]), unit)
+    blend_deaths = band("blend_deaths_all")
+    cols.add("blend_deaths_all_u5", blend_deaths.sum(axis=1, min_count=len(BANDS)), SRC_BLEND,
+             "All-cause deaths under 5 years, blended (sum of the five bands)", "deaths per year")
+    for b in BANDS:
+        cols.add(f"blend_deaths_all_{b}", blend_deaths[b], SRC_BLEND, f"All-cause deaths at "
+                 f"{LABEL[b]}, blended (IHME derived deaths and IGME deaths split by IHME death "
+                 "shares)", "deaths per year")
 
     # --- PfPR-ACM ----------------------------------------------------------------------------
     share, lo, hi = band("pfpracm_share"), band("pfpracm_share_lower_95"), band("pfpracm_share_upper_95")
@@ -138,11 +156,21 @@ def main():
                      "lower 95% interval (model hazard-ratio uncertainty only)", "proportion")
             cols.add(f"pfpracm_share_{b}_upper", hi[b], SRC_ACM, f"PfPR-ACM share at {LABEL[b]}, "
                      "upper 95% interval (model hazard-ratio uncertainty only)", "proportion")
+    cols.add("pfpracm_share_u5", (share * blend_deaths).sum(axis=1, min_count=len(BANDS))
+             / blend_deaths.sum(axis=1, min_count=len(BANDS)), SRC_ACM,
+             "Share of all-cause deaths under 5 attributable to malaria: band shares weighted by "
+             "the blended all-cause deaths (blend_deaths_all_*)", "proportion")
     q_acm = band("pfpracm_q_malaria")
     for b in BANDS:
         cols.add(f"pfpracm_q_malaria_{b}", q_acm[b], SRC_ACM, f"PfPR-ACM probability of malaria "
                  f"death {Q_DESC.format(band=LABEL[b])}: pfpracm_share x blend_q_all",
                  "probability (0-1)")
+    q_comb = band("combined_q_malaria")
+    for b in BANDS:
+        cols.add(f"combined_q_malaria_{b}", q_comb[b], SRC_COMBINED, f"Probability of malaria "
+                 f"death {Q_DESC.format(band=LABEL[b])}: 0.5 x blend_q_malaria + 0.5 x "
+                 "pfpracm_q_malaria (countries: 1/4 IHME + 1/4 IGME + 1/2 PfPR-ACM; Nigerian "
+                 "states: 1/2 IHME + 1/2 PfPR-ACM)", "probability (0-1)")
     flag = band("pfpracm_outside_central95").astype(float)
     cols.add("pfpracm_outside_central95", flag.max(axis=1, skipna=True).map({1.0: True, 0.0: False}),
              SRC_ACM, "TRUE if the location's PfPR is outside the central 95% of the PfPR values the "
@@ -194,10 +222,13 @@ def main():
              "assigned to malaria", how_f, "proportion (0-1)", SRC_IGME5),
             ("igme_q_malaria", "igme_q_malaria", "Probability of death from malaria " + Q_DESC,
              {b: "igme_malaria_fraction x igme_q_all" for b in BANDS}, "probability (0-1)", SRC_IGME5),
+            ("igme_deaths_all", "igme_deaths_all", "All-cause deaths at {band}",
+             {b: ("IGME neonatal deaths" if b == "0_27d" else "IGME 1-11 month or 1-4 year deaths "
+                  "split by IHME death shares") for b in BANDS}, "deaths per year", SRC_IGME5),
             ("wpp_population", "wpp_pop", "Population aged {band}", how_pop, "persons", SRC_WPP)]:
         w = band(metric)
         for b in BANDS:
-            band_src = {"igme_q_all_0_27d": SRC_IGME,
+            band_src = {"igme_q_all_0_27d": SRC_IGME, "igme_deaths_all_0_27d": SRC_IGME,
                         "igme_malaria_fraction_0_27d": SRC_IHME}.get(f"{prefix}_{b}", src)
             cols.add(f"{prefix}_{b}", w[b], band_src, f"{desc.format(band=LABEL[b])} ({how[b]})", unit)
     cols.add("wpp_live_births", wpp_births, SRC_WPP, "Live births (UNICEF DM dataflow; see README "
@@ -261,9 +292,16 @@ def main():
     assert len(df) == 85 and not df.duplicated(["location_level", "iso3", "state_name"]).any()
     assert df.columns.is_unique and len(cols.dictionary) == df.shape[1]
     df.to_csv(OUT / "malaria_burden_inputs_2023.csv", index=False)
-    pd.DataFrame(cols.dictionary, columns=["column", "source", "description", "unit"]).to_csv(
-        OUT / "data_dictionary.csv", index=False)
+    dictionary = pd.DataFrame(cols.dictionary, columns=["column", "source", "description", "unit"])
+    dictionary.to_csv(OUT / "data_dictionary.csv", index=False)
     print(f"Wrote {len(df)} rows x {df.shape[1]} columns to output/malaria_burden_inputs_2023.csv")
+
+    main_cols = MAIN_IDS + [c.format(b=b) if "{b}" in c else c for c in MAIN_COLUMNS
+                            for b in (BANDS if "{b}" in c else [None])]
+    df[main_cols].to_csv(OUT / "malaria_burden_main_2023.csv", index=False)
+    dictionary.set_index("column").loc[main_cols].reset_index().to_csv(
+        OUT / "malaria_burden_main_2023_dictionary.csv", index=False)
+    print(f"Wrote {len(df)} rows x {len(main_cols)} columns to output/malaria_burden_main_2023.csv")
 
 
 if __name__ == "__main__":

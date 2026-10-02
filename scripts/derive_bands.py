@@ -14,9 +14,13 @@ IGME/WPP onto the five bands, using IHME proportions only where IGME has no spli
             no neonatal malaria category). q_malaria = share x q_all.
   pop       WPP under-1 population split by IHME's under-1 age distribution; 12-23 months = WPP
             age 1; 2-4 years = WPP ages 2-4.
-Blend: 0.5 x IHME + 0.5 x IGME/WPP for countries; Nigerian states use IHME only. Mauritius and
-Seychelles (no IHME) get only the IGME/WPP values that need no IHME split, and no blend.
+  deaths    neonatal = IGME neonatal deaths; IGME 1-11 month and 1-4 year deaths split by IHME's
+            death shares within each.
+Blend: 0.5 x IHME + 0.5 x IGME/WPP for countries (q_all, q_malaria, population, deaths, malaria
+fraction); Nigerian states use IHME only. Mauritius and Seychelles (no IHME) get only the IGME/WPP
+values that need no IHME split, and no blend.
 PfPR-ACM: q_malaria = PfPR-ACM share x blended q_all.
+Combined: combined_q_malaria = 0.5 x blended q_malaria + 0.5 x PfPR-ACM q_malaria.
 
 Inputs: IHME/ihme_2023_by_age_band.csv, UN-IGME/igme_national_2023.csv,
         PfPR-ACM/pfpr_acm_shares_2023.csv, reference/*.csv
@@ -37,7 +41,8 @@ POSTNEONATAL = BANDS[1:]
 # IGME parent band (q indicator, deaths indicator) -> the two IHME bands it splits into.
 PARENTS = {("CME_MRM1T11", "CME_TMM1T11"): ("1_5m", "6_11m"),
            ("CME_MRY1T4", "CME_TMY1T4"): ("12_23m", "2_4y")}
-IHME_WEIGHT = 0.5
+IHME_WEIGHT = 0.5   # IHME's weight in the IHME : IGME/WPP blend (countries; states use IHME only)
+ACM_WEIGHT = 0.5    # PfPR-ACM's weight against the blend in combined_q_malaria
 
 
 def hazard(q):
@@ -113,6 +118,16 @@ def main():
     wpp_pop["12_23m"] = ind("DM_POP_TOT_AGE_Y01")
     wpp_pop["2_4y"] = ind("DM_POP_TOT_AGE_Y02") + ind("DM_POP_TOT_AGE_Y03") + ind("DM_POP_TOT_AGE_Y04")
 
+    # IGME all-cause deaths on the five bands: published neonatal deaths; 1-11 month and 1-4 year
+    # deaths split by IHME's death shares within each.
+    deaths = pd.DataFrame(index=countries, columns=BANDS, dtype=float)
+    deaths["0_27d"] = ind("CME_TMM0")
+    for (_, d_code), (a, c) in PARENTS.items():
+        for band in (a, c):
+            deaths[band] = ind(d_code) * D[band] / (D[a] + D[c])
+    gap = deaths.sum(axis=1) / ind("CME_TMY0T4") - 1
+    assert gap[has_ihme].abs().max() < 1e-4, gap.abs().max()       # bands add to IGME U5 deaths
+
     # Checks: the splits reproduce the IGME/WPP parents.
     for (q_code, _), (a, c) in PARENTS.items():
         gap = (1 - q[a]) * (1 - q[c]) - (1 - ind(q_code, 1000))
@@ -137,10 +152,11 @@ def main():
             if is_country:
                 r.update(igme_q_all=q.at[key, band], igme_malaria_fraction=f.at[key, band],
                          igme_q_malaria=q.at[key, band] * f.at[key, band],
-                         wpp_population=wpp_pop.at[key, band])
+                         igme_deaths_all=deaths.at[key, band], wpp_population=wpp_pop.at[key, band])
             r["blend_ihme_weight"] = weight
             for m, other in {"q_all": "igme_q_all", "q_malaria": "igme_q_malaria",
-                             "population": "wpp_population"}.items():
+                             "population": "wpp_population", "deaths_all": "igme_deaths_all",
+                             "malaria_fraction": "igme_malaria_fraction"}.items():
                 own = r[f"ihme_{m}"]
                 r[f"blend_{m}"] = own if weight == 1.0 else weight * own + (1 - weight) * r[other]
             a = acm.loc[f"{key}|{band}"] if f"{key}|{band}" in acm.index else None
@@ -148,6 +164,8 @@ def main():
             for col in ["share", "share_lower_95", "share_upper_95", "outside_central95"]:
                 r[f"pfpracm_{col}"] = a[col] if a is not None else np.nan
             r["pfpracm_q_malaria"] = r["pfpracm_share"] * r["blend_q_all"]
+            r["combined_q_malaria"] = ((1 - ACM_WEIGHT) * r["blend_q_malaria"]
+                                       + ACM_WEIGHT * r["pfpracm_q_malaria"])
             rows.append(r)
     out = pd.DataFrame(rows)
     out.to_csv(ROOT / "output" / "burden_by_age_band_2023.csv", index=False)

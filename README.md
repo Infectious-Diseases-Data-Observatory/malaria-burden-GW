@@ -10,8 +10,36 @@ sub-Saharan African countries and Nigerian states. By age band, it covers:
 It also has *P. falciparum* prevalence, and an in-house PfPR-based estimate of malaria
 mortality (PfPR-ACM). Sources are IHME, UN IGME (with UN WPP and CA-CODE), MAP and WorldPop.
 
-**Main file:** [`output/malaria_burden_inputs_2023.csv`](output/malaria_burden_inputs_2023.csv),
-one row per country (48) and per Nigerian state (37). Every column is defined in
+**Main file:** [`output/malaria_burden_main_2023.csv`](output/malaria_burden_main_2023.csv),
+one row per country (48) and per Nigerian state (37), with 43 columns defined in
+[`output/malaria_burden_main_2023_dictionary.csv`](output/malaria_burden_main_2023_dictionary.csv).
+Every column is copied from the full file below. The age-band suffixes are `0_27d`, `1_5m`,
+`6_11m`, `12_23m` and `2_4y`.
+
+| Columns | Content |
+|---|---|
+| `location_level`, `iso3`, `country_name`, `state_name` | Location |
+| `blend_live_births` | Live births |
+| `blend_deaths_all_u5`, `blend_deaths_all_{band}` | All-cause deaths, under 5 and by band |
+| `blend_q_all_{band}` | Probability of death, all causes |
+| `blend_q_malaria_{band}` | Probability of death, malaria |
+| `blend_pop_{band}` | Population |
+| `blend_malaria_fraction_{band}` | Share of all-cause deaths assigned to malaria |
+| `map_pfpr_2_10` | MAP population-weighted PfPR2–10 |
+| `pfpracm_share_{band}`, `pfpracm_share_u5` | PfPR-ACM malaria share of all-cause deaths; under 5 weighted by `blend_deaths_all_{band}` |
+| `combined_q_malaria_{band}` | 0.5 × `blend_q_malaria` + 0.5 × PfPR-ACM malaria *q* |
+
+All `blend_` columns average IHME and IGME/WPP for countries and use IHME only for Nigerian
+states. `combined_q_malaria` is therefore ¼ IHME + ¼ IGME + ½ PfPR-ACM for countries and
+½ IHME + ½ PfPR-ACM for states.
+
+What's blank in the main file:
+- **Mauritius and Seychelles:** every `blend_`, `pfpracm_` and `combined_` column (no IHME).
+- **Lesotho:** `map_`, `pfpracm_` and `combined_` columns (no MAP PfPR).
+
+**Full file:** [`output/malaria_burden_inputs_2023.csv`](output/malaria_burden_inputs_2023.csv),
+the same rows with all 169 columns: every source on the five bands, uncertainty bounds and the
+sources as published. Every column is defined in
 [`output/data_dictionary.csv`](output/data_dictionary.csv).
 
 The same band-level values are in long form, one row per location and age band (85 × 5), in
@@ -33,6 +61,7 @@ these columns:
 |---|---|
 | `blend_` | **Headline estimates.** 50:50 IHME and UN IGME/WPP for countries; IHME only for Nigerian states |
 | `pfpracm_` | **PfPR-ACM:** malaria share of all-cause deaths from the in-house PfPR model, and the malaria probability of death it implies with `blend_q_all` |
+| `combined_` | 50:50 of the blended and PfPR-ACM malaria probabilities of death |
 | `map_` | MAP PfPR2–10 (the PfPR-ACM exposure) |
 | `ihme_`, `igme_`, `wpp_` | Each source on the five age bands (IGME split into bands with IHME proportions) |
 | `igme_published_`, `cacode_`, `wpp_pop_u1/u5` | IGME, CA-CODE and WPP as published, for reference |
@@ -105,6 +134,19 @@ IGME and WPP don't publish all five bands. Where a split is missing, it uses IHM
 | Malaria *q* | malaria share × IGME all-cause *q* |
 | Population, 0–27 days to 6–11 months | WPP under-1 population split by IHME's under-1 age distribution |
 | Population, 12–23 months and 2–4 years | WPP age 1; WPP ages 2–4 summed |
+| Deaths, 0–27 days | IGME neonatal deaths |
+| Deaths, 1–5 months to 2–4 years | IGME 1–11 month and 1–4 year deaths, each split by IHME's death shares within it. The bands add to IGME's under-5 deaths. |
+
+Under-5 deaths are the sum of the blended bands.
+
+`blend_malaria_fraction` is the average of the IHME and IGME (CA-CODE-based) shares. Because it
+is an average of ratios, it can differ from `blend_q_malaria` ÷ `blend_q_all`. The two are
+identical for most countries and differ by up to 5 points where the sources disagree most
+(Equatorial Guinea, 2–4 years).
+
+**Combined malaria probability:** `combined_q_malaria` = 0.5 × `blend_q_malaria` + 0.5 ×
+`pfpracm_q_malaria`. It is blank where PfPR-ACM is (Lesotho, Mauritius, Seychelles). The weight
+is `ACM_WEIGHT` in `scripts/derive_bands.py`.
 
 ### PfPR-ACM (`scripts/pfpr_acm.R`)
 The in-house PfPR–all-cause mortality model fits one binomial/cloglog GAM per age band to DHS and
@@ -270,7 +312,7 @@ Rscript scripts/fetch_worldpop.R   # downloads ~130 MB of rasters to .cache/ (gi
 python3 scripts/process_ihme.py    # IHME/ downloads -> IHME/ihme_2023_by_age_band.csv
 Rscript scripts/pfpr_acm.R         # PfPR-ACM shares -> PfPR-ACM/
 python3 scripts/derive_bands.py    # five bands, blend, PfPR-ACM q -> output/burden_by_age_band_2023.csv
-python3 scripts/build_merged.py    # -> output/malaria_burden_inputs_2023.csv, data_dictionary.csv
+python3 scripts/build_merged.py    # -> output/malaria_burden_main_2023.csv and the full file, with dictionaries
 ```
 
 - **Offline:** `fetch_igme.py` and `fetch_map.py` accept `--offline` to re-tidy from the saved
