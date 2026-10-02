@@ -65,6 +65,7 @@ class Columns:
 
 def locations():
     c = pd.read_csv(ROOT / "reference" / "countries.csv")
+    c = c[c["in_outputs"]]          # Lesotho, Mauritius and Seychelles are left out
     s = pd.read_csv(ROOT / "reference" / "nigeria_states.csv")
     countries = pd.DataFrame({"location_level": "country", "iso3": c["iso3"],
                               "country_name": c["country_name"], "state_name": pd.NA,
@@ -121,8 +122,7 @@ def main():
     # --- Blended estimates -------------------------------------------------------------------
     weight = band("blend_ihme_weight")["0_27d"]
     cols.add("blend_ihme_weight", weight, SRC_BLEND, "Weight on IHME in the blended columns (0.5 "
-             "for countries; 1.0 for Nigerian states, which use IHME only; blank where IHME is "
-             "unavailable)", "weight (0-1)")
+             "for countries; 1.0 for Nigerian states, which use IHME only)", "weight (0-1)")
     births = ihme_births["live_births"].where(~is_country,
                                               IHME_WEIGHT * ihme_births["live_births"] + (1 - IHME_WEIGHT) * wpp_births)
     cols.add("blend_live_births", births.where(weight.notna()), SRC_BLEND,
@@ -299,7 +299,7 @@ def main():
                  "national under-1 share to every grid cell)", "persons")
 
     df = cols.data.reset_index(drop=True)
-    assert len(df) == 85 and not df.duplicated(["location_level", "iso3", "state_name"]).any()
+    assert len(df) == len(locs) and not df.duplicated(["location_level", "iso3", "state_name"]).any()
     assert df.columns.is_unique and len(cols.dictionary) == df.shape[1]
     df.to_csv(OUT / "malaria_burden_inputs_2023.csv", index=False)
     dictionary = pd.DataFrame(cols.dictionary, columns=["column", "source", "description", "unit"])

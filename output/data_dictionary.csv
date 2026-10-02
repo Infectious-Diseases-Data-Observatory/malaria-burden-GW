@@ -7,7 +7,7 @@ year,,Reference year of all estimates,
 gbd_location_id,IHME GBD 2023 (IHME/ downloads),GBD location_id,
 igme_code,"UN IGME 2025 round (released March 2026), UNICEF SDMX API dataflow UNICEF,CME,1.0",UN IGME / UNICEF area code,
 map_admin_id,"Malaria Atlas Project, 202608 release, admin-0/admin-1 aggregates",MAP admin-1 unit ID (Nigerian states only),
-blend_ihme_weight,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Weight on IHME in the blended columns (0.5 for countries; 1.0 for Nigerian states, which use IHME only; blank where IHME is unavailable)",weight (0-1)
+blend_ihme_weight,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Weight on IHME in the blended columns (0.5 for countries; 1.0 for Nigerian states, which use IHME only)",weight (0-1)
 blend_live_births,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Live births, blended IHME and WPP",births per year
 blend_pop_0_27d,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Population aged 0-27 days (neonatal), blended",persons
 blend_pop_1_5m,Derived: 50:50 IHME and UN IGME/WPP (Nigerian states: IHME only); see README,"Population aged 1-5 months, blended",persons

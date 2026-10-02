@@ -11,7 +11,7 @@ It also has *P. falciparum* prevalence, and an in-house PfPR-based estimate of m
 mortality (PfPR-ACM). Sources are IHME, UN IGME (with UN WPP and CA-CODE), MAP and WorldPop.
 
 **Main file:** [`output/malaria_burden_main_2023.csv`](output/malaria_burden_main_2023.csv),
-one row per country (48) and per Nigerian state (37), with 43 columns defined in
+one row per country (45) and per Nigerian state (37), with 43 columns defined in
 [`output/malaria_burden_main_2023_dictionary.csv`](output/malaria_burden_main_2023_dictionary.csv).
 Every column is copied from the full file below. The age-band suffixes are `0_27d`, `1_5m`,
 `6_11m`, `12_23m` and `2_4y`.
@@ -41,16 +41,15 @@ adjusted, because it already counts indirect deaths. The unadjusted values (`ble
 `combined_q_malaria` is therefore 0.5 × (1.6 × IHME/IGME blend) + 0.5 × PfPR-ACM for countries,
 and 0.5 × (1.6 × IHME) + 0.5 × PfPR-ACM for states.
 
-What's blank in the main file:
-- **Mauritius and Seychelles:** every `blend_`, `pfpracm_` and `combined_` column (no IHME).
-- **Lesotho:** `map_`, `pfpracm_` and `combined_` columns (no MAP PfPR).
+The main file has no blank cells. Lesotho, Mauritius and Seychelles are left out of every
+output file (see Coverage).
 
 **Full file:** [`output/malaria_burden_inputs_2023.csv`](output/malaria_burden_inputs_2023.csv),
 the same rows with all 179 columns: every source on the five bands, uncertainty bounds and the
 sources as published. Every column is defined in
 [`output/data_dictionary.csv`](output/data_dictionary.csv).
 
-The same band-level values are in long form, one row per location and age band (85 × 5), in
+The same band-level values are in long form, one row per location and age band (82 × 5), in
 [`output/burden_by_age_band_2023.csv`](output/burden_by_age_band_2023.csv). The long file uses
 these columns:
 
@@ -78,15 +77,18 @@ these columns:
 
 ## IHME/IGME blend vs PfPR-ACM
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="figures/u5_malaria_probability_dark.png">
-  <img alt="Dot plot of the probability of dying from malaria before age 5 in 2023 for 45 sub-Saharan African countries, comparing the IHME/IGME blend multiplied by 1.6 for indirect deaths with PfPR-ACM. The two are similar in most high-prevalence countries; Sierra Leone has the highest adjusted blend at 40 per 1,000 and Niger the highest PfPR-ACM at 33." src="figures/u5_malaria_probability_light.png" width="720">
-</picture>
-
-The figure shows the cumulative probability of dying from malaria before age 5:
+Both figures show the cumulative probability of dying from malaria before age 5:
 Σ<sub>band</sub> *S*<sub>band</sub> × *q*<sub>malaria,band</sub>, where *S* is survival to the start
-of the band. Both series use the blended all-cause probabilities for *S*. The IHME/IGME series
-includes the × 1.6 indirect-death adjustment; PfPR-ACM already counts indirect deaths.
+of the band. Both series use the blended all-cause probabilities for *S* (IHME's for Nigerian
+states). The IHME/IGME series includes the × 1.6 indirect-death adjustment; PfPR-ACM already
+counts indirect deaths.
+
+### Countries
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/u5_malaria_probability_countries_dark.png">
+  <img alt="Dot plot of the probability of dying from malaria before age 5 in 2023 for 45 sub-Saharan African countries, comparing the IHME/IGME blend multiplied by 1.6 for indirect deaths with PfPR-ACM. The two are similar in most high-prevalence countries; Sierra Leone has the highest adjusted blend at 40 per 1,000 and Niger the highest PfPR-ACM at 33." src="figures/u5_malaria_probability_countries_light.png" width="720">
+</picture>
 
 - **Overall:** with the adjustment, PfPR-ACM is higher in 19 of 45 countries and lower in 26
   (median ratio 0.92).
@@ -99,17 +101,38 @@ includes the × 1.6 indirect-death adjustment; PfPR-ACM already counts indirect 
 - **Adjusted blend much higher:** Liberia (28.0 vs 16.4), DRC (33.9 vs 26.0) and Sierra Leone
   (39.6 vs 31.0), and most low-prevalence countries.
 
-The plotted values, with the unadjusted blend and the combined estimate, are in
-[`figures/u5_malaria_probability_blend_vs_pfpracm.csv`](figures/u5_malaria_probability_blend_vs_pfpracm.csv).
+### Nigerian states
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/u5_malaria_probability_nigeria_states_dark.png">
+  <img alt="Dot plot of the probability of dying from malaria before age 5 in 2023 for Nigeria's 37 states, comparing IHME multiplied by 1.6 for indirect deaths with PfPR-ACM. PfPR-ACM is higher in 13 states, nearly all northern, led by Sokoto at 55 per 1,000; IHME is higher in most southern states, with the largest gap in Lagos (21 against 9)." src="figures/u5_malaria_probability_nigeria_states_light.png" width="720">
+</picture>
+
+- **Overall:** PfPR-ACM is higher than IHME × 1.6 in 13 of 37 states and lower in 24 (median
+  ratio 0.81).
+- **PfPR-ACM higher:** 12 of the 13 states are northern, led by Sokoto (54.6 vs 32.3 per
+  1,000), Kebbi (45.0 vs 28.7) and Zamfara (42.2 vs 28.4); the other is Ebonyi.
+- **IHME × 1.6 higher:** most southern states, with the largest gaps in Lagos (20.9 vs 9.0),
+  Anambra (22.6 vs 12.3) and Imo (32.0 vs 18.5). Kano is 37.3 (IHME × 1.6) against 33.5.
+- **Relation to prevalence:** across states, IHME's malaria mortality is almost uncorrelated with
+  MAP PfPR (correlation 0.08), while PfPR-ACM tracks it (0.65), as it must by construction.
+  Relative to PfPR-ACM, IHME puts more malaria mortality in the south and less in the north.
+
+The plotted values for both figures are in
+[`figures/u5_malaria_probability_blend_vs_pfpracm.csv`](figures/u5_malaria_probability_blend_vs_pfpracm.csv),
+with the unadjusted blend and the combined estimate alongside.
 
 ## Coverage
 
-- **Countries:** the 48 countries in the UN SDG "Sub-Saharan Africa" region
-  ([`reference/countries.csv`](reference/countries.csv)). Sudan is not included.
-  Mauritius and Seychelles have no IHME values, because GBD places them outside its
-  Sub-Saharan Africa super-region. Without IHME there are no IHME proportions to split IGME
-  with. They therefore have no `blend_` or `pfpracm_` values, and only the IGME/WPP band values
-  that need no split: neonatal *q* and population at 12–23 months and 2–4 years.
+- **Countries:** 45 of the 48 countries in the UN SDG "Sub-Saharan Africa" region
+  ([`reference/countries.csv`](reference/countries.csv)). Sudan is not in that region. Three
+  are left out of the outputs (`in_outputs` = FALSE):
+  - Mauritius and Seychelles have no IHME estimates, because GBD places them outside its
+    Sub-Saharan Africa super-region.
+  - Lesotho has no MAP PfPR (no endemic transmission), and so no PfPR-ACM estimate.
+
+  The per-source files (`UN-IGME/`, `WorldPop/`, `IHME/ihme_2023_by_age_band.csv`) still hold
+  what each source published for them.
 - **Nigerian states:** 36 states + Federal Capital Territory
   ([`reference/nigeria_states.csv`](reference/nigeria_states.csv) maps GBD, IGME and MAP IDs).
   Niger (country) and Niger State share a name; join on IDs, never names.
@@ -130,12 +153,12 @@ The plotted values, with the unadjusted blend and the combined estimate, are in
 
 | Prefix | Source | Version | Year | Countries | Nigerian states | Licence |
 |---|---|---|---|---|---|---|
-| `ihme_` | IHME Global Burden of Disease | GBD 2023 (files in `IHME/`, downloaded manually from the GBD Results Tool) | 2023 | ✓ (46) | ✓ | IHME free-of-charge non-commercial user agreement |
+| `ihme_` | IHME Global Burden of Disease | GBD 2023 (files in `IHME/`, downloaded manually from the GBD Results Tool) | 2023 | ✓ | ✓ | IHME free-of-charge non-commercial user agreement |
 | `igme_` | UN Inter-agency Group for Child Mortality Estimation | 2025 round (released March 2026), UNICEF SDMX API `UNICEF,CME,1.0` | 2023 | ✓ | — | CC BY 3.0 IGO |
 | `cacode_` | CA-CODE causes of death (WHO/UNICEF, published with UN IGME) | 2026 release, UNICEF SDMX API `UNICEF,CME_CAUSE_OF_DEATH,1.0` | 2023 | ✓ | — | CC BY 3.0 IGO |
 | `wpp_` | UN World Population Prospects 2024 (the births/population IGME uses) | via UNICEF SDMX API `UNICEF,DM,1.0` and `UNPD,UNPD_DEMOGRAPHY,1.0` | 2023 | ✓ | — | CC BY 3.0 IGO |
-| `map_` | Malaria Atlas Project | 202608 release, admin-0/admin-1 aggregates from data.malariaatlas.org | 2023 | ✓ (45) | ✓ | CC BY 3.0 |
-| `pfpracm_` | In-house PfPR–all-cause mortality model | MIS/DHS project, primary `primary_map_regional17_dhsmics_gamma2_v9` ([`PfPR-ACM/provenance.json`](PfPR-ACM/provenance.json)) | applied to 2023 | ✓ (45) | ✓ | In-house, unpublished |
+| `map_` | Malaria Atlas Project | 202608 release, admin-0/admin-1 aggregates from data.malariaatlas.org | 2023 | ✓ | ✓ | CC BY 3.0 |
+| `pfpracm_` | In-house PfPR–all-cause mortality model | MIS/DHS project, primary `primary_map_regional17_dhsmics_gamma2_v9` ([`PfPR-ACM/provenance.json`](PfPR-ACM/provenance.json)) | applied to 2023 | ✓ | ✓ | In-house, unpublished |
 | `worldpop_` | WorldPop Global2 | R2025A, constrained, UN-adjusted, 1 km ([DOI 10.5258/SOTON/WP00842](https://doi.org/10.5258/SOTON/WP00842)) | 2023 | ✓ | ✓ | CC BY 4.0 |
 
 Each source's `raw/` folder has a `fetch_log.json` recording the exact URL and UTC time of each
@@ -187,7 +210,7 @@ multiplier is `INDIRECT_MULTIPLIER` in `scripts/derive_bands.py`, which also che
 adjusted share exceeds 1 (the largest is 0.82, Sierra Leone at 2–4 years).
 
 **Combined malaria probability:** `combined_q_malaria` = 0.5 × `blend_q_malaria_adj` + 0.5 ×
-`pfpracm_q_malaria`. It is blank where PfPR-ACM is (Lesotho, Mauritius, Seychelles). The weight
+`pfpracm_q_malaria`. The weight
 is `ACM_WEIGHT` in `scripts/derive_bands.py`.
 
 ### PfPR-ACM (`scripts/pfpr_acm.R`)
@@ -256,8 +279,8 @@ download has none. `IHME/ihme_2023_by_age_band.csv` also has single-year populat
 - **Measure:** PfPR for ages 2–10, aggregated by MAP to country and state. MAP publishes no
   all-age PfPR product.
 - **Not modelled:** Lesotho, Mauritius and Seychelles have no endemic *P. falciparum*
-  transmission, so MAP doesn't model them. They're left blank rather than set to zero, and so
-  have no PfPR-ACM values.
+  transmission, so MAP doesn't model them. Lesotho is therefore left out of the outputs, as are
+  Mauritius and Seychelles (no IHME).
 - **Cabo Verde:** modelled, and MAP publishes 0 for it.
 
 ### WorldPop (`scripts/fetch_worldpop.R`)
@@ -306,11 +329,6 @@ download has none. `IHME/ihme_2023_by_age_band.csv` also has single-year populat
   |---|---|
   | CA-CODE far higher | Eritrea 8.0% vs 0.6% (PfPR 0.8%), Comoros 3.4% vs 0.7% (1.7%), Djibouti 4.2% vs 1.6% (1.7%), Namibia 3.0% vs 1.4% (0.3%), South Africa 0.05% vs 0.01% (0.01%), Chad 26.7% vs 7.0% (14.0%), Central African Republic 39.2% vs 16.3% (32.5%) |
   | CA-CODE far lower | Equatorial Guinea 4.1% vs 40.8% (21.6%), Gabon 3.0% vs 22.7% (17.5%), Ghana 8.5% vs 31.0% (16.1%); CA-CODE is 0 in Botswana, Cabo Verde and São Tomé and Príncipe, which halves IHME's malaria *q* in the blend |
-
-  Lesotho is the extreme case. CA-CODE assigns it 7.9% of 1–59 month deaths although it has no
-  endemic transmission and IHME assigns none. With IHME at zero, the share is spread using the
-  pooled sub-Saharan IHME age pattern, so Lesotho's blended malaria *q* is non-zero;
-  `derive_bands.py` prints a note.
 - **CA-CODE's all-cause total differs from IGME's for DRC (+16%) and South Sudan (+11%).** The
   CA-CODE share is applied to IGME's deaths, so IGME-arm malaria deaths there are lower than
   CA-CODE's published counts.
@@ -357,7 +375,7 @@ python3 scripts/process_ihme.py    # IHME/ downloads -> IHME/ihme_2023_by_age_ba
 Rscript scripts/pfpr_acm.R         # PfPR-ACM shares -> PfPR-ACM/
 python3 scripts/derive_bands.py    # five bands, blend, PfPR-ACM q -> output/burden_by_age_band_2023.csv
 python3 scripts/build_merged.py    # -> output/malaria_burden_main_2023.csv and the full file, with dictionaries
-Rscript scripts/plot_readme.R      # README figure -> figures/ (needs ggplot2)
+Rscript scripts/plot_readme.R      # README figures (countries, Nigerian states) -> figures/ (needs ggplot2)
 ```
 
 - **Offline:** `fetch_igme.py` and `fetch_map.py` accept `--offline` to re-tidy from the saved

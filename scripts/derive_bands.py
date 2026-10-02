@@ -17,8 +17,8 @@ IGME/WPP onto the five bands, using IHME proportions only where IGME has no spli
   deaths    neonatal = IGME neonatal deaths; IGME 1-11 month and 1-4 year deaths split by IHME's
             death shares within each.
 Blend: 0.5 x IHME + 0.5 x IGME/WPP for countries (q_all, q_malaria, population, deaths, malaria
-fraction); Nigerian states use IHME only. Mauritius and Seychelles (no IHME) get only the IGME/WPP
-values that need no IHME split, and no blend.
+fraction); Nigerian states use IHME only. Countries with in_outputs = FALSE in
+reference/countries.csv (Lesotho, Mauritius, Seychelles) are left out.
 Indirect deaths: blended malaria share and q are also given x 1.6 (_adj), the adjustment for
 indirect malaria deaths, which applies to the cause-assigned IHME/IGME estimates only.
 PfPR-ACM: q_malaria = PfPR-ACM share x blended q_all (already includes indirect deaths).
@@ -26,7 +26,7 @@ Combined: combined_q_malaria = 0.5 x adjusted blended q_malaria + 0.5 x PfPR-ACM
 
 Inputs: IHME/ihme_2023_by_age_band.csv, UN-IGME/igme_national_2023.csv,
         PfPR-ACM/pfpr_acm_shares_2023.csv, reference/*.csv
-Output: output/burden_by_age_band_2023.csv (one row per location x band, 85 locations)
+Output: output/burden_by_age_band_2023.csv (one row per location x band)
 """
 from pathlib import Path
 
@@ -56,6 +56,7 @@ def hazard(q):
 
 def locations():
     c = pd.read_csv(ROOT / "reference" / "countries.csv")
+    c = c[c["in_outputs"]]
     s = pd.read_csv(ROOT / "reference" / "nigeria_states.csv")
     locs = pd.concat([
         pd.DataFrame({"location_level": "country", "iso3": c["iso3"], "location_name": c["country_name"]}),
@@ -72,7 +73,7 @@ def main():
     ih = {m: b.pivot(index="key", columns="age_band", values=m).reindex(index=locs.index, columns=BANDS)
           for m in ["population", "q_all", "q_malaria", "malaria_fraction", "deaths_all", "deaths_malaria"]}
     countries = locs.index[locs["location_level"] == "country"]
-    has_ihme = ih["q_all"].loc[countries].notna().all(axis=1)      # False for Mauritius, Seychelles
+    has_ihme = ih["q_all"].loc[countries].notna().all(axis=1)      # False if IHME has no estimate
     iso = locs.loc[countries, "iso3"]
 
     g = pd.read_csv(ROOT / "UN-IGME" / "igme_national_2023.csv")
@@ -101,7 +102,7 @@ def main():
     fr = ih["malaria_fraction"].loc[countries, POSTNEONATAL]
     pooled = (ih["deaths_malaria"].loc[countries, POSTNEONATAL].sum()
               / ih["deaths_all"].loc[countries, POSTNEONATAL].sum())
-    no_ihme_malaria = has_ihme & (fr.sum(axis=1) == 0)             # IHME pattern undefined (Lesotho)
+    no_ihme_malaria = has_ihme & (fr.sum(axis=1) == 0)             # IHME pattern undefined
     pattern = fr.copy()
     pattern.loc[no_ihme_malaria] = pooled.to_numpy()
     scale = (w * pattern).sum(axis=1, min_count=1)
