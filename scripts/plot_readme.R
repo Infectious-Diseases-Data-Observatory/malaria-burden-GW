@@ -2,6 +2,8 @@
 # estimates with the x 1.6 indirect-death adjustment (blend_q_malaria_adj) and from PfPR-ACM.
 #   countries        IHME/IGME blend x 1.6 vs PfPR-ACM
 #   Nigerian states  IHME x 1.6 vs PfPR-ACM (states use IHME only)
+# Each row also marks the combined estimate (the average of the two) with a tick; the bracket in
+# each label is MAP PfPR2-10.
 #
 # Cumulative probability before 5 from the five band probabilities (competing risks):
 #     q_malaria_u5 = sum_b S_b x q_malaria_b,   S_b = prod_{j<b} (1 - q_all_j)
@@ -47,13 +49,20 @@ themes <- list(
   dark = list(surface = "#1a1a19", ink = "#ffffff", ink2 = "#c3c2b7", muted = "#898781",
               grid = "#2c2c2a", connector = "#383835", series = c("#3987e5", "#d95926")))
 
+short_names <- c("Democratic Republic of the Congo" = "DR Congo",
+                 "United Republic of Tanzania" = "Tanzania")      # figure labels only
+average_label <- "Average of the two"
+
 dumbbell <- function(r, stub, title, unit, legend_label, short_label, caption) {
   r <- r[order(r$pfpracm), ]
-  r$label <- factor(sprintf("%s (%.0f%%)", r$name, 100 * r$pfpr_2_10),
-                    levels = sprintf("%s (%.0f%%)", r$name, 100 * r$pfpr_2_10))
-  long <- rbind(data.frame(label = r$label, value = 1000 * r$blend, series = legend_label),
-                data.frame(label = r$label, value = 1000 * r$pfpracm, series = "PfPR-ACM"))
-  long$series <- factor(long$series, levels = c(legend_label, "PfPR-ACM"))
+  name <- ifelse(r$name %in% names(short_names), short_names[r$name], r$name)
+  labels <- sprintf("%s (PfPR %.0f%%)", name, 100 * r$pfpr_2_10)
+  r$label <- factor(labels, levels = labels)
+  series <- c(legend_label, "PfPR-ACM", average_label)
+  long <- rbind(data.frame(label = r$label, value = 1000 * r$blend, series = series[1]),
+                data.frame(label = r$label, value = 1000 * r$pfpracm, series = series[2]),
+                data.frame(label = r$label, value = 1000 * r$combined, series = series[3]))
+  long$series <- factor(long$series, levels = series)  # average drawn last, on top of the dots
   top <- r[nrow(r), ]                        # direct labels on the top row, outward from the pair
   left_is_blend <- top$blend < top$pfpracm
   for (mode in names(themes)) {
@@ -61,21 +70,25 @@ dumbbell <- function(r, stub, title, unit, legend_label, short_label, caption) {
     p <- ggplot(long, aes(x = value, y = label)) +
       geom_segment(data = r, aes(x = 1000 * blend, xend = 1000 * pfpracm, y = label, yend = label),
                    inherit.aes = FALSE, colour = th$connector, linewidth = 0.7) +
-      geom_point(aes(fill = series, shape = series), size = 2.9, stroke = 0.7, colour = th$surface) +
+      geom_point(aes(fill = series, shape = series, colour = series, size = series), stroke = 0.7) +
       annotate("text", x = 1000 * min(top$blend, top$pfpracm) - 0.8, y = nrow(r),
                label = if (left_is_blend) short_label else "PfPR-ACM", hjust = 1, size = 3.1,
                colour = th$ink2) +
       annotate("text", x = 1000 * max(top$blend, top$pfpracm) + 0.8, y = nrow(r),
                label = if (left_is_blend) "PfPR-ACM" else short_label, hjust = 0, size = 3.1,
                colour = th$ink2) +
-      scale_fill_manual(values = th$series, name = NULL) +
-      scale_shape_manual(values = c(21, 23), name = NULL) +
+      annotate("text", x = 1000 * top$combined, y = nrow(r) + 0.55, label = "Average",
+               vjust = 0, size = 2.8, colour = th$ink2) +
+      scale_fill_manual(values = c(th$series, th$ink), name = NULL) +
+      scale_colour_manual(values = c(th$surface, th$surface, th$ink), name = NULL) +
+      scale_shape_manual(values = c(21, 23, 124), name = NULL) +
+      scale_size_manual(values = c(2.9, 2.9, 3.2), name = NULL) +
       scale_x_continuous(expand = expansion(mult = c(0.02, 0.04)), limits = c(0, NA),
                          breaks = scales::breaks_width(10)) +
       coord_cartesian(clip = "off") +
       labs(title = title,
-           subtitle = sprintf(paste("Deaths per 1,000 live births. MAP PfPR2-10 in brackets; %s",
-                                    "ordered by the PfPR-ACM estimate."), unit),
+           subtitle = sprintf(paste("Deaths per 1,000 live births. The tick on each line is the average",
+                                    "of the two; %s ordered by the PfPR-ACM estimate."), unit),
            x = "Deaths per 1,000 live births", y = NULL, caption = caption) +
       theme_minimal(base_size = 10.5) +
       theme(plot.background = element_rect(fill = th$surface, colour = NA),
@@ -103,7 +116,7 @@ dumbbell(res[res$location_level == "country", ], "countries",
          paste("IHME/IGME malaria probabilities are multiplied by 1.6 to include indirect malaria",
                "deaths; PfPR-ACM\n(deaths that would not occur at PfPR 0) already includes them.",
                "Both series use the IHME/IGME blended\nall-cause probabilities for survival between",
-               "age bands."))
+               "age bands. PfPR is MAP's 2023 population-weighted PfPR2-10."))
 dumbbell(res[res$location_level == "nigeria_state", ], "nigeria_states",
          "Probability of dying from malaria before age 5, Nigerian states, 2023", "states",
          "IHME × 1.6", "IHME × 1.6",

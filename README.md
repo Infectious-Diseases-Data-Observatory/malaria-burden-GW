@@ -81,13 +81,14 @@ Both figures show the cumulative probability of dying from malaria before age 5:
 Σ<sub>band</sub> *S*<sub>band</sub> × *q*<sub>malaria,band</sub>, where *S* is survival to the start
 of the band. Both series use the blended all-cause probabilities for *S* (IHME's for Nigerian
 states). The IHME/IGME series includes the × 1.6 indirect-death adjustment; PfPR-ACM already
-counts indirect deaths.
+counts indirect deaths. The tick on each line marks the combined estimate (`combined_q_malaria`),
+the average of the two. The bracket in each label is the location's MAP PfPR2–10.
 
 ### Countries
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="figures/u5_malaria_probability_countries_dark.png">
-  <img alt="Dot plot of the probability of dying from malaria before age 5 in 2023 for 45 sub-Saharan African countries, comparing the IHME/IGME blend multiplied by 1.6 for indirect deaths with PfPR-ACM. The two are similar in most high-prevalence countries; Sierra Leone has the highest adjusted blend at 40 per 1,000 and Niger the highest PfPR-ACM at 33." src="figures/u5_malaria_probability_countries_light.png" width="720">
+  <img alt="Dot plot of the probability of dying from malaria before age 5 in 2023 for 45 sub-Saharan African countries, comparing the IHME/IGME blend multiplied by 1.6 for indirect deaths with PfPR-ACM, with a tick at their average. The two are similar in most high-prevalence countries; Sierra Leone has the highest adjusted blend at 40 per 1,000 and Niger the highest PfPR-ACM at 33." src="figures/u5_malaria_probability_countries_light.png" width="720">
 </picture>
 
 - **Overall:** with the adjustment, PfPR-ACM is higher in 19 of 45 countries and lower in 26
@@ -105,7 +106,7 @@ counts indirect deaths.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="figures/u5_malaria_probability_nigeria_states_dark.png">
-  <img alt="Dot plot of the probability of dying from malaria before age 5 in 2023 for Nigeria's 37 states, comparing IHME multiplied by 1.6 for indirect deaths with PfPR-ACM. PfPR-ACM is higher in 13 states, nearly all northern, led by Sokoto at 55 per 1,000; IHME is higher in most southern states, with the largest gap in Lagos (21 against 9)." src="figures/u5_malaria_probability_nigeria_states_light.png" width="720">
+  <img alt="Dot plot of the probability of dying from malaria before age 5 in 2023 for Nigeria's 37 states, comparing IHME multiplied by 1.6 for indirect deaths with PfPR-ACM, with a tick at their average. PfPR-ACM is higher in 13 states, nearly all northern, led by Sokoto at 55 per 1,000; IHME is higher in most southern states, with the largest gap in Lagos (21 against 9)." src="figures/u5_malaria_probability_nigeria_states_light.png" width="720">
 </picture>
 
 - **Overall:** PfPR-ACM is higher than IHME × 1.6 in 13 of 37 states and lower in 24 (median
