@@ -1,13 +1,14 @@
-"""Fetch UN IGME child mortality estimates (and the UN WPP births/population IGME uses)
-from the UNICEF SDMX API, for the sub-Saharan African countries in reference/countries.csv.
+"""Fetch UN IGME child mortality estimates, the UN WPP births/population IGME uses, and CA-CODE
+malaria cause fractions from the UNICEF SDMX API, for the countries in reference/countries.csv.
 
 Raw API responses are saved verbatim to UN-IGME/raw/ alongside a fetch log (URL, UTC time).
 Tidy outputs are written to UN-IGME/:
   igme_national_2023.csv       one row per country x indicator (value, lower, upper)
   igme_nigeria_states.csv      Nigerian state U5MR / NMR, all years published (series ends 2021)
 
-Usage:  python3 scripts/fetch_igme.py            # fetch + tidy
-        python3 scripts/fetch_igme.py --offline  # re-tidy from saved raw files only
+Usage:  python3 scripts/fetch_igme.py                       # fetch all + tidy
+        python3 scripts/fetch_igme.py --only=cacode_malaria  # fetch one query + tidy
+        python3 scripts/fetch_igme.py --offline             # re-tidy from saved raw files only
 """
 import io
 import json
@@ -73,22 +74,29 @@ def queries(iso3s):
         # Subnational (admin-1) Nigeria: U5MR and NMR, all years, UN IGME estimates only
         "cme_subnational_nga": f"{BASE}/UNICEF,CME_SUBNATIONAL,1.0/.MRM0+MRY0T4._T._T.UN_IGME..NGA."
                                f"?format=csv&labels=both",
+        # CA-CODE (WHO/UNICEF causes of death, published with UN IGME): malaria share (%) and
+        # deaths for 1-59 months and under 5. CA-CODE has no neonatal malaria category.
+        "cacode_malaria": f"{BASE}/UNICEF,CME_CAUSE_OF_DEATH,1.0/{areas}.FRACTION+DEATHS.MALARIA._T."
+                          f"M1T59+Y0T4.?format=csv&labels=both&{period}",
     }
 
 
-def fetch_all():
+def fetch_all(only=None):
     RAW.mkdir(parents=True, exist_ok=True)
     iso3s = pd.read_csv(ROOT / "reference" / "countries.csv")["iso3"].tolist()
-    log = []
+    log_path = RAW / "fetch_log.json"
+    log = {e["name"]: e for e in json.loads(log_path.read_text())} if log_path.exists() else {}
     for name, url in queries(iso3s).items():
+        if only and name not in only:
+            continue
         print(f"Fetching {name} ...")
         text = fetch(url)
         (RAW / f"{name}.csv").write_text(text, encoding="utf-8")
-        log.append({"name": name, "url": url,
-                    "fetched_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                    "rows": max(text.count("\n") - 1, 0)})
+        log[name] = {"name": name, "url": url,
+                     "fetched_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                     "rows": max(text.count("\n") - 1, 0)}
         time.sleep(5)  # be polite; the API rate-limits
-    (RAW / "fetch_log.json").write_text(json.dumps(log, indent=2), encoding="utf-8")
+    log_path.write_text(json.dumps(list(log.values()), indent=2), encoding="utf-8")
 
 
 def read_raw(name):
@@ -118,7 +126,15 @@ def tidy():
     pop = pop.assign(unit="Persons", value=pop["OBS_VALUE"] * 10.0 ** pop["UNIT_MULTIPLIER"])
     pop = pop[["iso3", "indicator_code", "indicator", "unit", "year", "value"]]
 
-    national = (pd.concat([cme, pop]).merge(countries, on="iso3", how="left")
+    cod = read_raw("cacode_malaria")
+    cod = cod.assign(indicator_code="CACODE_" + cod["INDICATOR"] + "_MALARIA_" + cod["AGE_GROUP"],
+                     indicator="CA-CODE malaria " + cod["Indicator"].str.lower() + ", " +
+                     cod["Age group"]).rename(columns={
+        "REF_AREA": "iso3", "Unit of measure": "unit", "TIME_PERIOD": "year",
+        "OBS_VALUE": "value", "LOWER_BOUND": "lower", "UPPER_BOUND": "upper"})
+    cod = cod[["iso3", "indicator_code", "indicator", "unit", "year", "value", "lower", "upper"]]
+
+    national = (pd.concat([cme, pop, cod]).merge(countries, on="iso3", how="left")
                 .sort_values(["iso3", "indicator_code"]))
     national.insert(1, "country_name", national.pop("country_name"))
     assert national["country_name"].notna().all()
@@ -140,6 +156,7 @@ def tidy():
 
 
 if __name__ == "__main__":
+    only = {a.split("=", 1)[1] for a in sys.argv if a.startswith("--only=")} or None
     if "--offline" not in sys.argv:
-        fetch_all()
+        fetch_all(only)
     tidy()
