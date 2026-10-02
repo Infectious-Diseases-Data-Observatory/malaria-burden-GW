@@ -12,9 +12,22 @@ mortality (PfPR-ACM). Sources are IHME, UN IGME (with UN WPP and CA-CODE), MAP a
 
 **Main file:** [`output/malaria_burden_inputs_2023.csv`](output/malaria_burden_inputs_2023.csv),
 one row per country (48) and per Nigerian state (37). Every column is defined in
-[`output/data_dictionary.csv`](output/data_dictionary.csv). The same band-level values are in
-long form, one row per location and age band, in
-[`output/burden_by_age_band_2023.csv`](output/burden_by_age_band_2023.csv).
+[`output/data_dictionary.csv`](output/data_dictionary.csv).
+
+The same band-level values are in long form, one row per location and age band (85 × 5), in
+[`output/burden_by_age_band_2023.csv`](output/burden_by_age_band_2023.csv). The long file uses
+these columns:
+
+| Long-file column | Wide-file column | Note |
+|---|---|---|
+| `{source}_population` | `{source}_pop_{band}` | |
+| `{source}_q_all` | `{source}_q_all_{band}` | |
+| `{source}_q_malaria` | `{source}_q_malaria_{band}` | |
+| `{source}_malaria_fraction` | `{source}_malaria_fraction_{band}` | |
+| `{source}_deaths_*` | `{source}_deaths_*_{band}` | |
+| `pfpracm_share_lower_95`, `pfpracm_share_upper_95` | `pfpracm_share_{band}_lower`, `pfpracm_share_{band}_upper` | |
+| `map_pfpr_2_10_pct` | `map_pfpr_2_10` | percent in the long file, proportion in the wide file |
+| live births | `*_live_births` | wide file only |
 
 | Column prefix | What it is |
 |---|---|
@@ -31,7 +44,8 @@ long form, one row per location and age band, in
   ([`reference/countries.csv`](reference/countries.csv)). Sudan is not included.
   Mauritius and Seychelles have no IHME values, because GBD places them outside its
   Sub-Saharan Africa super-region. Without IHME there are no IHME proportions to split IGME
-  with, so they have no `blend_` or `pfpracm_` values.
+  with. They therefore have no `blend_` or `pfpracm_` values, and only the IGME/WPP band values
+  that need no split: neonatal *q* and population at 12–23 months and 2–4 years.
 - **Nigerian states:** 36 states + Federal Capital Territory
   ([`reference/nigeria_states.csv`](reference/nigeria_states.csv) maps GBD, IGME and MAP IDs).
   Niger (country) and Niger State share a name; join on IDs, never names.
@@ -86,7 +100,7 @@ IGME and WPP don't publish all five bands. Where a split is missing, it uses IHM
 | All-cause *q*, 0–27 days | IGME neonatal mortality rate |
 | All-cause *q*, 1–5 and 6–11 months | IGME 1–11 month probability, split by IHME's share of the cumulative hazard *H* = −ln(1 − *q*): *H*<sub>band</sub> = *H*<sub>IGME</sub> × *H*<sub>IHME,band</sub> / *H*<sub>IHME,1–11m</sub>, then *q*<sub>band</sub> = 1 − e<sup>−*H*<sub>band</sub></sup>. The two bands chain back exactly to IGME's 1–11 month value. |
 | All-cause *q*, 12–23 months and 2–4 years | IGME 1–4 year probability (4q1), split the same way |
-| Malaria share, 1–59 month bands | CA-CODE's malaria share of 1–59 month deaths, spread across the four bands in proportion to IHME's band malaria shares. It is scaled so that, with IGME deaths following IHME's age distribution of deaths, the 1–59 month total equals CA-CODE's share. |
+| Malaria share, 1–59 month bands | CA-CODE's malaria share of 1–59 month deaths, spread across the four bands in proportion to IHME's band malaria shares. It is scaled so the 1–59 month total equals CA-CODE's share on IGME's own deaths: IGME's 1–11 month and 1–4 year deaths, each split between its two bands by IHME's death shares. |
 | Malaria share, 0–27 days | IHME's share (CA-CODE assigns no neonatal deaths to malaria) |
 | Malaria *q* | malaria share × IGME all-cause *q* |
 | Population, 0–27 days to 6–11 months | WPP under-1 population split by IHME's under-1 age distribution |
@@ -109,8 +123,16 @@ saved primary v9 fits; nothing is refitted.
 - **Intervals:** 95% intervals reflect model hazard-ratio uncertainty only. There is none for
   2–4 years, because cross-band covariance isn't estimated.
 - **Malaria probability of death:** `pfpracm_q_malaria` = PfPR-ACM share × `blend_q_all`.
+- **Support flag:** `pfpracm_outside_central95` is TRUE when the location's PfPR is outside the
+  central 95% of the PfPR values the model was fitted on, roughly 1.6–63.5% depending on the
+  band.
 - **Reuse:** `PfPR-ACM/pfpr_acm_curve_v9.csv` gives the share on a 0–100% PfPR grid for each
   model band, so it can be applied to other prevalence values without the model files.
+  - The curves are not monotone at high prevalence. The <1, 1–5, 24–35 and 36–47 month shares
+    peak between about 46% and 62% PfPR and then fall. The 48–59 month share dips slightly
+    between 39% and 61%.
+  - Above about 63% PfPR the data are sparse (`outside_central95`), so don't use the curve
+    there without checking. The highest 2023 value in this file is Zamfara at 43.8%.
 
 The script reads only the model's compact PfPR components (knots, coefficients and covariance;
 no survey data) from the MIS/DHS project and does not modify that project.
@@ -173,12 +195,43 @@ download has none. `IHME/ihme_2023_by_age_band.csv` also has single-year populat
   - Its curves are transported to every country, including those outside the fitting sample.
   - They are evaluated at national or state mean PfPR, not applied subnationally and then
     aggregated.
-  - The model was fitted on MAP's 202508 release; the 2023 exposure here is the 202608 release.
   - The model's youngest band is <1 completed month, while the neonatal band here is 0–27 days.
-- **Lesotho:** CA-CODE assigns 7.9% of Lesotho's 1–59 month deaths to malaria, although it has no
+  - Ten low-prevalence countries are below the central 95% of the fitted PfPR range
+    (`pfpracm_outside_central95`): South Africa, Botswana, Eswatini, Namibia, São Tomé and
+    Príncipe, Eritrea, Mauritania, Comoros, Djibouti and Cabo Verde.
+- **The PfPR-ACM exposure is not the in-house project's own PfPR series.**
+  - The model was fitted on regional PfPR from MAP's 202508 release (recorded in
+    `PfPR-ACM/provenance.json`). Its own national series (`annual_comparison/national_pfpr_2000_2024.csv`)
+    weights 202508 rasters by GPW 2020 population.
+  - The exposure here is MAP's 202608 release, which revised recent years, as MAP aggregates it.
+  - For 2023 the median gap between the two across 42 countries is 1.1 points, but five
+    countries differ by more than 5 points. Zambia is 25.5% here against 14.5%, Burundi 32.0%
+    against 23.4%, Malawi 26.8% against 19.3%, Burkina Faso 28.7% against 21.6%, and DRC 30.4%
+    against 36.4%.
+  - The 2–4-year share therefore differs from the project's published country shares by up to
+    13 points: Senegal −0.13 and Zambia +0.11.
+  - This repo uses MAP's latest population-weighted aggregates because they are the latest MAP
+    estimate, match the `map_` columns, and exist for Nigerian states.
+- **IHME and CA-CODE disagree widely on malaria's share of deaths**, so the blend moves malaria
+  *q* by between 0.5× and 3.5× IHME's value (2–4 years). Countries where CA-CODE's 1–59 month
+  share is more than twice or less than half IHME's:
+
+  | | Countries (MAP PfPR2–10) |
+  |---|---|
+  | CA-CODE far higher | Eritrea 8.0% vs 0.6% (PfPR 0.8%), Comoros 3.4% vs 0.7% (1.7%), Djibouti 4.2% vs 1.6% (1.7%), Namibia 3.0% vs 1.4% (0.3%), Chad 26.7% vs 7.0% (14.0%), Central African Republic 39.2% vs 16.3% (32.5%) |
+  | CA-CODE far lower | Equatorial Guinea 4.1% vs 40.8% (21.6%), Gabon 3.0% vs 22.7% (17.5%), Ghana 8.5% vs 31.0% (16.1%); CA-CODE is 0 in Botswana, Cabo Verde and São Tomé and Príncipe, which halves IHME's malaria *q* in the blend |
+
+  Lesotho is the extreme case. CA-CODE assigns it 7.9% of 1–59 month deaths although it has no
   endemic transmission and IHME assigns none. With IHME at zero, the share is spread using the
-  pooled sub-Saharan IHME age pattern, so Lesotho's blended malaria *q* is non-zero.
+  pooled sub-Saharan IHME age pattern, so Lesotho's blended malaria *q* is non-zero;
   `derive_bands.py` prints a note.
+- **CA-CODE's all-cause total differs from IGME's for DRC (+16%) and South Sudan (+11%).** The
+  CA-CODE share is applied to IGME's deaths, so IGME-arm malaria deaths there are lower than
+  CA-CODE's published counts.
+- **IGME's own rates don't chain exactly.** The IGME arm uses the published neonatal, 1–11 month
+  and 1–4 year rates. These multiply to slightly less than IGME's published infant and under-5
+  rates: at most 3.7% below for infants and 2.4% below for under-5, both in South Sudan; under
+  1% in most countries.
 - **Togo's WPP births look wrong in the UNICEF DM dataflow.** `wpp_live_births` for Togo
   (268,455) is about 7% below the births implied by IGME's own neonatal deaths ÷ NMR (about
   290,000); every other country agrees within 1%. This feeds into Togo's `blend_live_births`.
@@ -189,8 +242,9 @@ download has none. `IHME/ihme_2023_by_age_band.csv` also has single-year populat
 - **IHME and IGME differ materially**, which the 50:50 blend averages over.
   - Nigeria 2023 under-5 deaths: 715,000 (IHME, derived) against 857,000 (IGME).
   - Births: 8.50 million (IHME) against 7.51 million (WPP).
-  - Largest gaps: Eritrea (IHME births 2.1× WPP), DRC (IHME under-5 deaths 0.55× IGME) and Cabo
-    Verde (2.4×).
+  - Largest under-5 death gaps: Eritrea 3.4× and Cabo Verde 2.4× (IHME higher), DRC 0.55×
+    (IHME lower).
+  - Largest births gap: Eritrea, where IHME is 2.1× WPP.
 - **IHME and WorldPop distribute Nigeria's under-5 population across states very differently.**
   - National totals are close (IHME 38.8 million, WorldPop 33.4 million).
   - The state ratio WorldPop/IHME runs from 0.35 to 3.1: Lagos 0.61 million (IHME) vs 1.61

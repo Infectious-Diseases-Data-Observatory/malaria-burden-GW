@@ -31,5 +31,6 @@
     "48-59": [0.0164865959077473, 1.62295251492351, 63.1664103499948, 94.7588284788529]
   },
   "exposure": "MAP 202608 PfPR2-10, 2023, population-weighted admin-0/admin-1 means",
-  "created_utc": "2026-10-01T20:58:15Z"
+  "fitting_exposure": "Regional MAP PfPR2-10 from Malaria__202508_Global_Pf_Parasite_Rate (MAP_DATASET_ID in R_dhs/00_config.R of the source project)",
+  "created_utc": "2026-10-02T08:47:21Z"
 }

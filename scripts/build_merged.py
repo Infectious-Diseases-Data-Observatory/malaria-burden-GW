@@ -143,6 +143,10 @@ def main():
         cols.add(f"pfpracm_q_malaria_{b}", q_acm[b], SRC_ACM, f"PfPR-ACM probability of malaria "
                  f"death {Q_DESC.format(band=LABEL[b])}: pfpracm_share x blend_q_all",
                  "probability (0-1)")
+    flag = band("pfpracm_outside_central95").astype(float)
+    cols.add("pfpracm_outside_central95", flag.max(axis=1, skipna=True).map({1.0: True, 0.0: False}),
+             SRC_ACM, "TRUE if the location's PfPR is outside the central 95% of the PfPR values the "
+             "model was fitted on, for any model age band (shares there rest on sparse data)", "flag")
 
     # --- MAP ---------------------------------------------------------------------------------
     for c, desc in [("pfpr_2_10", "P. falciparum parasite rate in children aged 2-10, "
@@ -161,7 +165,8 @@ def main():
         ("q_all", "ihme_q_all", "Probability of death from all causes " + Q_DESC, "probability (0-1)"),
         ("q_malaria", "ihme_q_malaria", "Probability of death from malaria " + Q_DESC, "probability (0-1)"),
         ("malaria_fraction", "ihme_malaria_fraction", "Share of all-cause deaths at {band} assigned "
-         "to malaria (q_malaria / q_all)", "proportion (0-1)"),
+         "to malaria (q_malaria / q_all; under 5: malaria deaths / all-cause deaths summed over "
+         "the bands)", "proportion (0-1)"),
         ("deaths_all", "ihme_deaths_all", "All-cause deaths at {band} (derived; see README)", "deaths per year"),
         ("deaths_malaria", "ihme_deaths_malaria", "Malaria deaths at {band} (derived; see README)", "deaths per year")]
     for metric, prefix, desc, unit in ihme_metrics:
@@ -171,20 +176,28 @@ def main():
         cols.add(f"{prefix}_u5", ihme_u5[metric], SRC_IHME, desc.format(band=LABEL["u5"]), unit)
 
     # --- UN IGME / WPP on the five bands -----------------------------------------------------
-    for metric, prefix, desc, unit in [
-            ("igme_q_all", "igme_q_all", "Probability of death from all causes " + Q_DESC +
-             " (1-11 month and 1-4 year IGME rates split by IHME hazard shares)", "probability (0-1)"),
+    how_q = {"0_27d": "IGME neonatal mortality rate",
+             "1_5m": "IGME 1-11 month rate split by IHME hazard shares",
+             "6_11m": "IGME 1-11 month rate split by IHME hazard shares",
+             "12_23m": "IGME 1-4 year rate (4q1) split by IHME hazard shares",
+             "2_4y": "IGME 1-4 year rate (4q1) split by IHME hazard shares"}
+    how_f = {b: "CA-CODE 1-59 month share spread by IHME's age pattern of malaria shares, scaled "
+                "to CA-CODE's total on IGME's deaths" for b in BANDS[1:]}
+    how_f["0_27d"] = "IHME's share (CA-CODE has no neonatal malaria category)"
+    how_pop = {b: "WPP under-1 population split by IHME's under-1 age distribution"
+               for b in BANDS[:3]}
+    how_pop.update({"12_23m": "WPP age 1", "2_4y": "WPP ages 2, 3 and 4 summed"})
+    for metric, prefix, desc, how, unit, src in [
+            ("igme_q_all", "igme_q_all", "Probability of death from all causes " + Q_DESC, how_q,
+             "probability (0-1)", SRC_IGME5),
             ("igme_malaria_fraction", "igme_malaria_fraction", "Share of all-cause deaths at {band} "
-             "assigned to malaria: CA-CODE 1-59 month share spread by IHME's age pattern (neonatal: "
-             "IHME)", "proportion (0-1)"),
-            ("igme_q_malaria", "igme_q_malaria", "Probability of death from malaria " + Q_DESC +
-             ": igme_malaria_fraction x igme_q_all", "probability (0-1)"),
-            ("wpp_population", "wpp_pop", "Population aged {band} (WPP under-1 split by IHME's "
-             "under-1 age distribution; ages 2-4 summed)", "persons")]:
+             "assigned to malaria", how_f, "proportion (0-1)", SRC_IGME5),
+            ("igme_q_malaria", "igme_q_malaria", "Probability of death from malaria " + Q_DESC,
+             {b: "igme_malaria_fraction x igme_q_all" for b in BANDS}, "probability (0-1)", SRC_IGME5),
+            ("wpp_population", "wpp_pop", "Population aged {band}", how_pop, "persons", SRC_WPP)]:
         w = band(metric)
-        src = SRC_WPP if prefix == "wpp_pop" else SRC_IGME5
         for b in BANDS:
-            cols.add(f"{prefix}_{b}", w[b], src, desc.format(band=LABEL[b]), unit)
+            cols.add(f"{prefix}_{b}", w[b], src, f"{desc.format(band=LABEL[b])} ({how[b]})", unit)
     cols.add("wpp_live_births", wpp_births, SRC_WPP, "Live births (UNICEF DM dataflow; see README "
              "caution for Togo)", "births per year")
 

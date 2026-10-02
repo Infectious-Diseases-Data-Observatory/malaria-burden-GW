@@ -55,7 +55,8 @@ contrast <- function(piece, pfpr_pct) {
   data.frame(model_band = piece$age_band, pfpr_pct = pfpr_pct, log_hr_zero_vs_current = est,
              log_hr_se = se, share = 1 - exp(est), share_lower_95 = 1 - exp(est + 1.96 * se),
              share_upper_95 = 1 - exp(est - 1.96 * se),
-             outside_observed_support = pfpr_pct < piece$support[1] | pfpr_pct > piece$support[4])
+             outside_observed_support = pfpr_pct < piece$support[1] | pfpr_pct > piece$support[4],
+             outside_central95 = pfpr_pct < piece$support[2] | pfpr_pct > piece$support[3])
 }
 
 # Check against the project's own published anchors (PfPR 10, 20, 30, 50%).
@@ -86,13 +87,15 @@ target <- c("<1" = "0_27d", "1-5" = "1_5m", "6-11" = "6_11m", "12-23" = "12_23m"
 single <- by_model[by_model$model_band %in% names(target), ]
 single$age_band <- unname(target[single$model_band])
 older <- by_model[by_model$model_band %in% c("24-35", "36-47", "48-59"), ]
-older <- aggregate(share ~ location_level + iso3 + location_name + pfpr_pct, data = older, FUN = mean)
+by_loc <- older[c("location_level", "iso3", "location_name", "pfpr_pct")]
+older <- cbind(aggregate(older["share"], by_loc, mean),
+               outside_observed_support = aggregate(older["outside_observed_support"], by_loc, any)[[5]],
+               outside_central95 = aggregate(older["outside_central95"], by_loc, any)[[5]])
 older$age_band <- "2_4y"
 older$model_band <- "24-35, 36-47, 48-59 (mean)"
 older$share_lower_95 <- older$share_upper_95 <- NA_real_
-older$outside_observed_support <- NA
 cols <- c("location_level", "iso3", "location_name", "pfpr_pct", "age_band", "model_band", "share",
-          "share_lower_95", "share_upper_95", "outside_observed_support")
+          "share_lower_95", "share_upper_95", "outside_observed_support", "outside_central95")
 shares <- rbind(single[cols], older[cols])
 shares <- shares[order(shares$location_level, shares$location_name,
                        match(shares$age_band, c("0_27d", "1_5m", "6_11m", "12_23m", "2_4y"))), ]
@@ -111,6 +114,8 @@ write_json(list(
   knots = setNames(lapply(components, function(p) p$smooth$xp), model_bands),
   pfpr_support_min_p025_p975_max = setNames(lapply(components, `[[`, "support"), model_bands),
   exposure = "MAP 202608 PfPR2-10, 2023, population-weighted admin-0/admin-1 means",
+  fitting_exposure = paste("Regional MAP PfPR2-10 from Malaria__202508_Global_Pf_Parasite_Rate",
+                           "(MAP_DATASET_ID in R_dhs/00_config.R of the source project)"),
   created_utc = format(Sys.time(), "%Y-%m-%dT%H:%M:%SZ", tz = "UTC")),
   file.path(out_dir, "provenance.json"), auto_unbox = TRUE, pretty = TRUE, digits = NA)
 
